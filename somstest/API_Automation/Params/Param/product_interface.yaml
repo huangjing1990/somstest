@@ -1,0 +1,102 @@
+---
+product_interface:
+  dec: "商品管理"
+  add_product:
+    # 新增商品
+    - url: /gc/goods/add
+      data: {"storeId":"1514e1d61686438f95fa46f19070c126","name":"test","categoryId":"bed66011503b11e8a3bc7cd30abc","stockType":"RESTRICTED","mainFigure":"/resource/RETAIL/20201206/f492ee2828784278ae2ecc38cd18881d.jpg","service":"Test","status":"DEFAULT","recommend":true,"source":"RETAIL","classificationIds":["52fa72b92de2438ba4d3fa58a25537ae"],"skus":[{"stock":"1","salesVolume":1,"originalPrice":"","price":"1"}],"goodsPropertyNames":[],"freightParam":{"type":"FIXED","price":0,"freightTemplateId":""},"allowRefund":true,"express":true,"cityDistribution":false,"selfPickUp":false,"detail":null}
+      header: {"Content-Type": "application/json"}
+
+  add_classification:
+    # 添加分类
+    - url: /gc/classification/add
+      data: {"parentId":"0","status":"DEFAULT","storeId":"1514e1d61686438f95fa46f19070c126","name":"1111","sequence":47,"logo":null,"recommend":false,"source":"RETAIL"}
+      header: {"Content-Type": "application/json"}
+
+  getInfos:
+    # 确认商品分类添加成功
+    - url: /gc/classification/getInfos
+      data: {
+        "parentId":0,
+        #"storeId":"",
+        "status":"DEFAULT"
+      }
+      header: {}
+
+  getDetails:
+    # 搜索要更新的商品
+    - url: /gc/goods/getDetails
+      data: {
+        # "storeId": "${storeId}",
+        # "keyword": "${goodsName}",
+        "status": "DEFAULT",
+        "pageInfo": {
+          "pageNo": 1,
+          "pageSize": 10
+        }
+      }
+      header: {
+                "Content-Type": "application/json"
+      }
+
+  updateRelationships:
+    # 切换商品到新的分类
+    - url: /gc/classification/updateRelationships
+      data: {
+#        "classificationIds": [
+#          "${classId}"
+#        ],
+#        "goodsIds": [
+#          "${goodId}"
+#        ]
+      }
+      header: {
+        "Content-Type": "application/json"
+      }
+
+  isgetDetails:
+    # 确认商品到新的分类成功
+    - url: /gc/goods/getDetails
+      data: {
+#        "storeId": "${storeId}",
+#        "classificationId": "${classId}",
+        "status": "DEFAULT",
+        "pageInfo": {
+          "pageNo": 1,
+          "pageSize": 10
+        }
+      }
+      header: {
+        "Content-Type": "application/json"
+      }
+
+  apply:
+    # 下架商品
+    - url: /gc/goods/apply
+      data: {
+#        "ids":["${goodId}"]
+      }
+      header: {
+        "Content-Type": "application/json"
+      }
+
+  remove:
+    # 移除商品
+    - url: /gc/goods/remove
+      data: {
+        #        "ids":["${goodId}"]
+      }
+      header: {
+        "Content-Type": "application/json"
+      }
+
+  deleteClass:
+    # 删除分类信息
+    - url: /gc/classification/delete
+      data: {
+#        "storeId":"${appId}",
+#        "id":"${classId}"
+      }
+      header: {
+        "Content-Type": "application/json"
+      }
