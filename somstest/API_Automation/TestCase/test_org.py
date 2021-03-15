@@ -36,11 +36,11 @@ class TestOrg(unittest.TestCase):
         # self.g["goodId"] = response['body']["data"]
         assert self.initEvn.test.assert_in_response_text(response['text'], "迅洁智慧环卫")
 
-    @logger("添加单位")
-    def test_addorg(self):
-        """
-            用例描述：添加单位
-        """
+    # @logger("添加单位")
+    # def test_addorg(self):
+    #     """
+    #         用例描述：添加单位
+    #     """
         # response = self.product.addproduct(self.req_url, token=self.user_token, appId=self.appid,
         #                                    name=self.productName)
         # self.g["goodId"] = response['body']["data"]
