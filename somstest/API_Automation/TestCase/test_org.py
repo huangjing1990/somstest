@@ -33,15 +33,15 @@ class TestOrg(unittest.TestCase):
             用例描述：登录
         """
         response = self.login.login(self.req_url, lu="209487", pd="DB1A8BD798EEA81B0BE3DCA1D0E2C309")
-        # self.g["goodId"] = response['body']["data"]
-        assert self.initEvn.test.assert_in_response_text(response['text'], "迅洁智慧环卫")
+        print(response["headers"])
+        self.g["Cookie"] = {"JSESSIONID": response["headers"]["Set-Cookie"][11:43]}
+        print(self.g["Cookie"])
+        assert self.initEvn.test.assert_code(response['code'], 302)
 
-    # @logger("添加单位")
-    # def test_addorg(self):
-    #     """
-    #         用例描述：添加单位
-    #     """
-        # response = self.product.addproduct(self.req_url, token=self.user_token, appId=self.appid,
-        #                                    name=self.productName)
-        # self.g["goodId"] = response['body']["data"]
-        # assert self.initEvn.test.assert_body(response['body'], 'code', '000000')
+    @logger("添加单位")
+    def test_addorg(self):
+        """
+            用例描述：添加单位
+        """
+        response = self.org.add_org(self.req_url, self.g["Cookie"])
+        assert self.initEvn.test.assert_body(response['body'], 'resultCode', 1)

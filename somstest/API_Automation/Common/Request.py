@@ -76,7 +76,7 @@ class Request:
         return response_dicts
 
     @logger('post_request')
-    def post_request(self, url, params, header, token=None):
+    def post_request(self, url, params, header, cookie=None):
         """
         Post请求
         :param url:
@@ -88,8 +88,8 @@ class Request:
             url = '%s%s' % ('https://', url)
             print(url)
         ContentType = header.get("Content-Type")
-        if (token is not None):
-            s.headers.update(token)
+        # if (cookie is not None):
+        #     s.headers.update(cookie)
         try:
             if params is None:
                 response = requests.post(url, data=None, headers=header, verify=False)
@@ -101,7 +101,7 @@ class Request:
                 LOG.info('请求地址：%s' % (url))
                 LOG.info('请求入参：%s' % (data_str))
                 LOG.info('请求header：%s' % (header))
-                response = requests.post(url, data=data_str, headers=header, verify=False)
+                response = requests.post(url, data=data_str, headers=header, cookies=cookie, verify=False, allow_redirects=False)
                 assert test.assert_code(response.status_code, 200)
                 LOG.info('response.status_code：%s' % (response.status_code))
                 s.close()
@@ -125,9 +125,11 @@ class Request:
 
         response_dicts = dict()
         response_dicts['code'] = response.status_code
+        response_dicts['headers'] = response.headers
         response_dicts['text'] = response.text
         response_dicts['time_consuming'] = time_consuming
         response_dicts['time_total'] = time_total
+
         try:
             response_dicts['body'] = response.json()
             LOG.info(url + ': 返回结果：%s' % (response.json()))

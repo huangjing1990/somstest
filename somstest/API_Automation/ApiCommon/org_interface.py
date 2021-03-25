@@ -7,25 +7,14 @@ class Org_interface():
     def __init__(self):
         self.request = Request()
 
-    def add_org(self, domain, phoneNumber=None, password=None):
-        """
-        用户注册
-        :param URL地址
-        :param  登录的手机号码
-        :param  登录的用户密码
-        :return: 返回登录信息
-        """
-        url, data, header = request_data("login_interface", "login")
+    def add_org(self, domain, cookie):
+        url, data, header = request_data("org_interface", "addOrg")
+
         apiUrl = domain + url
 
-        data['phoneNumber'] = phoneNumber
-        data['password'] = password
+        response = self.request.post_request(apiUrl, data, header,cookie)
 
-        response = self.request.post_request(apiUrl, data, header)
-
-        token = response['body']['data']['token']
-        appID = response['body']['data']['apps'][0]['appId']
-        return token, appID
+        return response
 
     def get_userToken(self, domain, appId, token):
         """

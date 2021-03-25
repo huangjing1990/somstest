@@ -9,8 +9,8 @@ org_interface:
               "parentOrgId":"1022",
               "legalPerson":"",
               "isOrgParty":"0",
-              "orgName":"jmeter部门",
-              "shortName":"jmeter部门",
+              "orgName":"python部门",
+              "shortName":"python部门",
               "orgTypeId":"40",
               "provinceId":"0050",
               "cityId":"5000",
@@ -21,9 +21,11 @@ org_interface:
               "contactName":"",
               "contactTel":"",
               "owner":"",
-              "memo":"jmeter自动化测试"
+              "memo":"python自动化测试"
 
       }
       header: {
-        "Content-Type": "application/x-www-form-urlencoded"
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
       }

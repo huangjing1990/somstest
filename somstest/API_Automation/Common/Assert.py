@@ -28,6 +28,9 @@ class Assertions:
         :return:
         """
         try:
+            if (code == 302):  # 如果状态码是302，说明请求正常
+                LOG.info(" statusCode is %s " % (code))
+                return True
             assert code == expected_code
             LOG.info(" statusCode is %s " % (code))
             return True
