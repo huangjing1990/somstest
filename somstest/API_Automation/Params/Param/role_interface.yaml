@@ -1,0 +1,61 @@
+---
+role_interface:
+  dec: "角色管理"
+  addRole:
+    # 添加单位
+    - url: /role/addRole
+      data: {
+              "roleName":"python角色",
+              "orgId":"1001",
+              "state":"1",
+              "memo":"python"
+
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+  findRoleByPage:
+    # 查询角色
+    - url: /role/findRoleByPage
+      data: {
+              "curOrgId":"1001",
+              "page":"1",
+              "rows":"15",
+              "sort":"roleId",
+              "order":"asc"
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+  updateRole:
+    # 编辑角色
+    - url: /role/updateRole
+      data: {
+              "roleId":"",
+              "roleName":"编辑python角色",
+              "orgId":"1001",
+              "state":"1",
+              "memo":""
+
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+  deleteRole:
+    # 删除角色
+    - url: /role/deleteRole
+      data: {
+              "roleId":""
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
