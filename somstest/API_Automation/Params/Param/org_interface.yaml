@@ -73,7 +73,7 @@ org_interface:
 
       }
   deleteOrg:
-    # 编辑单位
+    # 删除单位
     - url: /org/deleteOrg
       data: {
               "orgId":""

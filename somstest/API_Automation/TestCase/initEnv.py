@@ -33,17 +33,15 @@ class initEvn():
         details = tester + "_" + environment + versioncode
         return details
 
-    def get_userToken(self):
+    def get_userCookie(self):
         # 用户登录
 
-        token, appid = self.login.login(self.host, phoneNumber="15527060286", password="hbc23687")
+        response = self.login.login(self.host, lu="209487", pd="DB1A8BD798EEA81B0BE3DCA1D0E2C309")
+        assert self.test.assert_code(response['code'], 302)
+        cookie = {"JSESSIONID": response["headers"]["Set-Cookie"][11:43]}
 
-        # 获取 用户token
-
-        user_token = self.login.get_userToken(self.host, appId=appid, token=token)
-
-        return user_token, appid
+        return cookie
 
 
 if __name__ == '__main__':
-    print(initEvn().get_userToken())
+    print(initEvn().get_userCookie())

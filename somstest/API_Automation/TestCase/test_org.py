@@ -19,24 +19,24 @@ class TestOrg(unittest.TestCase):
         cls.req_url = cls.initEvn.host
         cls.login = Login_interface()
         cls.org = Org_interface()
-        # cls.user_token, cls.appid = initEvn().get_userToken()
         cls.g = globals()
+        cls.g["Cookie"] = initEvn().get_userCookie()
 
         LOG.info('测试用例开始执行')
 
     def tearDown(self):
         LOG.info('测试用例执行完毕')
 
-    @logger("登录")
-    def test_login(self):
-        """
-            用例描述：登录
-        """
-        response = self.login.login(self.req_url, lu="209487", pd="DB1A8BD798EEA81B0BE3DCA1D0E2C309")
-        print(response["headers"])
-        self.g["Cookie"] = {"JSESSIONID": response["headers"]["Set-Cookie"][11:43]}
-        print(self.g["Cookie"])
-        assert self.initEvn.test.assert_code(response['code'], 302)
+    # @logger("登录")
+    # def test_login(self):
+    #     """
+    #         用例描述：登录
+    #     """
+    #     response = self.login.login(self.req_url, lu="209487", pd="DB1A8BD798EEA81B0BE3DCA1D0E2C309")
+    #     print(response["headers"])
+    #     self.g["Cookie"] = {"JSESSIONID": response["headers"]["Set-Cookie"][11:43]}
+    #     print(self.g["Cookie"])
+    #     assert self.initEvn.test.assert_code(response['code'], 302)
 
     @logger("添加单位")
     def test_addorg(self):

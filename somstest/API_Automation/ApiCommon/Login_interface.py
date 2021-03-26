@@ -1,3 +1,4 @@
+from TestCase.initEnv import *
 from Common.Request import *
 from Params.params import *
 
@@ -15,8 +16,6 @@ class Login_interface():
         data['pd'] = pd
 
         response = self.request.post_request(apiUrl, data, header)
-        # token = response['body']['data']['token']
-        # appID = response['body']['data']['apps'][0]['appId']
         return response
 
     def get_userToken(self, domain, appId, token):
