@@ -45,3 +45,33 @@ class TestOrg(unittest.TestCase):
         """
         response = self.org.add_org(self.req_url, self.g["Cookie"])
         assert self.initEvn.test.assert_body(response['body'], 'resultCode', 1)
+
+    @logger("查询单位")
+    def test_findorg(self):
+        """
+            用例描述：查询单位
+        """
+        response = self.org.find_org(self.req_url, self.g["Cookie"])
+        pythonorg = response["body"]["rows"][0]["children"][21]["children"][7]["children"]
+        for i in range(0, len(pythonorg)):
+            if pythonorg[i]["orgName"] == "python部门":
+                self.g["orgId"] = pythonorg[i]["orgId"]
+        # print(self.g["orgId"])
+        assert self.initEvn.test.assert_in_text(response['body'], "python")
+
+    @logger("编辑单位")
+    def test_editorg(self):
+        """
+            用例描述：编辑单位
+        """
+        self.g["orgName"] = "编辑python部门"
+        response = self.org.edit_org(self.req_url, self.g["Cookie"], self.g["orgId"], self.g["orgName"])
+        assert self.initEvn.test.assert_body(response['body'], 'resultCode', 1)
+
+    @logger("删除单位")
+    def test_deleteorg(self):
+        """
+            用例描述：删除单位
+        """
+        response = self.org.delete_org(self.req_url, self.g["Cookie"], self.g["orgId"])
+        assert self.initEvn.test.assert_body(response['body'], 'resultCode', 1)

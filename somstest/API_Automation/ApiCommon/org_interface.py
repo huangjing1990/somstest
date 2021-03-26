@@ -12,41 +12,39 @@ class Org_interface():
 
         apiUrl = domain + url
 
-        response = self.request.post_request(apiUrl, data, header,cookie)
+        response = self.request.post_request(apiUrl, data, header, cookie)
 
         return response
 
-    def get_userToken(self, domain, appId, token):
-        """
-        用户登陆
-        :param URL地址
-        :param 用户登陆appID
-        :return: 返回用户登陆后的token
-        """
-        url, data, header = request_data("login_interface", "getUserToken")
+    def find_org(self, domain, cookie):
+        url, data, header = request_data("org_interface", "findOrgByTree")
+
         apiUrl = domain + url
 
-        data['appId'] = appId
-        header['authorization'] = token
-        header['appid'] = appId
+        response = self.request.post_request(apiUrl, data, header, cookie)
 
-        response = self.request.get_request(apiUrl, data, header)
-        token = response['body']['data']['token']
-        return token
+        return response
 
-    def logout(self, domain, appId, token):
-        """
-        退出登录
-        :param URL地址
-        :param 用户登陆appID
-        :return: 返回用户登陆后的token
-        """
-        url, data, header = request_data("login_interface", "logout")
+    def edit_org(self, domain, cookie, orgId, orgName):
+        url, data, header = request_data("org_interface", "editOrg")
+
         apiUrl = domain + url
 
-        header['authorization'] = token
-        header['appid'] = appId
+        data["orgId"] = orgId
+        data["orgName"] = orgName
+        data["shortName"] = orgName
 
-        response = self.request.get_request(apiUrl, data, header)
+        response = self.request.post_request(apiUrl, data, header, cookie)
+
+        return response
+
+    def delete_org(self, domain, cookie, orgId):
+        url, data, header = request_data("org_interface", "deleteOrg")
+
+        apiUrl = domain + url
+
+        data["orgId"] = orgId
+
+        response = self.request.post_request(apiUrl, data, header, cookie)
 
         return response

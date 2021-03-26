@@ -72,7 +72,8 @@ class Request:
         response_dicts['time_consuming'] = time_consuming
         response_dicts['time_total'] = time_total
         response_dicts['history'] = response.history
-        LOG.info(url + ': 返回结果：%s' % (response.json()))
+        if (len(response.json()) < 100):
+            LOG.info(url + ': 返回结果：%s' % (response.json()))
         return response_dicts
 
     @logger('post_request')
@@ -101,7 +102,8 @@ class Request:
                 LOG.info('请求地址：%s' % (url))
                 LOG.info('请求入参：%s' % (data_str))
                 LOG.info('请求header：%s' % (header))
-                response = requests.post(url, data=data_str, headers=header, cookies=cookie, verify=False, allow_redirects=False)
+                response = requests.post(url, data=data_str, headers=header, cookies=cookie, verify=False,
+                                         allow_redirects=False)
                 assert test.assert_code(response.status_code, 200)
                 LOG.info('response.status_code：%s' % (response.status_code))
                 s.close()
@@ -132,7 +134,8 @@ class Request:
 
         try:
             response_dicts['body'] = response.json()
-            LOG.info(url + ': 返回结果：%s' % (response.json()))
+            if (len(response.text) < 500):
+                LOG.info(url + ': 返回结果：%s' % (response.json()))
         except Exception as e:
             print(e)
             response_dicts['body'] = ''

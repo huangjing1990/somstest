@@ -29,3 +29,58 @@ org_interface:
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
 
       }
+  findOrgByTree:
+    # 查询单位
+    - url: /org/findOrgByTree
+      data: {
+              "sort":"orgId",
+              "order":"asc",
+              "orgId":"0"
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+  editOrg:
+    # 编辑单位
+    - url: /org/editOrg
+      data: {
+              "orgId":"",
+              "address":"大竹林(地铁站)",
+              "legalPerson":"1022",
+              "isOrgParty":"0",
+              "orgName":"",
+              "shortName":"",
+              "provinceId":"0050",
+              "cityId":"5000",
+              "areaId":"500112",
+              "addressPoints":"106.478351,29.628054",
+              "fencePoints":"",
+              "isWork":"0",
+              "state":"1",
+              "contactName":"",
+              "contactTel":"",
+              "owner":"",
+              "memo":"python自动化",
+              "orgTypeId":"40",
+              "parentOrgId":"1022"
+
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+  deleteOrg:
+    # 编辑单位
+    - url: /org/deleteOrg
+      data: {
+              "orgId":""
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+

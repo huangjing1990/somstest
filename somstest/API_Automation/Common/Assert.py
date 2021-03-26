@@ -68,7 +68,8 @@ class Assertions:
         """
         try:
             text = json.dumps(body, ensure_ascii=False)
-            LOG.info(" body_msg is %s " % (text))
+            if (len(text) < 100):
+                LOG.info(" body_msg is %s " % (text))
             assert expected_msg in text
             return True
 
