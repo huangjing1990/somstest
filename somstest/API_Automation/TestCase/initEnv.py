@@ -43,5 +43,5 @@ class initEvn():
         return cookie
 
 
-if __name__ == '__main__':
-    print(initEvn().get_userCookie())
+# if __name__ == '__main__':
+#     print(initEvn().get_userCookie())

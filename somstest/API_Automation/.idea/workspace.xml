@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="38f64d0e-f3ea-42b9-98db-265484356850" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiCommon/org_interface.py" beforeDir="false" afterPath="$PROJECT_DIR$/ApiCommon/org_interface.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Log/LOGINFO-2021-03-26-16.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Params/Param/login_interface.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Params/Param/login_interface.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Params/Param/org_interface.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Params/Param/org_interface.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Params/Param/role_interface.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Params/Param/role_interface.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/report_20210326_163336.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCase/test_org.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestCase/test_org.py" afterDir="false" />
-    </list>
+    <list default="true" id="38f64d0e-f3ea-42b9-98db-265484356850" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/venv/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,11 +30,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestCase/test_org.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1444">
-              <caret line="76" column="72" selection-start-line="76" selection-start-column="72" selection-end-line="76" selection-end-column="72" />
+            <state relative-caret-position="342">
+              <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
               <folding>
                 <element signature="e#95#106#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/TestCase/initEnv.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="389">
+              <caret line="45" selection-start-line="45" selection-end-line="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestCase/test_role.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="22" column="50" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -60,7 +69,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testFile/caselist.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="57">
@@ -129,7 +138,6 @@
         <option value="$PROJECT_DIR$/Common/Request.py" />
         <option value="$PROJECT_DIR$/Common/Assert.py" />
         <option value="$PROJECT_DIR$/ApiCommon/Login_interface.py" />
-        <option value="$PROJECT_DIR$/TestCase/initEnv.py" />
         <option value="$PROJECT_DIR$/ApiCommon/role_interface.py" />
         <option value="$PROJECT_DIR$/TestCase/test_role.py" />
         <option value="$PROJECT_DIR$/Params/Param/role_interface.yaml" />
@@ -138,10 +146,11 @@
         <option value="$PROJECT_DIR$/TestCase/test_org.py" />
         <option value="$PROJECT_DIR$/ApiCommon/org_interface.py" />
         <option value="$PROJECT_DIR$/testFile/caselist.txt" />
+        <option value="$PROJECT_DIR$/TestCase/initEnv.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-274" />
     <option name="y" value="145" />
     <option name="width" value="1948" />
@@ -398,7 +407,7 @@
       <workItem from="1617007010794" duration="2641000" />
       <workItem from="1617066273220" duration="3366000" />
       <workItem from="1617069885577" duration="745000" />
-      <workItem from="1617071108905" duration="649000" />
+      <workItem from="1617071108905" duration="1237000" />
     </task>
     <servers />
   </component>
@@ -417,7 +426,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126688000" />
+    <option name="totallyTimeSpent" value="127276000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -429,7 +438,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.20682302" />
@@ -465,7 +475,7 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/API_Automation$runAll.coverage" NAME="runAll Coverage Results" MODIFIED="1617071463070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/API_Automation$runAll.coverage" NAME="runAll Coverage Results" MODIFIED="1617072710723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/API_Automation$test.coverage" NAME="test Coverage Results" MODIFIED="1608456883588" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCase" />
     <SUITE FILE_PATH="coverage/API_Automation$Unittests_for_test_add_classification_TestAddClass.coverage" NAME="Unittests for test_add_classification.TestAddClass Coverage Results" MODIFIED="1608903457788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCase" />
     <SUITE FILE_PATH="coverage/API_Automation$initEnv.coverage" NAME="initEnv Coverage Results" MODIFIED="1608902590237" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCase" />
@@ -651,13 +661,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestCase/test_role.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="874">
-          <caret line="51" column="11" lean-forward="true" selection-start-line="51" selection-start-column="11" selection-end-line="51" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Params/Param/role_interface.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="513">
@@ -733,13 +736,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestCase/initEnv.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Common/log_Common.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="377">
@@ -756,16 +752,6 @@
           <caret line="142" column="55" selection-start-line="142" selection-start-column="43" selection-end-line="142" selection-end-column="55" />
           <folding>
             <element signature="e#114#136#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestCase/test_org.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1444">
-          <caret line="76" column="72" selection-start-line="76" selection-start-column="72" selection-end-line="76" selection-end-column="72" />
-          <folding>
-            <element signature="e#95#106#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -791,6 +777,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestCase/test_role.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="22" column="50" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestCase/test_org.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+          <folding>
+            <element signature="e#95#106#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestCase/initEnv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="45" selection-start-line="45" selection-end-line="47" />
         </state>
       </provider>
     </entry>
