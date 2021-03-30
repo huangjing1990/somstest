@@ -2,7 +2,7 @@
 role_interface:
   dec: "角色管理"
   addRole:
-    # 添加单位
+    # 添加角色
     - url: /role/addRole
       data: {
               "roleName":"python角色",

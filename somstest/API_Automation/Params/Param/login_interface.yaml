@@ -15,17 +15,4 @@ login_interface:
       header: {
             "Content-Type": "application/x-www-form-urlencoded",
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
-
       }
-
-  getUserToken:
-    # 获取用户token
-    - url: /ecmps/getUserToken
-      data: {"appId": "1514e1d61686438f95fa46f19070c126"}
-      header: {"authorization":"7d19fb3461e04a848843bf63494dc9f3"}
-
-  logout:
-    # 退出登录
-    - url: /bsmc/user/logout
-      data: {}
-      header: {}

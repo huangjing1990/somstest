@@ -48,3 +48,43 @@ class Org_interface():
         response = self.request.post_request(apiUrl, data, header, cookie)
 
         return response
+
+    def add_team(self, domain, cookie):
+        url, data, header = request_data("org_interface", "addTeam")
+
+        apiUrl = domain + url
+
+        response = self.request.post_request(apiUrl, data, header, cookie)
+
+        return response
+
+    def find_team(self, domain, cookie):
+        url, data, header = request_data("org_interface", "findTeamById")
+
+        apiUrl = domain + url
+
+        response = self.request.post_request(apiUrl, data, header, cookie)
+
+        return response
+
+    def edit_team(self, domain, cookie, teamId):
+        url, data, header = request_data("org_interface", "editTeam")
+
+        apiUrl = domain + url
+
+        data["orgId"] = teamId
+
+        response = self.request.post_request(apiUrl, data, header, cookie)
+
+        return response
+
+    def delete_team(self, domain, cookie, teamId):
+        url, data, header = request_data("org_interface", "deleteTeam")
+
+        apiUrl = domain + url
+
+        data["orgId"] = teamId
+
+        response = self.request.post_request(apiUrl, data, header, cookie)
+
+        return response

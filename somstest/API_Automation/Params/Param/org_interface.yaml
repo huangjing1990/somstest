@@ -29,6 +29,7 @@ org_interface:
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
 
       }
+
   findOrgByTree:
     # 查询单位
     - url: /org/findOrgByTree
@@ -42,6 +43,7 @@ org_interface:
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
 
       }
+
   editOrg:
     # 编辑单位
     - url: /org/editOrg
@@ -72,8 +74,84 @@ org_interface:
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
 
       }
+
   deleteOrg:
     # 删除单位
+    - url: /org/deleteOrg
+      data: {
+              "orgId":""
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+
+  addTeam:
+    # 添加班组
+    - url: /org/addOrg
+      data: {
+        "parentOrgId":"1215",
+        "contactName":"黄静",
+        "provinceId":"0050",
+        "orgName":"python班组",
+        "contactTel":"13092709027",
+        "cityId":"5000",
+        "address":"书城路18号",
+        "areaId":"500112",
+        "memo":"python自动化",
+        "orgTypeId":"50"
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  findTeamById:
+    # 查询班组
+    - url: /org/findTeamById
+      data: {
+              "curOrgId":"0",
+              "searchName":"orgName",
+              "searchValue":"python班组",
+              "page":"1",
+              "rows":"15",
+              "sort":"parentOrg.orgId",
+              "order":"desc"
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  editTeam:
+    # 编辑班组
+    - url: /org/editOrg
+      data: {
+              "orgId":"",
+              "contactName":"黄静",
+              "provinceId":"0050",
+              "orgName":"编辑python班组",
+              "contactTel":"13092709027",
+              "cityId":"5000",
+              "address":"书城路18号",
+              "state":"1",
+              "areaId":"500112",
+              "memo":"python自动化",
+              "orgTypeId":"50",
+              "parentOrgId":"1215"
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  deleteTeam:
+    # 删除班组
     - url: /org/deleteOrg
       data: {
               "orgId":""

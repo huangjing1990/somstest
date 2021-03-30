@@ -9,6 +9,7 @@ import unittest
 from ApiCommon.org_interface import *
 from ApiCommon.Login_interface import *
 from Params.params import *
+import json
 
 
 class TestOrg(unittest.TestCase):
@@ -74,4 +75,39 @@ class TestOrg(unittest.TestCase):
             用例描述：删除单位
         """
         response = self.org.delete_org(self.req_url, self.g["Cookie"], self.g["orgId"])
+        assert self.initEvn.test.assert_body(response['body'], 'resultCode', 1)
+
+
+    @logger("添加班组")
+    def test_addteam(self):
+        """
+            用例描述：添加班组
+        """
+        response = self.org.add_team(self.req_url, self.g["Cookie"])
+        assert self.initEvn.test.assert_body(response['body'], 'resultCode', 1)
+
+    @logger("查询班组")
+    def test_findteam(self):
+        """
+            用例描述：查询班组
+        """
+        response = self.org.find_team(self.req_url, self.g["Cookie"])
+        self.g["teamId"] = response["body"]["rows"][0]["orgId"]
+        # print(self.g["teamId"])
+        assert self.initEvn.test.assert_in_text(response['body'], "python")
+
+    @logger("编辑班组")
+    def test_editteam(self):
+        """
+            用例描述：编辑班组
+        """
+        response = self.org.edit_team(self.req_url, self.g["Cookie"], self.g["teamId"])
+        assert self.initEvn.test.assert_body(response['body'], 'resultCode', 1)
+
+    @logger("删除班组")
+    def test_deleteteam(self):
+        """
+            用例描述：删除班组
+        """
+        response = self.org.delete_team(self.req_url, self.g["Cookie"], self.g["teamId"])
         assert self.initEvn.test.assert_body(response['body'], 'resultCode', 1)
