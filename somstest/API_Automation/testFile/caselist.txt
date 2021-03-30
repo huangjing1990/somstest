@@ -1,3 +1,4 @@
 #test_add_classification
 test_role
 test_org
+test_user

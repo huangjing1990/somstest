@@ -1,0 +1,123 @@
+---
+user_interface:
+  dec: "用户管理"
+  addUser:
+    # 添加用户
+    - url: /user/addUser
+      data: {
+              "type":"0",
+              "employeeId":"210330",
+              "username":"python用户",
+              "sex":"0",
+              "org.orgId":"1215",
+              "cardMac":"",
+              "phone":"",
+              "email":"",
+              "state":"1"
+
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+  findUserByOrg:
+    # 查询用户
+    - url: /user/findUserByOrg
+      data: {
+              "org.orgId":"1215",
+              "searchName":"employeeId",
+              "searchValue":"210330",
+              "page":"1",
+              "rows":"15",
+              "sort":"employeeId",
+              "order":"asc"
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+  updateUser:
+    # 编辑用户
+    - url: /user/updateUser
+      data: {
+              "userId":"",
+              "employeeId":"210330",
+              "username":"编辑python用户",
+              "type":"用户",
+              "sex":"0",
+              "org.orgId":"1215",
+              "cardMac":"",
+              "phone":"13088889999",
+              "email":"13088889999@163.com",
+              "state":"1"
+
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  findUserById:
+    # 查看用户
+    - url: /user/findUserById
+      data: {
+              "userId":""
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  updateUserHasRole:
+    # 用户授权角色
+    - url: /user/updateUserHasRole
+      data: {
+              "userId":"",
+              "roleIds":"1482"
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  unLockUser:
+    # 解锁
+    - url: /user/unLockUser
+      data: {
+              "userId":""
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  resetPassword:
+    # 密码重置
+    - url: /user/resetPassword
+      data: {
+              "userId":""
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  deleteUserById:
+    # 删除用户
+    - url: /user/deleteUserById
+      data: {
+              "userIds":""
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
