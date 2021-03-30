@@ -12,7 +12,7 @@ from ApiCommon.Login_interface import *
 from Params.params import *
 
 
-class TestRole(unittest.TestCase):
+class TestUser(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
