@@ -98,3 +98,16 @@ class User_interface():
         response = self.request.post_request(apiUrl, data, header, cookie)
 
         return response
+
+    # 登录历史
+    def login_history(self, domain, cookie, time_start, time_end):
+        url, data, header = request_data("user_interface", "findUserLoginHistory")
+
+        apiUrl = domain + url
+
+        data["timeStart"] = time_start
+        data["timeEnd"] = time_end
+
+        response = self.request.post_request(apiUrl, data, header, cookie)
+
+        return response

@@ -1,0 +1,313 @@
+[2021-04-27 15:00:00.806096] INFO: LOGINFO: 日志路径; D:\git\somstest\API_Automation\Log
+[2021-04-27 15:00:00.806096] INFO: LOGINFO: D:\git\somstest\API_Automation\TestCase
+[2021-04-27 15:00:00.807093] INFO: LOGINFO: test_org.py
+[2021-04-27 15:00:01.146183] INFO: LOGINFO: <unittest.suite.TestSuite tests=[<unittest.suite.TestSuite tests=[<unittest.suite.TestSuite tests=[<test_org.TestOrg testMethod=test_0001_addorg>, <test_org.TestOrg testMethod=test_0002_findorg>, <test_org.TestOrg testMethod=test_0003_editorg>, <test_org.TestOrg testMethod=test_0004_deleteorg>, <test_org.TestOrg testMethod=test_0005_addteam>, <test_org.TestOrg testMethod=test_0006_findteam>, <test_org.TestOrg testMethod=test_0007_editteam>, <test_org.TestOrg testMethod=test_0008_deleteteam>]>]>]>
+[2021-04-27 15:00:01.146183] INFO: LOGINFO: D:\git\somstest\API_Automation\TestCase
+[2021-04-27 15:00:01.146183] INFO: LOGINFO: test_role.py
+[2021-04-27 15:00:01.157126] INFO: LOGINFO: <unittest.suite.TestSuite tests=[<unittest.suite.TestSuite tests=[<unittest.suite.TestSuite tests=[<test_role.TestRole testMethod=test_0001_addrole>, <test_role.TestRole testMethod=test_0002_findrole>, <test_role.TestRole testMethod=test_0003_editrole>, <test_role.TestRole testMethod=test_0004_deleterole>]>]>]>
+[2021-04-27 15:00:01.157126] INFO: LOGINFO: D:\git\somstest\API_Automation\TestCase
+[2021-04-27 15:00:01.158124] INFO: LOGINFO: test_user.py
+[2021-04-27 15:00:01.171089] INFO: LOGINFO: <unittest.suite.TestSuite tests=[<unittest.suite.TestSuite tests=[<unittest.suite.TestSuite tests=[<test_user.TestUser testMethod=test_0001_adduser>, <test_user.TestUser testMethod=test_0002_findUserByOrg>, <test_user.TestUser testMethod=test_0003_edituser>, <test_user.TestUser testMethod=test_0004_findUserById>, <test_user.TestUser testMethod=test_0005_userHasRole>, <test_user.TestUser testMethod=test_0006_unLockUser>, <test_user.TestUser testMethod=test_0007_resetPassword>, <test_user.TestUser testMethod=test_0008_deleteUser>, <test_user.TestUser testMethod=test_0009_loginHistory>]>]>]>
+[2021-04-27 15:00:01.171089] INFO: LOGINFO: ********TEST START********
+[2021-04-27 15:00:01.173084] INFO: LOGINFO: 报告路径; D:\git\somstest\API_Automation\report\report_20210427_150001.html
+[2021-04-27 15:00:01.174081] INFO: LOGINFO: 解析yaml, Path:D:\git\somstest\API_Automation/Params/Param/login_interface
+[2021-04-27 15:00:01.253867] INFO: LOGINFO: 当前模块 post_request
+[2021-04-27 15:00:01.253867] INFO: LOGINFO: 请求地址：https://somstest.xajyun.com/webLogin/login
+[2021-04-27 15:00:01.253867] INFO: LOGINFO: 请求入参：{'lu': '209487', 'verifyCode': '', 'verify': '', 'localVertifyCode': '', 'pd': 'DB1A8BD798EEA81B0BE3DCA1D0E2C309', 'loginFailedNum': ''}
+[2021-04-27 15:00:01.253867] INFO: LOGINFO: 请求header：{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+[2021-04-27 15:00:01.471097] INFO: LOGINFO: 当前模块 状态码断言
+[2021-04-27 15:00:01.471097] INFO: LOGINFO:  statusCode is 302 
+[2021-04-27 15:00:01.472095] INFO: LOGINFO: response.status_code：302
+[2021-04-27 15:00:01.472095] INFO: LOGINFO: https://somstest.xajyun.com/webLogin/login: 返回结果：
+[2021-04-27 15:00:01.472095] INFO: LOGINFO: 当前模块 状态码断言
+[2021-04-27 15:00:01.472095] INFO: LOGINFO:  statusCode is 302 
+[2021-04-27 15:00:01.472095] INFO: LOGINFO: 测试用例开始执行
+[2021-04-27 15:00:01.472095] INFO: LOGINFO: 当前模块 添加单位
+[2021-04-27 15:00:01.472095] INFO: LOGINFO: 解析yaml, Path:D:\git\somstest\API_Automation/Params/Param/org_interface
+[2021-04-27 15:00:01.516975] INFO: LOGINFO: 当前模块 post_request
+[2021-04-27 15:00:01.516975] INFO: LOGINFO: 请求地址：https://somstest.xajyun.com/org/addOrg
+[2021-04-27 15:00:01.517979] INFO: LOGINFO: 请求入参：{'address': '大竹林(地铁站)', 'parentOrgId': '1022', 'legalPerson': '', 'isOrgParty': '0', 'orgName': 'python部门', 'shortName': 'python部门', 'orgTypeId': '40', 'provinceId': '0050', 'cityId': '5000', 'areaId': '500112', 'addressPoints': '106.478351,29.628054', 'fencePoints': '', 'isWork': '0', 'contactName': '', 'contactTel': '', 'owner': '', 'memo': 'python自动化测试'}
+[2021-04-27 15:00:01.517979] INFO: LOGINFO: 请求header：{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+[2021-04-27 15:00:01.760247] INFO: LOGINFO: 当前模块 状态码断言
+[2021-04-27 15:00:01.760247] INFO: LOGINFO:  statusCode is 200 
+[2021-04-27 15:00:01.760247] INFO: LOGINFO: response.status_code：200
+[2021-04-27 15:00:01.760247] INFO: LOGINFO: https://somstest.xajyun.com/org/addOrg: 返回结果：{'resultCode': 1, 'errorCode': '', 'msg': '添加单位成功！', 'resultJson': '', 'resultJsonArr': None, 'resultObject': None, 'errorType': ''}
+[2021-04-27 15:00:01.760247] INFO: LOGINFO: 当前模块 验证response body中任意属性的值
+[2021-04-27 15:00:01.761245] INFO: LOGINFO:  body_msg is 1 
+[2021-04-27 15:00:01.761245] INFO: LOGINFO: 测试用例执行完毕
+[2021-04-27 15:00:01.761245] INFO: LOGINFO: 当前模块 查询单位
+[2021-04-27 15:00:01.761245] INFO: LOGINFO: 解析yaml, Path:D:\git\somstest\API_Automation/Params/Param/org_interface
+[2021-04-27 15:00:01.806124] INFO: LOGINFO: 当前模块 post_request
+[2021-04-27 15:00:01.806124] INFO: LOGINFO: 请求地址：https://somstest.xajyun.com/org/findOrgByTree
+[2021-04-27 15:00:01.807122] INFO: LOGINFO: 请求入参：{'sort': 'orgId', 'order': 'asc', 'orgId': '0'}
+[2021-04-27 15:00:01.807122] INFO: LOGINFO: 请求header：{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+[2021-04-27 15:00:02.412916] INFO: LOGINFO: 当前模块 状态码断言
+[2021-04-27 15:00:02.412916] INFO: LOGINFO:  statusCode is 200 
+[2021-04-27 15:00:02.412916] INFO: LOGINFO: response.status_code：200
+[2021-04-27 15:00:02.414946] INFO: LOGINFO: 当前模块 验证response body中是否包含预期字符串
+[2021-04-27 15:00:02.416951] INFO: LOGINFO: 测试用例执行完毕
+[2021-04-27 15:00:02.416951] INFO: LOGINFO: 当前模块 编辑单位
+[2021-04-27 15:00:02.416951] INFO: LOGINFO: 解析yaml, Path:D:\git\somstest\API_Automation/Params/Param/org_interface
+[2021-04-27 15:00:02.462783] INFO: LOGINFO: 当前模块 post_request
+[2021-04-27 15:00:02.462783] INFO: LOGINFO: 请求地址：https://somstest.xajyun.com/org/editOrg
+[2021-04-27 15:00:02.462783] INFO: LOGINFO: 请求入参：{'orgId': 1485, 'address': '大竹林(地铁站)', 'legalPerson': '1022', 'isOrgParty': '0', 'orgName': '编辑python部门', 'shortName': '编辑python部门', 'provinceId': '0050', 'cityId': '5000', 'areaId': '500112', 'addressPoints': '106.478351,29.628054', 'fencePoints': '', 'isWork': '0', 'state': '1', 'contactName': '', 'contactTel': '', 'owner': '', 'memo': 'python自动化', 'orgTypeId': '40', 'parentOrgId': '1022'}
+[2021-04-27 15:00:02.462783] INFO: LOGINFO: 请求header：{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+[2021-04-27 15:00:02.636347] INFO: LOGINFO: 当前模块 状态码断言
+[2021-04-27 15:00:02.636347] INFO: LOGINFO:  statusCode is 200 
+[2021-04-27 15:00:02.636347] INFO: LOGINFO: response.status_code：200
+[2021-04-27 15:00:02.637346] INFO: LOGINFO: https://somstest.xajyun.com/org/editOrg: 返回结果：{'resultCode': 1, 'errorCode': '', 'msg': '', 'resultJson': '', 'resultJsonArr': None, 'resultObject': None, 'errorType': ''}
+[2021-04-27 15:00:02.637346] INFO: LOGINFO: 当前模块 验证response body中任意属性的值
+[2021-04-27 15:00:02.637346] INFO: LOGINFO:  body_msg is 1 
+[2021-04-27 15:00:02.637346] INFO: LOGINFO: 测试用例执行完毕
+[2021-04-27 15:00:02.637346] INFO: LOGINFO: 当前模块 删除单位
+[2021-04-27 15:00:02.637346] INFO: LOGINFO: 解析yaml, Path:D:\git\somstest\API_Automation/Params/Param/org_interface
+[2021-04-27 15:00:02.687212] INFO: LOGINFO: 当前模块 post_request
+[2021-04-27 15:00:02.688209] INFO: LOGINFO: 请求地址：https://somstest.xajyun.com/org/deleteOrg
+[2021-04-27 15:00:02.688209] INFO: LOGINFO: 请求入参：{'orgId': 1485}
+[2021-04-27 15:00:02.688209] INFO: LOGINFO: 请求header：{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+[2021-04-27 15:00:02.970454] INFO: LOGINFO: 当前模块 状态码断言
+[2021-04-27 15:00:02.970454] INFO: LOGINFO:  statusCode is 200 
+[2021-04-27 15:00:02.970454] INFO: LOGINFO: response.status_code：200
+[2021-04-27 15:00:02.970454] INFO: LOGINFO: https://somstest.xajyun.com/org/deleteOrg: 返回结果：{'resultCode': 1, 'errorCode': '', 'msg': '删除成功！', 'resultJson': '', 'resultJsonArr': None, 'resultObject': None, 'errorType': ''}
+[2021-04-27 15:00:02.970454] INFO: LOGINFO: 当前模块 验证response body中任意属性的值
+[2021-04-27 15:00:02.970454] INFO: LOGINFO:  body_msg is 1 
+[2021-04-27 15:00:02.970454] INFO: LOGINFO: 测试用例执行完毕
+[2021-04-27 15:00:02.971452] INFO: LOGINFO: 当前模块 添加班组
+[2021-04-27 15:00:02.971452] INFO: LOGINFO: 解析yaml, Path:D:\git\somstest\API_Automation/Params/Param/org_interface
+[2021-04-27 15:00:03.035281] INFO: LOGINFO: 当前模块 post_request
+[2021-04-27 15:00:03.035281] INFO: LOGINFO: 请求地址：https://somstest.xajyun.com/org/addOrg
+[2021-04-27 15:00:03.035281] INFO: LOGINFO: 请求入参：{'parentOrgId': '1215', 'contactName': '黄静', 'provinceId': '0050', 'orgName': 'python班组', 'contactTel': '13092709027', 'cityId': '5000', 'address': '书城路18号', 'areaId': '500112', 'memo': 'python自动化', 'orgTypeId': '50'}
+[2021-04-27 15:00:03.035281] INFO: LOGINFO: 请求header：{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+[2021-04-27 15:00:03.478228] INFO: LOGINFO: 当前模块 状态码断言
+[2021-04-27 15:00:03.479222] INFO: LOGINFO:  statusCode is 200 
+[2021-04-27 15:00:03.479222] INFO: LOGINFO: response.status_code：200
+[2021-04-27 15:00:03.479222] INFO: LOGINFO: https://somstest.xajyun.com/org/addOrg: 返回结果：{'resultCode': 1, 'errorCode': '', 'msg': '添加单位成功！', 'resultJson': '', 'resultJsonArr': None, 'resultObject': None, 'errorType': ''}
+[2021-04-27 15:00:03.480224] INFO: LOGINFO: 当前模块 验证response body中任意属性的值
+[2021-04-27 15:00:03.480224] INFO: LOGINFO:  body_msg is 1 
+[2021-04-27 15:00:03.480224] INFO: LOGINFO: 测试用例执行完毕
+[2021-04-27 15:00:03.481242] INFO: LOGINFO: 当前模块 查询班组
+[2021-04-27 15:00:03.481242] INFO: LOGINFO: 解析yaml, Path:D:\git\somstest\API_Automation/Params/Param/org_interface
+[2021-04-27 15:00:03.542060] INFO: LOGINFO: 当前模块 post_request
+[2021-04-27 15:00:03.542060] INFO: LOGINFO: 请求地址：https://somstest.xajyun.com/org/findTeamById
+[2021-04-27 15:00:03.542060] INFO: LOGINFO: 请求入参：{'curOrgId': '0', 'searchName': 'orgName', 'searchValue': 'python班组', 'page': '1', 'rows': '15', 'sort': 'parentOrg.orgId', 'order': 'desc'}
+[2021-04-27 15:00:03.542060] INFO: LOGINFO: 请求header：{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+[2021-04-27 15:00:04.640192] INFO: LOGINFO: 当前模块 状态码断言
+[2021-04-27 15:00:04.640192] INFO: LOGINFO:  statusCode is 200 
+[2021-04-27 15:00:04.640192] INFO: LOGINFO: response.status_code：200
+[2021-04-27 15:00:04.640192] INFO: LOGINFO: https://somstest.xajyun.com/org/findTeamById: 返回结果：{'total': 1, 'rows': [{'orgName': 'python班组', 'cityName': '重庆市', 'parentDepName': '研发与技术推广中心', 'areaName': '渝北区', 'provinceName': '重庆市', 'parentOrgName': '新安洁股份', 'orgId': 1486, 'orgState': '1'}], 'footer': None}
+[2021-04-27 15:00:04.641193] INFO: LOGINFO: 当前模块 验证response body中是否包含预期字符串
+[2021-04-27 15:00:04.641193] INFO: LOGINFO: 测试用例执行完毕
+[2021-04-27 15:00:04.641193] INFO: LOGINFO: 当前模块 编辑班组
+[2021-04-27 15:00:04.641193] INFO: LOGINFO: 解析yaml, Path:D:\git\somstest\API_Automation/Params/Param/org_interface
+[2021-04-27 15:00:04.683080] INFO: LOGINFO: 当前模块 post_request
+[2021-04-27 15:00:04.683080] INFO: LOGINFO: 请求地址：https://somstest.xajyun.com/org/editOrg
+[2021-04-27 15:00:04.683080] INFO: LOGINFO: 请求入参：{'orgId': 1486, 'contactName': '黄静', 'provinceId': '0050', 'orgName': '编辑python班组', 'contactTel': '13092709027', 'cityId': '5000', 'address': '书城路18号', 'state': '1', 'areaId': '500112', 'memo': 'python自动化', 'orgTypeId': '50', 'parentOrgId': '1215'}
+[2021-04-27 15:00:04.683080] INFO: LOGINFO: 请求header：{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+[2021-04-27 15:00:04.847840] INFO: LOGINFO: 当前模块 状态码断言
+[2021-04-27 15:00:04.847840] INFO: LOGINFO:  statusCode is 200 
+[2021-04-27 15:00:04.847840] INFO: LOGINFO: response.status_code：200
+[2021-04-27 15:00:04.848866] INFO: LOGINFO: https://somstest.xajyun.com/org/editOrg: 返回结果：{'resultCode': 1, 'errorCode': '', 'msg': '', 'resultJson': '', 'resultJsonArr': None, 'resultObject': None, 'errorType': ''}
+[2021-04-27 15:00:04.848866] INFO: LOGINFO: 当前模块 验证response body中任意属性的值
+[2021-04-27 15:00:04.848866] INFO: LOGINFO:  body_msg is 1 
+[2021-04-27 15:00:04.848866] INFO: LOGINFO: 测试用例执行完毕
+[2021-04-27 15:00:04.848866] INFO: LOGINFO: 当前模块 删除班组
+[2021-04-27 15:00:04.848866] INFO: LOGINFO: 解析yaml, Path:D:\git\somstest\API_Automation/Params/Param/org_interface
+[2021-04-27 15:00:04.891720] INFO: LOGINFO: 当前模块 post_request
+[2021-04-27 15:00:04.891720] INFO: LOGINFO: 请求地址：https://somstest.xajyun.com/org/deleteOrg
+[2021-04-27 15:00:04.891720] INFO: LOGINFO: 请求入参：{'orgId': 1486}
+[2021-04-27 15:00:04.891720] INFO: LOGINFO: 请求header：{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+[2021-04-27 15:00:05.071437] INFO: LOGINFO: 当前模块 状态码断言
+[2021-04-27 15:00:05.071437] INFO: LOGINFO:  statusCode is 200 
+[2021-04-27 15:00:05.071437] INFO: LOGINFO: response.status_code：200
+[2021-04-27 15:00:05.071437] INFO: LOGINFO: https://somstest.xajyun.com/org/deleteOrg: 返回结果：{'resultCode': 1, 'errorCode': '', 'msg': '删除成功！', 'resultJson': '', 'resultJsonArr': None, 'resultObject': None, 'errorType': ''}
+[2021-04-27 15:00:05.071437] INFO: LOGINFO: 当前模块 验证response body中任意属性的值
+[2021-04-27 15:00:05.071437] INFO: LOGINFO:  body_msg is 1 
+[2021-04-27 15:00:05.072459] INFO: LOGINFO: 测试用例执行完毕
+[2021-04-27 15:00:05.073455] INFO: LOGINFO: 解析yaml, Path:D:\git\somstest\API_Automation/Params/Param/login_interface
+[2021-04-27 15:00:05.115350] INFO: LOGINFO: 当前模块 post_request
+[2021-04-27 15:00:05.115350] INFO: LOGINFO: 请求地址：https://somstest.xajyun.com/webLogin/login
+[2021-04-27 15:00:05.115350] INFO: LOGINFO: 请求入参：{'lu': '209487', 'verifyCode': '', 'verify': '', 'localVertifyCode': '', 'pd': 'DB1A8BD798EEA81B0BE3DCA1D0E2C309', 'loginFailedNum': ''}
+[2021-04-27 15:00:05.115350] INFO: LOGINFO: 请求header：{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+[2021-04-27 15:00:05.272140] INFO: LOGINFO: 当前模块 状态码断言
+[2021-04-27 15:00:05.272140] INFO: LOGINFO:  statusCode is 302 
+[2021-04-27 15:00:05.272140] INFO: LOGINFO: response.status_code：302
+[2021-04-27 15:00:05.272140] INFO: LOGINFO: https://somstest.xajyun.com/webLogin/login: 返回结果：
+[2021-04-27 15:00:05.272140] INFO: LOGINFO: 当前模块 状态码断言
+[2021-04-27 15:00:05.272140] INFO: LOGINFO:  statusCode is 302 
+[2021-04-27 15:00:05.272140] INFO: LOGINFO: 测试用例开始执行
+[2021-04-27 15:00:05.272140] INFO: LOGINFO: 当前模块 添加角色
+[2021-04-27 15:00:05.273163] INFO: LOGINFO: 解析yaml, Path:D:\git\somstest\API_Automation/Params/Param/role_interface
+[2021-04-27 15:00:05.317020] INFO: LOGINFO: 当前模块 post_request
+[2021-04-27 15:00:05.318047] INFO: LOGINFO: 请求地址：https://somstest.xajyun.com/role/addRole
+[2021-04-27 15:00:05.318047] INFO: LOGINFO: 请求入参：{'roleName': 'python角色', 'orgId': '1001', 'state': '1', 'memo': 'python'}
+[2021-04-27 15:00:05.318047] INFO: LOGINFO: 请求header：{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+[2021-04-27 15:00:05.682310] INFO: LOGINFO: 当前模块 状态码断言
+[2021-04-27 15:00:05.682310] INFO: LOGINFO:  statusCode is 200 
+[2021-04-27 15:00:05.682310] INFO: LOGINFO: response.status_code：200
+[2021-04-27 15:00:05.682310] INFO: LOGINFO: https://somstest.xajyun.com/role/addRole: 返回结果：{'resultCode': 1, 'errorCode': '', 'msg': '', 'resultJson': '', 'resultJsonArr': None, 'resultObject': None, 'errorType': ''}
+[2021-04-27 15:00:05.682310] INFO: LOGINFO: 当前模块 验证response body中任意属性的值
+[2021-04-27 15:00:05.682310] INFO: LOGINFO:  body_msg is 1 
+[2021-04-27 15:00:05.682310] INFO: LOGINFO: 测试用例执行完毕
+[2021-04-27 15:00:05.682310] INFO: LOGINFO: 当前模块 查询角色
+[2021-04-27 15:00:05.683308] INFO: LOGINFO: 解析yaml, Path:D:\git\somstest\API_Automation/Params/Param/role_interface
+[2021-04-27 15:00:05.725222] INFO: LOGINFO: 当前模块 post_request
+[2021-04-27 15:00:05.725222] INFO: LOGINFO: 请求地址：https://somstest.xajyun.com/role/findRoleByPage
+[2021-04-27 15:00:05.725222] INFO: LOGINFO: 请求入参：{'curOrgId': '1001', 'page': '1', 'rows': '15', 'sort': 'roleId', 'order': 'asc'}
+[2021-04-27 15:00:05.725222] INFO: LOGINFO: 请求header：{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+[2021-04-27 15:00:06.208395] INFO: LOGINFO: 当前模块 状态码断言
+[2021-04-27 15:00:06.208395] INFO: LOGINFO:  statusCode is 200 
+[2021-04-27 15:00:06.208395] INFO: LOGINFO: response.status_code：200
+[2021-04-27 15:00:06.208395] INFO: LOGINFO: 当前模块 验证response body中是否包含预期字符串
+[2021-04-27 15:00:06.209391] INFO: LOGINFO: 测试用例执行完毕
+[2021-04-27 15:00:06.209391] INFO: LOGINFO: 当前模块 编辑角色
+[2021-04-27 15:00:06.209391] INFO: LOGINFO: 解析yaml, Path:D:\git\somstest\API_Automation/Params/Param/role_interface
+[2021-04-27 15:00:06.251308] INFO: LOGINFO: 当前模块 post_request
+[2021-04-27 15:00:06.252305] INFO: LOGINFO: 请求地址：https://somstest.xajyun.com/role/updateRole
+[2021-04-27 15:00:06.252305] INFO: LOGINFO: 请求入参：{'roleId': 1571, 'roleName': '编辑python角色', 'orgId': '1001', 'state': '1', 'memo': ''}
+[2021-04-27 15:00:06.252305] INFO: LOGINFO: 请求header：{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+[2021-04-27 15:00:06.617752] INFO: LOGINFO: 当前模块 状态码断言
+[2021-04-27 15:00:06.617752] INFO: LOGINFO:  statusCode is 200 
+[2021-04-27 15:00:06.617752] INFO: LOGINFO: response.status_code：200
+[2021-04-27 15:00:06.617752] INFO: LOGINFO: https://somstest.xajyun.com/role/updateRole: 返回结果：{'resultCode': 1, 'errorCode': '', 'msg': '', 'resultJson': '', 'resultJsonArr': None, 'resultObject': None, 'errorType': ''}
+[2021-04-27 15:00:06.617752] INFO: LOGINFO: 当前模块 验证response body中任意属性的值
+[2021-04-27 15:00:06.617752] INFO: LOGINFO:  body_msg is 1 
+[2021-04-27 15:00:06.617752] INFO: LOGINFO: 测试用例执行完毕
+[2021-04-27 15:00:06.618755] INFO: LOGINFO: 当前模块 删除角色
+[2021-04-27 15:00:06.618755] INFO: LOGINFO: 解析yaml, Path:D:\git\somstest\API_Automation/Params/Param/role_interface
+[2021-04-27 15:00:06.660639] INFO: LOGINFO: 当前模块 post_request
+[2021-04-27 15:00:06.660639] INFO: LOGINFO: 请求地址：https://somstest.xajyun.com/role/deleteRole
+[2021-04-27 15:00:06.660639] INFO: LOGINFO: 请求入参：{'roleId': 1571}
+[2021-04-27 15:00:06.660639] INFO: LOGINFO: 请求header：{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+[2021-04-27 15:00:07.024104] INFO: LOGINFO: 当前模块 状态码断言
+[2021-04-27 15:00:07.024104] INFO: LOGINFO:  statusCode is 200 
+[2021-04-27 15:00:07.024104] INFO: LOGINFO: response.status_code：200
+[2021-04-27 15:00:07.025101] INFO: LOGINFO: https://somstest.xajyun.com/role/deleteRole: 返回结果：{'resultCode': 1, 'errorCode': '', 'msg': '', 'resultJson': '', 'resultJsonArr': None, 'resultObject': None, 'errorType': ''}
+[2021-04-27 15:00:07.025101] INFO: LOGINFO: 当前模块 验证response body中任意属性的值
+[2021-04-27 15:00:07.025101] INFO: LOGINFO:  body_msg is 1 
+[2021-04-27 15:00:07.025101] INFO: LOGINFO: 测试用例执行完毕
+[2021-04-27 15:00:07.026097] INFO: LOGINFO: 解析yaml, Path:D:\git\somstest\API_Automation/Params/Param/login_interface
+[2021-04-27 15:00:07.066987] INFO: LOGINFO: 当前模块 post_request
+[2021-04-27 15:00:07.067985] INFO: LOGINFO: 请求地址：https://somstest.xajyun.com/webLogin/login
+[2021-04-27 15:00:07.067985] INFO: LOGINFO: 请求入参：{'lu': '209487', 'verifyCode': '', 'verify': '', 'localVertifyCode': '', 'pd': 'DB1A8BD798EEA81B0BE3DCA1D0E2C309', 'loginFailedNum': ''}
+[2021-04-27 15:00:07.067985] INFO: LOGINFO: 请求header：{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+[2021-04-27 15:00:07.238276] INFO: LOGINFO: 当前模块 状态码断言
+[2021-04-27 15:00:07.238276] INFO: LOGINFO:  statusCode is 302 
+[2021-04-27 15:00:07.238276] INFO: LOGINFO: response.status_code：302
+[2021-04-27 15:00:07.238276] INFO: LOGINFO: https://somstest.xajyun.com/webLogin/login: 返回结果：
+[2021-04-27 15:00:07.238276] INFO: LOGINFO: 当前模块 状态码断言
+[2021-04-27 15:00:07.239276] INFO: LOGINFO:  statusCode is 302 
+[2021-04-27 15:00:07.239276] INFO: LOGINFO: 测试用例开始执行
+[2021-04-27 15:00:07.239276] INFO: LOGINFO: 当前模块 添加用户
+[2021-04-27 15:00:07.239276] INFO: LOGINFO: 解析yaml, Path:D:\git\somstest\API_Automation/Params/Param/user_interface
+[2021-04-27 15:00:07.281162] INFO: LOGINFO: 当前模块 post_request
+[2021-04-27 15:00:07.281162] INFO: LOGINFO: 请求地址：https://somstest.xajyun.com/user/addUser
+[2021-04-27 15:00:07.281162] INFO: LOGINFO: 请求入参：{'type': '0', 'employeeId': '210330', 'username': 'python用户', 'sex': '0', 'org.orgId': '1215', 'cardMac': '', 'phone': '', 'email': '', 'state': '1'}
+[2021-04-27 15:00:07.281162] INFO: LOGINFO: 请求header：{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+[2021-04-27 15:00:07.883168] INFO: LOGINFO: 当前模块 状态码断言
+[2021-04-27 15:00:07.883168] INFO: LOGINFO:  statusCode is 200 
+[2021-04-27 15:00:07.883168] INFO: LOGINFO: response.status_code：200
+[2021-04-27 15:00:07.883168] INFO: LOGINFO: https://somstest.xajyun.com/user/addUser: 返回结果：{'resultCode': 1, 'errorCode': '', 'msg': '', 'resultJson': '', 'resultJsonArr': None, 'resultObject': None, 'errorType': ''}
+[2021-04-27 15:00:07.883168] INFO: LOGINFO: 当前模块 验证response body中任意属性的值
+[2021-04-27 15:00:07.884173] INFO: LOGINFO:  body_msg is 1 
+[2021-04-27 15:00:07.884173] INFO: LOGINFO: 测试用例执行完毕
+[2021-04-27 15:00:07.884173] INFO: LOGINFO: 当前模块 查询用户
+[2021-04-27 15:00:07.884173] INFO: LOGINFO: 解析yaml, Path:D:\git\somstest\API_Automation/Params/Param/user_interface
+[2021-04-27 15:00:07.926076] INFO: LOGINFO: 当前模块 post_request
+[2021-04-27 15:00:07.926076] INFO: LOGINFO: 请求地址：https://somstest.xajyun.com/user/findUserByOrg
+[2021-04-27 15:00:07.926076] INFO: LOGINFO: 请求入参：{'org.orgId': '1215', 'searchName': 'employeeId', 'searchValue': '210330', 'page': '1', 'rows': '15', 'sort': 'employeeId', 'order': 'asc'}
+[2021-04-27 15:00:07.927071] INFO: LOGINFO: 请求header：{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+[2021-04-27 15:00:08.310023] INFO: LOGINFO: 当前模块 状态码断言
+[2021-04-27 15:00:08.310023] INFO: LOGINFO:  statusCode is 200 
+[2021-04-27 15:00:08.310023] INFO: LOGINFO: response.status_code：200
+[2021-04-27 15:00:08.310023] INFO: LOGINFO: https://somstest.xajyun.com/user/findUserByOrg: 返回结果：{'total': 1, 'rows': [{'orgName': '研发与技术推广中心', 'sex': '0', 'employeeId': '210330', 'userId': 'dad49ed34e004b7bb0a', 'orgId': 1215, 'failedCount': 0, 'phone': '', 'createTime': '2021-04-27 15:00:08', 'state': '1', 'cardMac': '', 'roleNames': '', 'email': '', 'account': None, 'username': 'python用户', 'roleStates': ''}], 'footer': None}
+[2021-04-27 15:00:08.310023] INFO: LOGINFO: 当前模块 验证response body中是否包含预期字符串
+[2021-04-27 15:00:08.310023] INFO: LOGINFO: 测试用例执行完毕
+[2021-04-27 15:00:08.310023] INFO: LOGINFO: 当前模块 编辑用户
+[2021-04-27 15:00:08.310023] INFO: LOGINFO: 解析yaml, Path:D:\git\somstest\API_Automation/Params/Param/user_interface
+[2021-04-27 15:00:08.355899] INFO: LOGINFO: 当前模块 post_request
+[2021-04-27 15:00:08.355899] INFO: LOGINFO: 请求地址：https://somstest.xajyun.com/user/updateUser
+[2021-04-27 15:00:08.355899] INFO: LOGINFO: 请求入参：{'userId': 'dad49ed34e004b7bb0a', 'employeeId': '210330', 'username': '编辑python用户', 'type': '用户', 'sex': '0', 'org.orgId': '1215', 'cardMac': '', 'phone': '13088889999', 'email': '13088889999@163.com', 'state': '1'}
+[2021-04-27 15:00:08.355899] INFO: LOGINFO: 请求header：{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+[2021-04-27 15:00:08.717710] INFO: LOGINFO: 当前模块 状态码断言
+[2021-04-27 15:00:08.717710] INFO: LOGINFO:  statusCode is 200 
+[2021-04-27 15:00:08.717710] INFO: LOGINFO: response.status_code：200
+[2021-04-27 15:00:08.717710] INFO: LOGINFO: https://somstest.xajyun.com/user/updateUser: 返回结果：{'resultCode': 1, 'errorCode': '', 'msg': '修改成功！', 'resultJson': '', 'resultJsonArr': None, 'resultObject': None, 'errorType': ''}
+[2021-04-27 15:00:08.717710] INFO: LOGINFO: 当前模块 验证response body中任意属性的值
+[2021-04-27 15:00:08.718704] INFO: LOGINFO:  body_msg is 1 
+[2021-04-27 15:00:08.718704] INFO: LOGINFO: 测试用例执行完毕
+[2021-04-27 15:00:08.718704] INFO: LOGINFO: 当前模块 查看用户
+[2021-04-27 15:00:08.718704] INFO: LOGINFO: 解析yaml, Path:D:\git\somstest\API_Automation/Params/Param/user_interface
+[2021-04-27 15:00:08.760591] INFO: LOGINFO: 当前模块 post_request
+[2021-04-27 15:00:08.760591] INFO: LOGINFO: 请求地址：https://somstest.xajyun.com/user/findUserById
+[2021-04-27 15:00:08.760591] INFO: LOGINFO: 请求入参：{'userId': 'dad49ed34e004b7bb0a'}
+[2021-04-27 15:00:08.761588] INFO: LOGINFO: 请求header：{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+[2021-04-27 15:00:09.121579] INFO: LOGINFO: 当前模块 状态码断言
+[2021-04-27 15:00:09.121579] INFO: LOGINFO:  statusCode is 200 
+[2021-04-27 15:00:09.121579] INFO: LOGINFO: response.status_code：200
+[2021-04-27 15:00:09.121579] INFO: LOGINFO: https://somstest.xajyun.com/user/findUserById: 返回结果：{'teamName': '', 'qq': None, 'orgName': '研发与技术推广中心', 'sex': '0', 'roles': '', 'employeeId': '210330', 'userId': 'dad49ed34e004b7bb0a', 'loginCount': 0, 'failedCount': 0, 'phone': '13088889999', 'stationName': None, 'state': '1', 'cardMac': '', 'email': '13088889999@163.com', 'account': None, 'username': '编辑python用户'}
+[2021-04-27 15:00:09.122575] INFO: LOGINFO: 当前模块 验证response body中是否包含预期字符串
+[2021-04-27 15:00:09.122575] INFO: LOGINFO: 测试用例执行完毕
+[2021-04-27 15:00:09.122575] INFO: LOGINFO: 当前模块 用户授权角色
+[2021-04-27 15:00:09.122575] INFO: LOGINFO: 解析yaml, Path:D:\git\somstest\API_Automation/Params/Param/user_interface
+[2021-04-27 15:00:09.165489] INFO: LOGINFO: 当前模块 post_request
+[2021-04-27 15:00:09.165489] INFO: LOGINFO: 请求地址：https://somstest.xajyun.com/user/updateUserHasRole
+[2021-04-27 15:00:09.165489] INFO: LOGINFO: 请求入参：{'userId': 'dad49ed34e004b7bb0a', 'roleIds': '1482'}
+[2021-04-27 15:00:09.165489] INFO: LOGINFO: 请求header：{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+[2021-04-27 15:00:09.550744] INFO: LOGINFO: 当前模块 状态码断言
+[2021-04-27 15:00:09.550744] INFO: LOGINFO:  statusCode is 200 
+[2021-04-27 15:00:09.550744] INFO: LOGINFO: response.status_code：200
+[2021-04-27 15:00:09.550744] INFO: LOGINFO: https://somstest.xajyun.com/user/updateUserHasRole: 返回结果：{'resultCode': 1, 'errorCode': '', 'msg': '角色授权成功', 'resultJson': '', 'resultJsonArr': None, 'resultObject': None, 'errorType': ''}
+[2021-04-27 15:00:09.551741] INFO: LOGINFO: 当前模块 验证response body中任意属性的值
+[2021-04-27 15:00:09.551741] INFO: LOGINFO:  body_msg is 1 
+[2021-04-27 15:00:09.551741] INFO: LOGINFO: 测试用例执行完毕
+[2021-04-27 15:00:09.551741] INFO: LOGINFO: 当前模块 解锁
+[2021-04-27 15:00:09.551741] INFO: LOGINFO: 解析yaml, Path:D:\git\somstest\API_Automation/Params/Param/user_interface
+[2021-04-27 15:00:09.593628] INFO: LOGINFO: 当前模块 post_request
+[2021-04-27 15:00:09.593628] INFO: LOGINFO: 请求地址：https://somstest.xajyun.com/user/unLockUser
+[2021-04-27 15:00:09.593628] INFO: LOGINFO: 请求入参：{'userId': 'dad49ed34e004b7bb0a'}
+[2021-04-27 15:00:09.593628] INFO: LOGINFO: 请求header：{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+[2021-04-27 15:00:09.982222] INFO: LOGINFO: 当前模块 状态码断言
+[2021-04-27 15:00:09.982222] INFO: LOGINFO:  statusCode is 200 
+[2021-04-27 15:00:09.982222] INFO: LOGINFO: response.status_code：200
+[2021-04-27 15:00:09.982222] INFO: LOGINFO: https://somstest.xajyun.com/user/unLockUser: 返回结果：{'resultCode': 1, 'errorCode': '', 'msg': '解锁用户成功', 'resultJson': '', 'resultJsonArr': None, 'resultObject': None, 'errorType': ''}
+[2021-04-27 15:00:09.982222] INFO: LOGINFO: 当前模块 验证response body中任意属性的值
+[2021-04-27 15:00:09.982222] INFO: LOGINFO:  body_msg is 1 
+[2021-04-27 15:00:09.983211] INFO: LOGINFO: 测试用例执行完毕
+[2021-04-27 15:00:09.983211] INFO: LOGINFO: 当前模块 密码重置
+[2021-04-27 15:00:09.983211] INFO: LOGINFO: 解析yaml, Path:D:\git\somstest\API_Automation/Params/Param/user_interface
+[2021-04-27 15:00:10.025077] INFO: LOGINFO: 当前模块 post_request
+[2021-04-27 15:00:10.025077] INFO: LOGINFO: 请求地址：https://somstest.xajyun.com/user/resetPassword
+[2021-04-27 15:00:10.025077] INFO: LOGINFO: 请求入参：{'userId': 'dad49ed34e004b7bb0a'}
+[2021-04-27 15:00:10.025077] INFO: LOGINFO: 请求header：{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+[2021-04-27 15:00:10.456059] INFO: LOGINFO: 当前模块 状态码断言
+[2021-04-27 15:00:10.456059] INFO: LOGINFO:  statusCode is 200 
+[2021-04-27 15:00:10.456059] INFO: LOGINFO: response.status_code：200
+[2021-04-27 15:00:10.457056] INFO: LOGINFO: https://somstest.xajyun.com/user/resetPassword: 返回结果：{'resultCode': 1, 'errorCode': '', 'msg': '重置密码成功', 'resultJson': '', 'resultJsonArr': None, 'resultObject': None, 'errorType': ''}
+[2021-04-27 15:00:10.457056] INFO: LOGINFO: 当前模块 验证response body中任意属性的值
+[2021-04-27 15:00:10.457056] INFO: LOGINFO:  body_msg is 1 
+[2021-04-27 15:00:10.457056] INFO: LOGINFO: 测试用例执行完毕
+[2021-04-27 15:00:10.457056] INFO: LOGINFO: 当前模块 删除用户
+[2021-04-27 15:00:10.457056] INFO: LOGINFO: 解析yaml, Path:D:\git\somstest\API_Automation/Params/Param/user_interface
+[2021-04-27 15:00:10.497945] INFO: LOGINFO: 当前模块 post_request
+[2021-04-27 15:00:10.498943] INFO: LOGINFO: 请求地址：https://somstest.xajyun.com/user/deleteUserById
+[2021-04-27 15:00:10.498943] INFO: LOGINFO: 请求入参：{'userIds': 'dad49ed34e004b7bb0a,'}
+[2021-04-27 15:00:10.498943] INFO: LOGINFO: 请求header：{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+[2021-04-27 15:00:11.044783] INFO: LOGINFO: 当前模块 状态码断言
+[2021-04-27 15:00:11.044783] INFO: LOGINFO:  statusCode is 200 
+[2021-04-27 15:00:11.044783] INFO: LOGINFO: response.status_code：200
+[2021-04-27 15:00:11.044783] INFO: LOGINFO: https://somstest.xajyun.com/user/deleteUserById: 返回结果：{'resultCode': 1, 'errorCode': '', 'msg': '删除成功', 'resultJson': '', 'resultJsonArr': None, 'resultObject': None, 'errorType': ''}
+[2021-04-27 15:00:11.044783] INFO: LOGINFO: 当前模块 验证response body中任意属性的值
+[2021-04-27 15:00:11.044783] INFO: LOGINFO:  body_msg is 1 
+[2021-04-27 15:00:11.045773] INFO: LOGINFO: 测试用例执行完毕
+[2021-04-27 15:00:11.045773] INFO: LOGINFO: 当前模块 登录历史
+[2021-04-27 15:00:11.045773] INFO: LOGINFO: 解析yaml, Path:D:\git\somstest\API_Automation/Params/Param/user_interface
+[2021-04-27 15:00:11.087688] INFO: LOGINFO: 当前模块 post_request
+[2021-04-27 15:00:11.087688] INFO: LOGINFO: 请求地址：https://somstest.xajyun.com/user/findUserLoginHistory
+[2021-04-27 15:00:11.087688] INFO: LOGINFO: 请求入参：{'orgId': '1000', 'orgName': '新安洁股份', 'timeStart': '2021-04-27', 'timeEnd': '2021-04-27', 'searchName': 'username', 'searchValue': '', 'type': '', 'page': '1', 'rows': '15'}
+[2021-04-27 15:00:11.087688] INFO: LOGINFO: 请求header：{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+[2021-04-27 15:00:15.154819] INFO: LOGINFO: 当前模块 状态码断言
+[2021-04-27 15:00:15.155816] INFO: LOGINFO:  statusCode is 200 
+[2021-04-27 15:00:15.155816] INFO: LOGINFO: response.status_code：200
+[2021-04-27 15:00:15.155816] INFO: LOGINFO: 当前模块 验证response body中是否包含预期字符串
+[2021-04-27 15:00:15.155816] INFO: LOGINFO: 测试用例执行完毕
+[2021-04-27 15:00:15.162827] INFO: LOGINFO: *********TEST END*********

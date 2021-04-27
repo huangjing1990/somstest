@@ -5,6 +5,7 @@
 # 在研发与技术推广中心下，创建python用户，授权武汉研发专用的角色，后删除
 
 import time
+from datetime import timedelta
 from TestCase.initEnv import *
 import unittest
 from ApiCommon.user_interface import *
@@ -31,7 +32,7 @@ class TestUser(unittest.TestCase):
     @logger("添加用户")
     def test_adduser(self):
         """
-            用例描述：添加用户
+            用户管理：添加用户
         """
         response = self.user.add_user(self.req_url, self.g["Cookie"])
         assert self.initEvn.test.assert_body(response['body'], 'resultCode', 1)
@@ -39,7 +40,7 @@ class TestUser(unittest.TestCase):
     @logger("查询用户")
     def test_findUserByOrg(self):
         """
-            用例描述：查询用户
+            用户管理：查询用户
         """
         response = self.user.find_userByOrg(self.req_url, self.g["Cookie"])
         self.g["userId"] = response["body"]["rows"][0]["userId"]
@@ -49,7 +50,7 @@ class TestUser(unittest.TestCase):
     @logger("编辑用户")
     def test_edituser(self):
         """
-            用例描述：编辑用户
+            用户管理：编辑用户
         """
         response = self.user.edit_user(self.req_url, self.g["Cookie"], self.g["userId"])
         assert self.initEvn.test.assert_body(response['body'], 'resultCode', 1)
@@ -57,7 +58,7 @@ class TestUser(unittest.TestCase):
     @logger("查看用户")
     def test_findUserById(self):
         """
-            用例描述：查看用户
+            用户管理：查看用户
         """
         response = self.user.find_userById(self.req_url, self.g["Cookie"], self.g["userId"])
         assert self.initEvn.test.assert_in_text(response['body'], "python")
@@ -65,7 +66,7 @@ class TestUser(unittest.TestCase):
     @logger("用户授权角色")
     def test_userHasRole(self):
         """
-            用例描述：用户授权角色
+            用户管理：用户授权角色
         """
         response = self.user.edit_userHasRole(self.req_url, self.g["Cookie"], self.g["userId"])
         assert self.initEvn.test.assert_body(response['body'], 'resultCode', 1)
@@ -73,7 +74,7 @@ class TestUser(unittest.TestCase):
     @logger("解锁")
     def test_unLockUser(self):
         """
-            用例描述：解锁
+            用户管理：解锁
         """
         response = self.user.unLockUser(self.req_url, self.g["Cookie"], self.g["userId"])
         assert self.initEvn.test.assert_body(response['body'], 'resultCode', 1)
@@ -81,7 +82,7 @@ class TestUser(unittest.TestCase):
     @logger("密码重置")
     def test_resetPassword(self):
         """
-            用例描述：密码重置
+            用户管理：密码重置
         """
         response = self.user.resetPassword(self.req_url, self.g["Cookie"], self.g["userId"])
         assert self.initEvn.test.assert_body(response['body'], 'resultCode', 1)
@@ -89,7 +90,18 @@ class TestUser(unittest.TestCase):
     @logger("删除用户")
     def test_deleteUser(self):
         """
-            用例描述：删除用户
+            用户管理：删除用户
         """
         response = self.user.delete_user(self.req_url, self.g["Cookie"], self.g["userId"])
         assert self.initEvn.test.assert_body(response['body'], 'resultCode', 1)
+
+    @logger("登录历史")
+    def test_loginHistory(self):
+        """
+            用户管理：登录历史
+        """
+        time_start = time.strftime("%Y-%m-%d")
+
+        response = self.user.login_history(self.req_url, self.g["Cookie"], time_start, time_start)
+        assert self.initEvn.test.assert_in_text(response['body'], "黄静")
+

@@ -121,3 +121,24 @@ user_interface:
 
       }
 
+  findUserLoginHistory:
+    # 登录历史
+    - url: /user/findUserLoginHistory
+      data: {
+              "orgId":"1000",
+              "orgName":"新安洁股份",
+              "timeStart":"",
+              "timeEnd":"",
+              "searchName":"username",
+              "searchValue":"",
+              "type":"",
+              "page":"1",
+              "rows":"15",
+
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+

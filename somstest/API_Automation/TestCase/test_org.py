@@ -42,7 +42,7 @@ class TestOrg(unittest.TestCase):
     @logger("添加单位")
     def test_addorg(self):
         """
-            用例描述：添加单位
+            单位管理：添加单位
         """
         response = self.org.add_org(self.req_url, self.g["Cookie"])
         assert self.initEvn.test.assert_body(response['body'], 'resultCode', 1)
@@ -50,7 +50,7 @@ class TestOrg(unittest.TestCase):
     @logger("查询单位")
     def test_findorg(self):
         """
-            用例描述：查询单位
+            单位管理：查询单位
         """
         response = self.org.find_org(self.req_url, self.g["Cookie"])
         pythonorg = response["body"]["rows"][0]["children"][21]["children"][7]["children"]
@@ -63,7 +63,7 @@ class TestOrg(unittest.TestCase):
     @logger("编辑单位")
     def test_editorg(self):
         """
-            用例描述：编辑单位
+            单位管理：编辑单位
         """
         self.g["orgName"] = "编辑python部门"
         response = self.org.edit_org(self.req_url, self.g["Cookie"], self.g["orgId"], self.g["orgName"])
@@ -72,7 +72,7 @@ class TestOrg(unittest.TestCase):
     @logger("删除单位")
     def test_deleteorg(self):
         """
-            用例描述：删除单位
+            单位管理：删除单位
         """
         response = self.org.delete_org(self.req_url, self.g["Cookie"], self.g["orgId"])
         assert self.initEvn.test.assert_body(response['body'], 'resultCode', 1)
@@ -81,7 +81,7 @@ class TestOrg(unittest.TestCase):
     @logger("添加班组")
     def test_addteam(self):
         """
-            用例描述：添加班组
+            班组管理：添加班组
         """
         response = self.org.add_team(self.req_url, self.g["Cookie"])
         assert self.initEvn.test.assert_body(response['body'], 'resultCode', 1)
@@ -89,7 +89,7 @@ class TestOrg(unittest.TestCase):
     @logger("查询班组")
     def test_findteam(self):
         """
-            用例描述：查询班组
+            班组管理：查询班组
         """
         response = self.org.find_team(self.req_url, self.g["Cookie"])
         self.g["teamId"] = response["body"]["rows"][0]["orgId"]
@@ -99,7 +99,7 @@ class TestOrg(unittest.TestCase):
     @logger("编辑班组")
     def test_editteam(self):
         """
-            用例描述：编辑班组
+            班组管理：编辑班组
         """
         response = self.org.edit_team(self.req_url, self.g["Cookie"], self.g["teamId"])
         assert self.initEvn.test.assert_body(response['body'], 'resultCode', 1)
@@ -107,7 +107,7 @@ class TestOrg(unittest.TestCase):
     @logger("删除班组")
     def test_deleteteam(self):
         """
-            用例描述：删除班组
+            班组管理：删除班组
         """
         response = self.org.delete_team(self.req_url, self.g["Cookie"], self.g["teamId"])
         assert self.initEvn.test.assert_body(response['body'], 'resultCode', 1)

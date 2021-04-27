@@ -30,7 +30,7 @@ class TestRole(unittest.TestCase):
     @logger("添加角色")
     def test_addrole(self):
         """
-            用例描述：添加角色
+            角色管理：添加角色
         """
         response = self.role.add_role(self.req_url, self.g["Cookie"])
         assert self.initEvn.test.assert_body(response['body'], 'resultCode', 1)
@@ -38,7 +38,7 @@ class TestRole(unittest.TestCase):
     @logger("查询角色")
     def test_findrole(self):
         """
-            用例描述：查询角色
+            角色管理：查询角色
         """
         response = self.role.find_role(self.req_url, self.g["Cookie"])
         pythonrole = response["body"]["rows"]
@@ -50,7 +50,7 @@ class TestRole(unittest.TestCase):
     @logger("编辑角色")
     def test_editrole(self):
         """
-            用例描述：编辑角色
+            角色管理：编辑角色
         """
         response = self.role.edit_role(self.req_url, self.g["Cookie"], self.g["roleId"])
         assert self.initEvn.test.assert_body(response['body'], 'resultCode', 1)
@@ -58,7 +58,7 @@ class TestRole(unittest.TestCase):
     @logger("删除角色")
     def test_deleterole(self):
         """
-            用例描述：删除角色
+            角色管理：删除角色
         """
         response = self.role.delete_role(self.req_url, self.g["Cookie"], self.g["roleId"])
         assert self.initEvn.test.assert_body(response['body'], 'resultCode', 1)
