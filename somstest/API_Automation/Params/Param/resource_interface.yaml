@@ -1,0 +1,59 @@
+---
+resource_interface:
+  dec: "资源管理"
+  addOperationResource:
+    # 添加资源
+    - url: /operationResource/addOperationResource
+      data: {
+              "operationResourceName":"python资源",
+              "type":"0",
+              "state":"1"
+
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+  findOperationResource:
+    # 查询资源
+    - url: /operationResource/findOperationResource
+      data: {
+              "page":"1",
+              "rows":"30",
+              "sort":"operationResourceId",
+              "order":"asc"
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+  updateOperationResource:
+    # 编辑资源
+    - url: /operationResource/updateOperationResource
+      data: {
+              "operationResourceId":"",
+              "operationResourceName":"编辑python资源",
+              "type":"0",
+              "state":"1"
+
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+  deleteOperationResources:
+    # 删除资源
+    - url: /operationResource/deleteOperationResources
+      data: {
+              "operationResourceId":"",
+              "operationResourceName":"编辑python资源"
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+

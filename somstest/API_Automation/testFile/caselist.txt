@@ -2,3 +2,4 @@
 test_org
 test_role
 test_user
+test_resource
