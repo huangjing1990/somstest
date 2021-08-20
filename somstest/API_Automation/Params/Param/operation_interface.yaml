@@ -39,10 +39,13 @@ operation_interface:
     # 编辑人工作业任务
     - url: /operationTask/updateOperationTask
       data: {
-              "operationResourceId":"",
-              "operationResourceName":"编辑python人工作业任务",
+              "operationTaskId":"",
+              "operationTaskName":"编辑python人工作业任务",
+              "operationResourceIds":"6,11,7,9",
               "type":"0",
-              "state":"1"
+              "orgId":"1001",
+              "state":"1",
+              "quality":""
 
       }
       header: {
@@ -50,12 +53,12 @@ operation_interface:
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
 
       }
-  deleteOperationResources:
+  deleteOperationTasks:
     # 删除人工作业任务
-    - url: /operationResource/deleteOperationResources
+    - url: /operationTask/deleteOperationTasks
       data: {
-              "operationResourceId":"",
-              "operationResourceName":"编辑python人工作业任务"
+              "operationTaskId":"",
+              "operationTaskName":"编辑python人工作业任务"
       }
       header: {
         "Content-Type": "application/x-www-form-urlencoded",

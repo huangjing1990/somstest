@@ -2,13 +2,13 @@ from Common.Request import *
 from Params.params import *
 
 
-class HumanTasks_interface():
+class OperationTask_interface():
 
     def __init__(self):
         self.request = Request()
 
     def add_task(self, domain, cookie, ):
-        url, data, header = request_data("resource_interface", "addOperationResource")
+        url, data, header = request_data("operation_interface", "addOperationTask")
 
         apiUrl = domain + url
 
@@ -17,7 +17,7 @@ class HumanTasks_interface():
         return response
 
     def find_task(self, domain, cookie):
-        url, data, header = request_data("resource_interface", "findOperationResource")
+        url, data, header = request_data("operation_interface", "findOperationTask")
 
         apiUrl = domain + url
 
@@ -25,23 +25,23 @@ class HumanTasks_interface():
 
         return response
 
-    def edit_task(self, domain, cookie, operationResourceId,):
-        url, data, header = request_data("resource_interface", "updateOperationResource")
+    def edit_task(self, domain, cookie, operationTaskId,):
+        url, data, header = request_data("operation_interface", "updateOperationTask")
 
         apiUrl = domain + url
 
-        data["operationResourceId"] = operationResourceId
+        data["operationTaskId"] = operationTaskId
 
         response = self.request.post_request(apiUrl, data, header, cookie)
 
         return response
 
-    def delete_task(self, domain, cookie, operationResourceId,):
-        url, data, header = request_data("resource_interface", "deleteOperationResources")
+    def delete_task(self, domain, cookie, operationTaskId,):
+        url, data, header = request_data("operation_interface", "deleteOperationTasks")
 
         apiUrl = domain + url
 
-        data["operationResourceId"] = operationResourceId
+        data["operationTaskId"] = operationTaskId
 
         response = self.request.post_request(apiUrl, data, header, cookie)
 

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2021-3-5
 # @Author  : huangjing
-# @File    : test_add.py
+# @File    : test_org.py
 
 import time
 from TestCase.initEnv import *
@@ -53,7 +53,7 @@ class TestOrg(unittest.TestCase):
             单位管理：查询单位
         """
         response = self.org.find_org(self.req_url, self.g["Cookie"])
-        pythonorg = response["body"]["rows"][0]["children"][21]["children"][7]["children"]
+        pythonorg = response["body"]["rows"][0]["children"][22]["children"][7]["children"]
         for i in range(0, len(pythonorg)):
             if pythonorg[i]["orgName"] == "python部门":
                 self.g["orgId"] = pythonorg[i]["orgId"]
