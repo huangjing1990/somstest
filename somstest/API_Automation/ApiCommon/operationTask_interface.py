@@ -8,7 +8,7 @@ class OperationTask_interface():
         self.request = Request()
 
     def add_task(self, domain, cookie, ):
-        url, data, header = request_data("operation_interface", "addOperationTask")
+        url, data, header = request_data("operationTask_interface", "addOperationTask")
 
         apiUrl = domain + url
 
@@ -17,7 +17,7 @@ class OperationTask_interface():
         return response
 
     def find_task(self, domain, cookie):
-        url, data, header = request_data("operation_interface", "findOperationTask")
+        url, data, header = request_data("operationTask_interface", "findOperationTask")
 
         apiUrl = domain + url
 
@@ -26,7 +26,7 @@ class OperationTask_interface():
         return response
 
     def edit_task(self, domain, cookie, operationTaskId,):
-        url, data, header = request_data("operation_interface", "updateOperationTask")
+        url, data, header = request_data("operationTask_interface", "updateOperationTask")
 
         apiUrl = domain + url
 
@@ -37,7 +37,7 @@ class OperationTask_interface():
         return response
 
     def delete_task(self, domain, cookie, operationTaskId,):
-        url, data, header = request_data("operation_interface", "deleteOperationTasks")
+        url, data, header = request_data("operationTask_interface", "deleteOperationTasks")
 
         apiUrl = domain + url
 

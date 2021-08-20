@@ -1,0 +1,68 @@
+---
+operationTask_interface:
+  dec: "人工作业任务管理"
+  addOperationTask:
+    # 添加人工作业任务
+    - url: /operationTask/addOperationTask
+      data: {
+              "operationTaskName":"python人工作业任务",
+              "operationResourceIds":"6,7,11",
+              "type":"0",
+              "orgId":"1001",
+              "state":"1",
+              "quality":""
+
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+  findOperationTask:
+    # 查询人工作业任务
+    - url: /operationTask/findOperationTask
+      data: {
+              "orgId":"1001",
+              "searchName":"operationTaskName",
+              "searchValue":"python",
+              "page":"1",
+              "rows":"15",
+              "sort":"createTime",
+              "order":"desc"
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+  updateOperationTask:
+    # 编辑人工作业任务
+    - url: /operationTask/updateOperationTask
+      data: {
+              "operationTaskId":"",
+              "operationTaskName":"编辑python人工作业任务",
+              "operationResourceIds":"6,11,7,9",
+              "type":"0",
+              "orgId":"1001",
+              "state":"1",
+              "quality":""
+
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+  deleteOperationTasks:
+    # 删除人工作业任务
+    - url: /operationTask/deleteOperationTasks
+      data: {
+              "operationTaskId":"",
+              "operationTaskName":"编辑python人工作业任务"
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+

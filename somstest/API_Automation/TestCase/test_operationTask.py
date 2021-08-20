@@ -6,7 +6,7 @@
 import time
 from TestCase.initEnv import *
 import unittest
-from ApiCommon.operation_interface import *
+from ApiCommon.operationTask_interface import *
 from ApiCommon.Login_interface import *
 from Params.params import *
 
@@ -57,7 +57,7 @@ class TestOperationTasks(unittest.TestCase):
         assert self.initEvn.test.assert_body(response["body"], 'resultCode', 1)
 
     @logger("删除人工任务")
-    def test_deletetaske(self):
+    def test_deletetask(self):
         """
             人工任务：删除任务
         """

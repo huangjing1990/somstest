@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38f64d0e-f3ea-42b9-98db-265484356850" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ApiCommon/operation_interface.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Params/Param/operation_interface.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestCase/test_operationTask.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ApiCommon/operationTime_interface.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Params/Param/operationTime_interface.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestCase/test_operationTime.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Log/LOGINFO-2021-06-18-16.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/report_20210618_162706.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/接口自动化测试.html" beforeDir="false" afterPath="$PROJECT_DIR$/Report/接口自动化测试.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCase/test_org.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestCase/test_org.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiCommon/operation_interface.py" beforeDir="false" afterPath="$PROJECT_DIR$/ApiCommon/operationTask_interface.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/LOGINFO-2021-08-20-11.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Params/Param/operation_interface.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Params/Param/operationTask_interface.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report/report_20210820_114811.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestCase/test_operationTask.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestCase/test_operationTask.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testFile/caselist.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testFile/caselist.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/venv/" />
@@ -28,65 +29,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestCase/test_operationTask.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="817">
-              <caret line="48" column="16" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
+            <state relative-caret-position="950">
+              <caret line="55" column="47" selection-start-line="55" selection-start-column="47" selection-end-line="55" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ApiCommon/operation_interface.py">
+        <entry file="file://$PROJECT_DIR$/TestCase/test_operationTime.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
-              <caret line="32" column="29" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="29" />
+            <state relative-caret-position="1026">
+              <caret line="59" column="23" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
+              <folding>
+                <element signature="e#106#117#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Params/Param/operationTime_interface.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="836">
+              <caret line="44" column="32" selection-start-line="44" selection-start-column="15" selection-end-line="44" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ApiCommon/operationTime_interface.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="9" column="16" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="16" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Params/Param/operation_interface.yaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="893">
-              <caret line="47" column="26" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Common/log_Common.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="912">
-              <caret line="52" selection-start-line="52" selection-end-line="52" />
-              <folding>
-                <element signature="e#107#116#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestCase/test_org.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="969">
-              <caret line="57" column="53" selection-start-line="57" selection-start-column="53" selection-end-line="57" selection-end-column="53" />
-              <folding>
-                <element signature="e#95#106#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://D:/Python37/Lib/unittest/case.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="10241">
-              <caret line="552" selection-start-line="552" selection-end-line="552" />
             </state>
           </provider>
         </entry>
@@ -118,11 +98,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/testFile/caselist.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+            <state relative-caret-position="114">
+              <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -145,11 +125,14 @@
       <find>employeeId</find>
       <find>用例描述</find>
       <find>资源</find>
+      <find>人工作业任务</find>
+      <find>任务</find>
     </findStrings>
     <replaceStrings>
       <replace>用户管理</replace>
       <replace>角色管理</replace>
       <replace>人工作业任务</replace>
+      <replace>时段</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -199,10 +182,14 @@
         <option value="$PROJECT_DIR$/ApiCommon/humanTasks_interface.py" />
         <option value="$PROJECT_DIR$/Params/Param/humanTasks_interface.yaml" />
         <option value="$PROJECT_DIR$/Params/Param/operation_interface.yaml" />
-        <option value="$PROJECT_DIR$/ApiCommon/operation_interface.py" />
         <option value="$PROJECT_DIR$/TestCase/test_humanTasks.py" />
-        <option value="$PROJECT_DIR$/testFile/caselist.txt" />
         <option value="$PROJECT_DIR$/TestCase/test_org.py" />
+        <option value="$PROJECT_DIR$/Params/Param/operationTask_interface.yaml" />
+        <option value="$PROJECT_DIR$/ApiCommon/operation_interface.py" />
+        <option value="$PROJECT_DIR$/Params/Param/operationTime_interface.yaml" />
+        <option value="$PROJECT_DIR$/ApiCommon/operationTime_interface.py" />
+        <option value="$PROJECT_DIR$/testFile/caselist.txt" />
+        <option value="$PROJECT_DIR$/TestCase/test_operationTime.py" />
         <option value="$PROJECT_DIR$/TestCase/test_operationTask.py" />
       </list>
     </option>
@@ -480,6 +467,8 @@
       <workItem from="1629359756764" duration="4428000" />
       <workItem from="1629423309974" duration="4772000" />
       <workItem from="1629438800446" duration="12000" />
+      <workItem from="1629446779733" duration="1805000" />
+      <workItem from="1629448611982" duration="328000" />
     </task>
     <servers />
   </component>
@@ -498,7 +487,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="183258000" />
+    <option name="totallyTimeSpent" value="185391000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -511,10 +500,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.19509594" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.19936034" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" />
@@ -524,7 +512,7 @@
       <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.5195228" />
-      <window_info anchor="bottom" id="Run" order="8" weight="0.5444685" />
+      <window_info anchor="bottom" id="Run" order="8" visible="true" weight="0.53036875" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.54555315" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
@@ -547,30 +535,13 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/API_Automation$runAll.coverage" NAME="runAll Coverage Results" MODIFIED="1629431291711" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/API_Automation$runAll.coverage" NAME="runAll Coverage Results" MODIFIED="1629448889595" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/API_Automation$test.coverage" NAME="test Coverage Results" MODIFIED="1608456883588" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCase" />
     <SUITE FILE_PATH="coverage/API_Automation$Unittests_for_test_add_classification_TestAddClass.coverage" NAME="Unittests for test_add_classification.TestAddClass Coverage Results" MODIFIED="1608903457788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCase" />
     <SUITE FILE_PATH="coverage/API_Automation$initEnv.coverage" NAME="initEnv Coverage Results" MODIFIED="1608902590237" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCase" />
     <SUITE FILE_PATH="coverage/API_Automation$test1220.coverage" NAME="test1220 Coverage Results" MODIFIED="1608902697125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCase" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Conf/config.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestCase/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestCase/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="28" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TestCase/test1220.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
@@ -871,30 +842,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestCase/test_operationTask.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="817">
-          <caret line="48" column="16" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ApiCommon/operation_interface.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="32" column="29" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Params/Param/operation_interface.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="893">
-          <caret line="47" column="26" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Common/log_Common.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="912">
@@ -922,6 +869,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Params/Param/operationTask_interface.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="23" selection-start-line="1" selection-end-line="1" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApiCommon/operationTask_interface.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" lean-forward="true" selection-end-line="48" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestCase/test_operationTask.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="950">
+          <caret line="55" column="47" selection-start-line="55" selection-start-column="47" selection-end-line="55" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestCase/test_operationTime.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1026">
+          <caret line="59" column="23" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
+          <folding>
+            <element signature="e#106#117#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Params/Param/operationTime_interface.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="836">
+          <caret line="44" column="32" selection-start-line="44" selection-start-column="15" selection-end-line="44" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApiCommon/operationTime_interface.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://D:/Python37/Lib/site-packages/BeautifulReport/BeautifulReport.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4142">
@@ -945,8 +943,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/testFile/caselist.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        <state relative-caret-position="114">
+          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
         </state>
       </provider>
     </entry>

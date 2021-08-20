@@ -1,16 +1,18 @@
 ---
-operation_interface:
-  dec: "人工作业任务管理"
-  addOperationTask:
-    # 添加人工作业任务
-    - url: /operationTask/addOperationTask
+operationTime_interface:
+  dec: "时段管理"
+  addOperationTime:
+    # 添加时段
+    - url: /operationTime/addOperationTime
       data: {
-              "operationTaskName":"python人工作业任务",
-              "operationResourceIds":"6,7,11",
+              "operationTimeName":"python时段",
+              "startTime":"08:00",
+              "endTime":"12:00",
+              "inspectionEndTime":"12:30",
               "type":"0",
               "orgId":"1001",
               "state":"1",
-              "quality":""
+              "memo":""
 
       }
       header: {
@@ -18,34 +20,36 @@ operation_interface:
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
 
       }
-  findOperationTask:
-    # 查询人工作业任务
-    - url: /operationTask/findOperationTask
+  findOperationTimeByPage:
+    # 查询时段
+    - url: /operationTime/findOperationTimeByPage
       data: {
-              "orgId":"1001",
-              "searchName":"operationTaskName",
-              "searchValue":"python",
+              "searchName":"operationTimeName",
+              "searchValue":"python时段",
+              "type":"",
               "page":"1",
               "rows":"15",
-              "sort":"createTime",
-              "order":"desc"
+              "sort":"startTime",
+              "order":"asc"
       }
       header: {
         "Content-Type": "application/x-www-form-urlencoded",
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
 
       }
-  updateOperationTask:
-    # 编辑人工作业任务
-    - url: /operationTask/updateOperationTask
+  updateOperationTime:
+    # 编辑时段
+    - url: /operationTime/updateOperationTime
       data: {
-              "operationTaskId":"",
-              "operationTaskName":"编辑python人工作业任务",
-              "operationResourceIds":"6,11,7,9",
+              "operationTimeId":"",
+              "operationTimeName":"编辑python时段",
+              "startTime":"08:00",
+              "endTime":"13:00",
+              "inspectionEndTime":"13:30",
               "type":"0",
               "orgId":"1001",
               "state":"1",
-              "quality":""
+              "memo":""
 
       }
       header: {
@@ -53,12 +57,11 @@ operation_interface:
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
 
       }
-  deleteOperationTasks:
-    # 删除人工作业任务
-    - url: /operationTask/deleteOperationTasks
+  confimDeleteOperationTime:
+    # 删除时段
+    - url: /operationTime/confimDeleteOperationTime
       data: {
-              "operationTaskId":"",
-              "operationTaskName":"编辑python人工作业任务"
+              "operationTaskId":""
       }
       header: {
         "Content-Type": "application/x-www-form-urlencoded",
