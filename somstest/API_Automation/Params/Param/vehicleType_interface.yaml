@@ -1,0 +1,61 @@
+---
+vehicleType_interface:
+  dec: "车辆类型管理"
+  addVehicleWorkType:
+    # 添加车辆类型
+    - url: /vehicleWorkType/addVehicleWorkType
+      data: {
+              "workTypeName":"python车辆类型",
+              "state":"1",
+              "memo":"python"
+
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+  findVehicleWorkTypeByPage:
+    # 查询车辆类型
+    - url: /vehicleWorkType/findVehicleWorkTypeByPage
+      data: {
+              "searchName":"workTypeName",
+              "searchValue":"python车辆类型",
+              "page":"1",
+              "rows":"15",
+              "sort":"workTypeId",
+              "order":"asc"
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+  updateVehicleWorkType:
+    # 编辑车辆类型
+    - url: /vehicleWorkType/updateVehicleWorkType
+      data: {
+              "workTypeId":"",
+              "workTypeName":"编辑python车辆类型",
+              "state":"2",
+              "memo":"1"
+
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+  deleteVehicleWorkType:
+    # 删除车辆类型
+    - url: /vehicleWorkType/deleteVehicleWorkType
+      data: {
+              "workTypeId":"",
+              "workTypeName":"编辑python车辆类型"
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
