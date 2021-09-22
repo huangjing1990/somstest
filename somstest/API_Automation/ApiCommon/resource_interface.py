@@ -25,7 +25,7 @@ class Resource_interface():
 
         return response
 
-    def edit_resource(self, domain, cookie, operationResourceId,):
+    def edit_resource(self, domain, cookie, operationResourceId, ):
         url, data, header = request_data("resource_interface", "updateOperationResource")
 
         apiUrl = domain + url
@@ -36,7 +36,7 @@ class Resource_interface():
 
         return response
 
-    def delete_resource(self, domain, cookie, operationResourceId,):
+    def delete_resource(self, domain, cookie, operationResourceId, ):
         url, data, header = request_data("resource_interface", "deleteOperationResources")
 
         apiUrl = domain + url

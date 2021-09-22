@@ -7,15 +7,15 @@
 封装request
 
 """
-from Common import Assert
 import requests
 import Common.Consts
 from Common.log_Common import *
+from Common.Assert import Assertions
 import json
 import urllib3
 
 s = requests.Session()
-test = Assert.Assertions()
+test = Assertions()
 urllib3.disable_warnings()
 
 

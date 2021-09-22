@@ -1,7 +1,6 @@
 from Common.Request import *
 from Params.params import *
 
-
 class Org_interface():
 
     def __init__(self):
