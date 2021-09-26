@@ -6,3 +6,4 @@ test_resource
 test_operationTask
 test_operationTime
 test_vehicleType
+test_mechanicalTask

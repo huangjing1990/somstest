@@ -11,7 +11,7 @@ from ApiCommon.Login_interface import *
 from Params.params import *
 
 
-class TestOperationTasks(unittest.TestCase):
+class TestOperationTime(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):

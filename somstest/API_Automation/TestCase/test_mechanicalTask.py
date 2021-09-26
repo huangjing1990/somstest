@@ -1,24 +1,24 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2021-8-19
+# @Time    : 2021-9-26
 # @Author  : huangjing
-# @File    : test_operationTask.py
+# @File    : test_mechanicalTask.py
 
 import time
 from TestCase.initEnv import *
 import unittest
-from ApiCommon.operationTask_interface import *
+from ApiCommon.mechanicalTask_interface import *
 from ApiCommon.Login_interface import *
 from Params.params import *
 
 
-class TestOperationTasks(unittest.TestCase):
+class TestMechanicalTasks(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
         cls.initEvn = initEvn()
         cls.req_url = cls.initEvn.host
         cls.login = Login_interface()
-        cls.task = OperationTask_interface()
+        cls.tasks = MechanicalTask_interface()
         cls.g = globals()
         cls.g["Cookie"] = initEvn().get_userCookie()
 
@@ -27,39 +27,39 @@ class TestOperationTasks(unittest.TestCase):
     def tearDown(self):
         LOG.info('测试用例执行完毕')
 
-    @logger("添加人工任务")
+    @logger("添加机械任务")
     def test_addtask(self):
         """
-            人工任务：添加人工任务
+            机械任务：添加机械任务
         """
-        response = self.task.add_task(self.req_url, self.g["Cookie"])
+        response = self.tasks.add_task(self.req_url, self.g["Cookie"])
         assert self.initEvn.test.assert_body(response['body'], 'resultCode', 1)
 
-    @logger("查询人工任务")
+    @logger("查询机械任务")
     def test_findtask(self):
         """
-            人工任务：查询人工任务
+            机械任务：查询机械任务
         """
-        response = self.task.find_task(self.req_url, self.g["Cookie"])
+        response = self.tasks.find_task(self.req_url, self.g["Cookie"])
         pythontask = response["body"]["rows"]
         for i in range(0, len(pythontask)):
-            if pythontask[i]["operationTaskName"] == "python人工作业任务":
-                self.g["operationTaskId"] = pythontask[i]["operationTaskId"]
-        print("operationTaskId:", self.g["operationTaskId"])
+            if pythontask[i]["jobTypeName"] == "python机械作业任务":
+                self.g["jobTypeId"] = pythontask[i]["jobTypeId"]
+        print("jobTypeId:", self.g["jobTypeId"])
         assert self.initEvn.test.assert_in_text(response["body"], "python")
 
-    @logger("编辑人工任务")
+    @logger("编辑机械任务")
     def test_edittask(self):
         """
-            人工任务：编辑人工任务
+            机械任务：编辑机械任务
         """
-        response = self.task.edit_task(self.req_url, self.g["Cookie"], self.g["operationTaskId"])
+        response = self.tasks.edit_task(self.req_url, self.g["Cookie"], self.g["jobTypeId"])
         assert self.initEvn.test.assert_body(response["body"], 'resultCode', 1)
 
-    @logger("删除人工任务")
+    @logger("删除机械任务")
     def test_deletetask(self):
         """
-            人工任务：删除人工任务
+            机械任务：删除机械任务
         """
-        response = self.task.delete_task(self.req_url, self.g["Cookie"], self.g["operationTaskId"])
+        response = self.tasks.delete_task(self.req_url, self.g["Cookie"], self.g["jobTypeId"])
         assert self.initEvn.test.assert_body(response['body'], 'resultCode', 1)

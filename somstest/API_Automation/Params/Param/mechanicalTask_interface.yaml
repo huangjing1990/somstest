@@ -1,0 +1,62 @@
+---
+mechanicalTask_interface:
+  dec: "机械作业任务"
+  addMechanicalTask:
+    # 添加机械作业任务
+    - url: /vehicleJobManager/addJobType
+      data: {
+              "jobTypeName":"python机械作业任务",
+              "memo":"",
+              "state":"1"
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  findMechanicalTask:
+    # 查询机械作业任务
+    - url: /vehicleJobManager/findAllJobTypeById
+      data: {
+              "searchName":"jobTypeName",
+              "searchValue":"python机械作业任务",
+              "page":"1",
+              "rows":"15",
+              "order":"asc",
+              "sort":"jobTypeId"
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  updateMechanicalTask:
+    # 编辑机械作业任务
+    - url: /vehicleJobManager/updateJobType
+      data: {
+              "jobTypeId":"",
+              "jobTypeName":"编辑python机械作业任务",
+              "memo":"",
+              "state":"1",
+              "workTypeId":""
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  deleteMechanicalTask:
+    # 删除机械作业任务
+    - url: /vehicleJobManager/deleteJobType
+      data: {
+              "jobTypeId":""
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
