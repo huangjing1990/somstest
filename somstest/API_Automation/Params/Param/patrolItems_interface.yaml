@@ -1,0 +1,62 @@
+---
+patrolItems_interface:
+  dec: "巡查项管理"
+  addPatrolItem:
+    # 添加巡查项
+    - url: /operationItem/addOperationItem
+      data: {
+              "parentItemId":"",
+              "operationItemName":"",
+              "inspectType":"1",
+              "itemType":"",
+              "memo":""
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  findPatrolItem:
+    # 查询巡查项
+    - url: /operationItem/findOperationItemByTree
+      data: {
+              "sort":"operationItemName",
+              "order":"asc"
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  editPatrolItem:
+    # 编辑巡查项
+    - url: /operationItem/editOperationItem
+      data: {
+              "parentItemId":"",
+              "operationItemId":"",
+              "operationItemName":"",
+              "inspectType":"1",
+              "itemType":"",
+              "memo":""
+
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  deletePatrolItem:
+    # 删除巡查项
+    - url: /operationItem/delOperationItem
+      data: {
+              "operationItemId":""
+
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
