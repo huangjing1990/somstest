@@ -7,3 +7,4 @@ test_operationTime
 test_vehicleType
 test_mechanicalTask
 test_patrolItems
+test_patrolStandard

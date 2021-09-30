@@ -1,0 +1,158 @@
+---
+patrolStandard_interface:
+  dec: "巡查项评分标准"
+  addPatrolStandard:
+    # 添加评分标准
+    - url: /operationLevel/addOperationLevel
+      data: {
+              "operationLevelName":"",
+              "defaultTimeScore":"60",
+              "excellentScore":"90",
+              "goodScore":"80",
+              "unqualifiedScore":"70",
+              "add_1005_score":"1.0",
+              "add_1006_score":"",
+              "add_1007_score":"",
+              "add_1008_score":"",
+              "add_1009_score":"",
+              "add_1010_score":"",
+              "add_1011_score":"",
+              "add_1012_score":"",
+              "add_1013_score":"",
+              "add_1014_score":"",
+              "add_1015_score":"",
+              "add_1053_score":"",
+              "add_1056_score":"",
+              "add_1057_score":"",
+              "add_1058_score":"",
+              "add_1059_score":"",
+              "add_1060_score":"",
+              "add_1061_score":"",
+              "add_1062_score":"",
+              "add_1017_score":"",
+              "add_1018_score":"",
+              "add_1019_score":"",
+              "add_1020_score":"",
+              "add_1021_score":"",
+              "add_1044_score":"",
+              "add_1045_score":"",
+              "add_1064_score":"",
+              "add_1066_score":"",
+              "add_1067_score":"",
+              "add_1068_score":"1.0",
+              "add_1069_score":"",
+              "add_1070_score":"",
+              "add_1071_score":""
+
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  findPatrolStandard:
+    # 查询评分标准
+    - url: /operationLevel/findAllOperationLevel
+      data: {
+              "searchName":"operationLevelName",
+              "searchValue":"",
+              "page":"1",
+              "rows":"15",
+              "sort":"operationLevelId",
+              "order":"asc"
+
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  editPatrolStandard:
+    # 编辑评分标准
+    - url: /operationLevel/editOperationLevel
+      data: {
+              "operationLevelId":"",
+              "operationLevelName":"",
+              "defaultTimeScore":"60",
+              "excellentScore":"90",
+              "goodScore":"80",
+              "unqualifiedScore":"70",
+              "add_1005_score":"1.0",
+              "add_1006_score":"",
+              "add_1007_score":"",
+              "add_1008_score":"",
+              "add_1009_score":"",
+              "add_1010_score":"",
+              "add_1011_score":"",
+              "add_1012_score":"",
+              "add_1013_score":"",
+              "add_1014_score":"",
+              "add_1015_score":"",
+              "add_1053_score":"",
+              "add_1056_score":"",
+              "add_1057_score":"",
+              "add_1058_score":"",
+              "add_1059_score":"",
+              "add_1060_score":"",
+              "add_1061_score":"",
+              "add_1062_score":"",
+              "add_1017_score":"",
+              "add_1018_score":"",
+              "add_1019_score":"",
+              "add_1020_score":"",
+              "add_1021_score":"",
+              "add_1044_score":"",
+              "add_1045_score":"",
+              "add_1064_score":"",
+              "add_1066_score":"",
+              "add_1067_score":"",
+              "add_1068_score":"1.0",
+              "add_1069_score":"",
+              "add_1070_score":"",
+              "add_1071_score":""
+
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  findPatrolStandardById:
+    # 查看
+    - url: /operationLevel/findOperationLevelById
+      data: {
+              "operationLevelId":""
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  chooseOperationTime:
+    # 选择时段
+    - url: /operationLevel/chooseOperationTime
+      data: {
+              "operationLevelId":"",
+              "operationTimeId":"2"
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  deletePatrolStandard:
+    # 删除评分标准
+    - url: /operationLevel/delOperationLevel
+      data: {
+              "operationLevelId":""
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
