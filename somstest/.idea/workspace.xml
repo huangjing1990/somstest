@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1060cb50-c38a-423a-9cb5-f8f9b971e210" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/API_Automation/ApiCommon/patrolStandard_interface.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API_Automation/Params/Param/patrolStandard_interface.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API_Automation/TestCase/test_patrolStandard.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API_Automation/Log/LOGINFO-2021-09-28-10.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API_Automation/Log/LOGINFO-2021-09-28-11.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API_Automation/Report/report_20210928_105944.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API_Automation/Report/接口自动化测试.html" beforeDir="false" afterPath="$PROJECT_DIR$/API_Automation/Report/接口自动化测试.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API_Automation/testFile/caselist.txt" beforeDir="false" afterPath="$PROJECT_DIR$/API_Automation/testFile/caselist.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API_Automation/TestCase/test_patrolStandard.py" beforeDir="false" afterPath="$PROJECT_DIR$/API_Automation/TestCase/test_patrolStandard.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,11 +12,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/API_Automation/TestCase/test_patrolStandard.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="63" column="78" selection-start-line="63" selection-start-column="78" selection-end-line="63" selection-end-column="78" />
+            <state relative-caret-position="190">
+              <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -42,7 +34,7 @@
         <entry file="file://$PROJECT_DIR$/API_Automation/Params/Param/patrolStandard_interface.yaml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="456">
-              <caret line="86" column="34" lean-forward="true" selection-start-line="86" selection-start-column="34" selection-end-line="86" selection-end-column="34" />
+              <caret line="86" column="34" selection-start-line="86" selection-start-column="34" selection-end-line="86" selection-end-column="34" />
               <folding>
                 <element signature="e#85#1719#0" />
                 <element signature="e#1723#2255#0" />
@@ -56,7 +48,7 @@
         <entry file="file://$PROJECT_DIR$/API_Automation/ApiCommon/patrolStandard_interface.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="665">
-              <caret line="36" column="40" lean-forward="true" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
+              <caret line="36" column="40" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -68,7 +60,7 @@
         <entry file="file://$PROJECT_DIR$/API_Automation/Common/Request.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1957">
-              <caret line="108" column="25" lean-forward="true" selection-start-line="108" selection-start-column="25" selection-end-line="108" selection-end-column="25" />
+              <caret line="108" column="25" selection-start-line="108" selection-start-column="25" selection-end-line="108" selection-end-column="25" />
               <folding>
                 <element signature="e#113#128#0" expanded="true" />
               </folding>
@@ -85,11 +77,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/API_Automation/testFile/caselist.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="171">
-              <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -123,8 +115,8 @@
         <option value="$PROJECT_DIR$/API_Automation/ApiCommon/patrolStandard_interface.py" />
         <option value="$PROJECT_DIR$/API_Automation/Common/Request.py" />
         <option value="$PROJECT_DIR$/API_Automation/Params/Param/patrolStandard_interface.yaml" />
-        <option value="$PROJECT_DIR$/API_Automation/TestCase/test_patrolStandard.py" />
         <option value="$PROJECT_DIR$/API_Automation/testFile/caselist.txt" />
+        <option value="$PROJECT_DIR$/API_Automation/TestCase/test_patrolStandard.py" />
       </list>
     </option>
   </component>
@@ -274,11 +266,12 @@
       <workItem from="1632789073275" duration="8036000" />
       <workItem from="1632875419612" duration="14799000" />
       <workItem from="1632968679305" duration="63000" />
+      <workItem from="1632971027057" duration="27000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56951000" />
+    <option name="totallyTimeSpent" value="56978000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -293,7 +286,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22334754" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22547974" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -604,13 +597,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/API_Automation/TestCase/test_patrolStandard.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="63" column="78" selection-start-line="63" selection-start-column="78" selection-end-line="63" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/API_Automation/TestCase/initEnv.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
@@ -621,7 +607,7 @@
     <entry file="file://$PROJECT_DIR$/API_Automation/Params/Param/patrolStandard_interface.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
-          <caret line="86" column="34" lean-forward="true" selection-start-line="86" selection-start-column="34" selection-end-line="86" selection-end-column="34" />
+          <caret line="86" column="34" selection-start-line="86" selection-start-column="34" selection-end-line="86" selection-end-column="34" />
           <folding>
             <element signature="e#85#1719#0" />
             <element signature="e#1723#2255#0" />
@@ -633,7 +619,7 @@
     <entry file="file://$PROJECT_DIR$/API_Automation/ApiCommon/patrolStandard_interface.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="665">
-          <caret line="36" column="40" lean-forward="true" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
+          <caret line="36" column="40" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
@@ -643,7 +629,7 @@
     <entry file="file://$PROJECT_DIR$/API_Automation/Common/Request.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1957">
-          <caret line="108" column="25" lean-forward="true" selection-start-line="108" selection-start-column="25" selection-end-line="108" selection-end-column="25" />
+          <caret line="108" column="25" selection-start-line="108" selection-start-column="25" selection-end-line="108" selection-end-column="25" />
           <folding>
             <element signature="e#113#128#0" expanded="true" />
           </folding>
@@ -660,7 +646,14 @@
     <entry file="file://$PROJECT_DIR$/API_Automation/testFile/caselist.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
-          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API_Automation/TestCase/test_patrolStandard.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
         </state>
       </provider>
     </entry>

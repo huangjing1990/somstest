@@ -12,7 +12,7 @@ from ApiCommon.Login_interface import *
 from Params.params import *
 
 
-class TestPatrolItems(unittest.TestCase):
+class TestPatrolStandard(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
