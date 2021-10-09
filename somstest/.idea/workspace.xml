@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1060cb50-c38a-423a-9cb5-f8f9b971e210" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/API_Automation/TestCase/test_patrolStandard.py" beforeDir="false" afterPath="$PROJECT_DIR$/API_Automation/TestCase/test_patrolStandard.py" afterDir="false" />
-    </list>
+    <list default="true" id="1060cb50-c38a-423a-9cb5-f8f9b971e210" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +14,7 @@
         <entry file="file://$PROJECT_DIR$/API_Automation/TestCase/test_patrolStandard.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="190">
-              <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+              <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -120,7 +118,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-274" />
     <option name="y" value="145" />
     <option name="width" value="1948" />
@@ -187,7 +185,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="E:/rrimstest" />
+    <property name="last_opened_file_path" value="D:/svn/AutoRF/rrimstest/API_Automation" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -267,11 +265,12 @@
       <workItem from="1632875419612" duration="14799000" />
       <workItem from="1632968679305" duration="63000" />
       <workItem from="1632971027057" duration="27000" />
+      <workItem from="1633658671272" duration="306000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56978000" />
+    <option name="totallyTimeSpent" value="57284000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -286,7 +285,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22547974" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22761194" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -597,6 +596,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/API_Automation/TestCase/test_patrolStandard.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/API_Automation/TestCase/initEnv.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
@@ -647,13 +653,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/API_Automation/TestCase/test_patrolStandard.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
         </state>
       </provider>
     </entry>

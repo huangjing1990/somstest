@@ -1,0 +1,77 @@
+---
+fence_interface:
+  dec: "电子围栏"
+  addFence:
+    # 添加电子围栏
+    - url: /fence/saveFence
+      data: {
+              "fenceName":"python电子围栏",
+              "points":"114.245057,30.603084,114.247889,30.599834,114.250464,30.600499,114.250893,30.60301,114.249348,30.604525",
+              "memo":""
+
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  findFence:
+    # 查看电子围栏
+    - url: /fence/findFenceByPage
+      data: {
+              "org.orgId":"1001",
+              "page":"1",
+              "rows":"15",
+              "sort":"fenceId",
+              "order":"desc"
+
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  chooseVehicle:
+    # 选择车辆
+    - url: /fence/chooseVehicle
+      data: {
+              "vehicleId":"10012",
+              "fenceId":""
+
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  editFence:
+    # 编辑电子围栏
+    - url: /fence/editFence
+      data: {
+              "fenceId":"",
+              "fenceName":"编辑python电子围栏",
+              "points":"114.245057,30.603084,114.245389,30.601782,114.2451,30.60048,114.249842,30.59964,114.250893,30.60301,114.249348,30.604525",
+              "memo":"",
+
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  deleteFence:
+    # 删除电子围栏
+    - url: /fence/deleteFence
+      data: {
+              "fenceId":""
+
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }

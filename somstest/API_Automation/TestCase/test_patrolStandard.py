@@ -29,7 +29,7 @@ class TestPatrolStandard(unittest.TestCase):
         LOG.info('测试用例执行完毕')
 
     @logger("添加评分标准")
-    def test_addParentStandard(self):
+    def test_addPatrolStandard(self):
         """
             巡查评分标准：添加评分标准
         """
@@ -39,7 +39,7 @@ class TestPatrolStandard(unittest.TestCase):
         assert self.initEvn.test.assert_body(response['body'], 'resultCode', 1)
 
     @logger("查询评分标准")
-    def test_findParentStandard(self):
+    def test_findPatrolStandard(self):
         """
             巡查评分标准：查询评分标准
         """
@@ -53,7 +53,7 @@ class TestPatrolStandard(unittest.TestCase):
         assert self.initEvn.test.assert_in_text(response['body'], self.g["operationLevelName"])
 
     @logger("编辑评分标准")
-    def test_editParentStandard(self):
+    def test_editPatrolStandard(self):
         """
             巡查评分标准：编辑评分标准
         """
@@ -64,7 +64,7 @@ class TestPatrolStandard(unittest.TestCase):
         assert self.initEvn.test.assert_body(response['body'], 'resultCode', 2)
 
     @logger("查看")
-    def test_findParentStandardById(self):
+    def test_findPatrolStandardById(self):
         """
             巡查评分标准：查看
         """
@@ -82,7 +82,7 @@ class TestPatrolStandard(unittest.TestCase):
         assert self.initEvn.test.assert_body(response['body'], 'resultCode', 1)
 
     @logger("删除评分标准")
-    def test_deleteParentStandard(self):
+    def test_deletePatrolStandard(self):
         """
             巡查评分标准：删除评分标准
         """

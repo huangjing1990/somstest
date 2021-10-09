@@ -8,3 +8,4 @@ test_vehicleType
 test_mechanicalTask
 test_patrolItems
 test_patrolStandard
+test_fence
