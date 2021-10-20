@@ -23,10 +23,10 @@ class TestOrg(unittest.TestCase):
         cls.g = globals()
         cls.g["Cookie"] = initEvn().get_userCookie()
 
-        LOG.info('测试用例开始执行')
+        LOG.info('【单位管理】测试用例开始执行')
 
     def tearDown(self):
-        LOG.info('测试用例执行完毕')
+        LOG.info('【单位管理】测试用例执行完毕')
 
     # @logger("登录")
     # def test_login(self):

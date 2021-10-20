@@ -20,12 +20,12 @@ class TestResource(unittest.TestCase):
         cls.login = Login_interface()
         cls.resource = Resource_interface()
         cls.g = globals()
-        cls.g["Cookie"] = initEvn().get_userCookie()
+        cls.g["Cookie"] = initEvn().g["Cookie"]
 
-        LOG.info('测试用例开始执行')
+        LOG.info('【资源管理】测试用例开始执行')
 
     def tearDown(self):
-        LOG.info('测试用例执行完毕')
+        LOG.info('【资源管理】测试用例执行完毕')
 
     @logger("添加资源")
     def test_addresource(self):

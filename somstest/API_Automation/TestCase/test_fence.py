@@ -21,12 +21,12 @@ class TestFence(unittest.TestCase):
         cls.login = Login_interface()
         cls.fence = Fence_interface()
         cls.g = globals()
-        cls.g["Cookie"] = initEvn().get_userCookie()
+        cls.g["Cookie"] = initEvn().g["Cookie"]
 
-        LOG.info('测试用例开始执行')
+        LOG.info('【电子围栏】测试用例开始执行')
 
     def tearDown(self):
-        LOG.info('测试用例执行完毕')
+        LOG.info('【电子围栏】测试用例执行完毕')
 
     @logger("添加电子围栏")
     def test_addFence(self):

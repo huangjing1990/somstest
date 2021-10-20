@@ -39,9 +39,9 @@ class initEvn():
         response = self.login.login(self.host, lu="209487", pd="DB1A8BD798EEA81B0BE3DCA1D0E2C309")
         assert self.test.assert_code(response['code'], 302)
         cookie = {"JSESSIONID": response["headers"]["Set-Cookie"][11:43]}
+        self.g["Cookie"] = cookie
 
         return cookie
-
 
 # if __name__ == '__main__':
 #     print(initEvn().get_userCookie())
