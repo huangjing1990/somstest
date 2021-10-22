@@ -3,18 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="38f64d0e-f3ea-42b9-98db-265484356850" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Log/LOGINFO-2021-10-09-14.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/report_20211009_143340.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/接口自动化测试.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCase/initEnv.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestCase/initEnv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCase/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCase/test1220.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCase/test_add_classification.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCase/test_patrolStandard.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestCase/test_patrolStandard.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCase/test_resource.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestCase/test_resource.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCase/test_role.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestCase/test_role.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCase/test_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestCase/test_user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestCase/test_vehicleType.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestCase/test_vehicleType.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/venv/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,6 +20,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/testFile/caselist.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestCase/test_role.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -56,10 +53,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestCase/test_vehicleType.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
+            <state relative-caret-position="166">
               <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
               <folding>
                 <element signature="e#104#115#0" expanded="true" />
@@ -102,15 +99,6 @@
         <entry file="file://$PROJECT_DIR$/TestCase/test_resource.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="418">
-              <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestCase/test_mechanicalTask.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
               <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
             </state>
           </provider>
@@ -227,7 +215,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-274" />
     <option name="y" value="145" />
     <option name="width" value="1948" />
@@ -508,7 +496,7 @@
       <workItem from="1633746879192" duration="6399000" />
       <workItem from="1633762906242" duration="606000" />
       <workItem from="1634713528894" duration="2210000" />
-      <workItem from="1634715767915" duration="1882000" />
+      <workItem from="1634715767915" duration="2577000" />
     </task>
     <servers />
   </component>
@@ -527,7 +515,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="200334000" />
+    <option name="totallyTimeSpent" value="201029000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -543,7 +531,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.21428572" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.21428572" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" />
@@ -553,7 +541,7 @@
       <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.5195228" />
-      <window_info anchor="bottom" id="Run" order="8" visible="true" weight="0.22559653" />
+      <window_info anchor="bottom" id="Run" order="8" weight="0.18763557" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.37093276" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
@@ -877,13 +865,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testFile/caselist.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TestCase/test.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -981,11 +962,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TestCase/test_vehicleType.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
+        <state relative-caret-position="166">
           <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
           <folding>
             <element signature="e#104#115#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testFile/caselist.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
         </state>
       </provider>
     </entry>

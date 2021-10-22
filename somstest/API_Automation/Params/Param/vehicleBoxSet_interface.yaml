@@ -1,0 +1,76 @@
+---
+vehicleBoxSet_interface:
+  dec: "油水箱设置"
+  addVehicleBoxSet:
+    # 添加油水箱
+    - url: /vehicleBoxSet/addVehicleBoxSet
+      data: {
+              "type":"1",
+              "name":"",
+              "capacity":"",
+              "height":"50.000",
+              "length":"40.000",
+              "width":"30.000",
+              "radius":"",
+              "shape":"",
+              "state":"1",
+              "memo":""
+
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  findVehicleBoxSet:
+   # 查询油水箱
+   - url: /vehicleBoxSet/findVehicleBoxSet
+     data: {
+             "searchName":"name",
+             "searchValue":"",
+             "type":"",
+             "page":"1",
+             "rows":"15"
+     }
+     header: {
+       "Content-Type": "application/x-www-form-urlencoded",
+       "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+     }
+
+  updateVehicleBoxSet:
+    # 编辑油水箱
+    - url: /vehicleBoxSet/updateVehicleBoxSet
+      data: {
+              "vehicleBoxSetId":"",
+              "type":"1",
+              "name":"",
+              "capacity":"",
+              "height":"58.000",
+              "length":"48.000",
+              "width":"38.000",
+              "radius":"",
+              "shape":"3",
+              "state":"1",
+              "memo":""
+
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  deleteVehicleBoxSet:
+    # 删除油水箱
+    - url: /vehicleBoxSet/deleteVehicleBoxSet
+      data: {
+
+              "vehicleBoxSetId":""
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
