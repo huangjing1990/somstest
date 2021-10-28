@@ -1,0 +1,71 @@
+---
+containerType_interface:
+  dec: "容器类型管理"
+  addContainerType:
+    # 添加容器类型
+    - url: /containerType/addContainerType
+      data: {
+              "trashType":"0",
+              "name":"python容器类型",
+              "volume":"120",
+              "specifications":"",
+              "color":"",
+              "thickness":"",
+              "materials":"",
+              "orgId":"1001",
+              "memo":""
+
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+  findContainerTypeByPage:
+    # 查询容器类型
+    - url: /containerType/findContainerTypeByPage
+      data: {
+        "searchName":"name",
+        "searchValue":"python容器类型",
+        "page":"1",
+        "rows":"15",
+        "sort":"typeId",
+        "order":"asc"
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  updateContainerType:
+    # 编辑容器类型
+    - url: /containerType/updateContainerType
+      data: {
+        "name":"编辑python容器类型",
+        "volume":"",
+        "specifications":"",
+        "color":"",
+        "thickness":"",
+        "materials":"",
+        "orgId":"1121",
+        "memo":"",
+        "typeId":"",
+        "trashType":"2"
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+      }
+
+  deleteContainerType:
+    # 删除容器类型
+    - url: /containerType/deleteContainerType
+      data: {
+        "typeId":""
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }

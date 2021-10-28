@@ -1,0 +1,64 @@
+---
+tree_interface:
+  dec: "树种管理"
+  addTree:
+    # 添加树种
+    - url: /tree/addTree
+      data: {
+              "treeName":"python树种",
+              "provinceId":"0050",
+              "memo":"",
+              "picPath":""
+
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  findTreeByPage:
+    # 查询树种
+    - url: /tree/findTreeByPage
+      data: {
+        "sort":"treeName",
+        "searchValue":"python树种",
+        "searchName":"treeName",
+        "rows":"15",
+        "page":"1",
+        "order":"asc",
+        "provinceId":"0050"
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  updateTree:
+    # 编辑树种
+    - url: /tree/updateTree
+      data: {
+        "treeName":"编辑python树种",
+        "treeId":"",
+        "provinceId":"0050",
+        "memo":"",
+        "picPath":""
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+      }
+
+
+  deleteTree:
+    # 删除树种
+    - url: /tree/deleteTree
+      data: {
+        "treeId":""
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }

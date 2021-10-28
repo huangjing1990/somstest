@@ -7,7 +7,7 @@ login_interface:
       data: {
             "lu":"209487",
             "verifyCode":"",
-            "verify":"",
+            "verify":"0",
             "localVertifyCode":"",
             "pd":"DB1A8BD798EEA81B0BE3DCA1D0E2C309",
             "loginFailedNum":""

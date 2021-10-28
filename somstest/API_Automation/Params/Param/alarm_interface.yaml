@@ -1,0 +1,36 @@
+---
+alarm_interface:
+  dec: "车辆报警设置"
+  saveAlarmCondition:
+    # 设置报警限制
+    - url: /alarmParam/saveAlarmCondition
+      data: {
+              "cityLoadSpeed":"60",
+              "highLoadSpeed":"80",
+              "aworkTypeHignLoadId":"101,104,116",
+              "vehicleWorkTypeSpeed":"50",
+              "aworkTypeSpeedId":"104",
+              "overTime":"25",
+              "aoverTimeId":"101,104,116",
+              "fatigueDriving":"4",
+              "fatigueDrivingId":"100,101,102,103,104,105,106,107,108,109,110,111,112,113,114",
+              "voiceWarning":"0"
+
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  selectAlarm:
+    # 查询车辆报警设置
+    - url: /alarmParam/selectAlarm
+      data: {
+
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }

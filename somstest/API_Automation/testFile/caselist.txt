@@ -10,3 +10,6 @@ test_patrolItems
 test_patrolStandard
 test_fence
 test_vehicleBoxSet
+test_containerType
+test_tree
+test_alarm
