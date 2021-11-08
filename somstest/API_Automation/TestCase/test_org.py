@@ -21,7 +21,7 @@ class TestOrg(unittest.TestCase):
         cls.login = Login_interface()
         cls.org = Org_interface()
         cls.g = globals()
-        cls.g["Cookie"] = initEvn().get_userCookie()
+        cls.g["Cookie"] = initEvn().get_adminCookie()
 
         LOG.info('【单位管理】测试用例开始执行')
 

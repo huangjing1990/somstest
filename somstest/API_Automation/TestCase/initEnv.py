@@ -33,10 +33,20 @@ class initEvn():
         details = tester + "_" + environment + versioncode
         return details
 
-    def get_userCookie(self):
-        # 用户登录
+    def get_adminCookie(self):
+        # 管理员登录
 
         response = self.login.login(self.host, lu="209487", pd="DB1A8BD798EEA81B0BE3DCA1D0E2C309")
+        assert self.test.assert_code(response['code'], 302)
+        cookie = {"JSESSIONID": response["headers"]["Set-Cookie"][11:43]}
+        self.g["Cookie"] = cookie
+
+        return cookie
+
+    def get_userCookie(self):
+        # 生产部门用户登录
+
+        response = self.login.login(self.host, lu="009269", pd="DB1A8BD798EEA81B0BE3DCA1D0E2C309")
         assert self.test.assert_code(response['code'], 302)
         cookie = {"JSESSIONID": response["headers"]["Set-Cookie"][11:43]}
         self.g["Cookie"] = cookie

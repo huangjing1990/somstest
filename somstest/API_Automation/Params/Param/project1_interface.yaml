@@ -1,14 +1,16 @@
 ---
-tree_interface:
-  dec: "树种管理"
-  addTree:
-    # 添加树种
-    - url: /tree/addTree
+project1_interface:
+  dec: "项目管理"
+  addProject:
+    # 添加项目
+    - url: /project/addProject
       data: {
-              "treeName":"python树种",
+              "projectName":"python项目",
               "provinceId":"0050",
-              "memo":"",
-              "picPath":""
+              "cityId":"5000",
+              "areaId":"500112",
+              "address":"",
+              "memo":""
 
       }
       header: {
@@ -17,17 +19,17 @@ tree_interface:
 
       }
 
-  findTreeByPage:
-    # 查询树种
-    - url: /tree/findTreeByPage
+  findProjectByPage:
+    # 查询项目
+    - url: /project/findProjectByPage
       data: {
-        "sort":"treeName",
-        "searchValue":"python树种",
-        "searchName":"treeName",
-        "rows":"15",
+        "searchName":"projectName",
+        "searchValue":"python项目",
         "page":"1",
+        "rows":"15",
+        "sort":"projectId",
         "order":"asc",
-        "provinceId":"0050"
+        "bidState":"0"
       }
       header: {
         "Content-Type": "application/x-www-form-urlencoded",
@@ -35,26 +37,30 @@ tree_interface:
 
       }
 
-  updateTree:
-    # 编辑树种
-    - url: /tree/updateTree
+  updateProject:
+    # 编辑项目
+    - url: /project/updateProject
       data: {
-        "treeName":"编辑python树种",
-        "treeId":"",
+        "projectName":"编辑python项目",
         "provinceId":"0050",
+        "cityId":"5000",
+        "areaId":"500112",
+        "address":"",
+        "org.orgId":"1053",
         "memo":"",
-        "picPath":""
+        "projectId":""
       }
       header: {
         "Content-Type": "application/x-www-form-urlencoded",
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
       }
 
-  deleteTree:
-    # 删除树种
-    - url: /tree/deleteTree
+
+  deleteProject:
+    # 删除项目
+    - url: /project/deleteProject
       data: {
-        "treeId":""
+        "projectId":""
       }
       header: {
         "Content-Type": "application/x-www-form-urlencoded",

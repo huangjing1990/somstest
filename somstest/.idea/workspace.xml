@@ -13,17 +13,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/API_Automation/testFile/caselist.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+            <state relative-caret-position="266">
+              <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/API_Automation/TestCase/test_alarm.py">
+        <entry file="file://$PROJECT_DIR$/API_Automation/TestCase/initEnv.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+            <state relative-caret-position="342">
+              <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
+              <folding>
+                <element signature="e#94#124#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -45,7 +48,6 @@
       <list>
         <option value="$PROJECT_DIR$/API_Automation/ApiCommon/org_interface.py" />
         <option value="$PROJECT_DIR$/API_Automation/ApiCommon/resource_interface.py" />
-        <option value="$PROJECT_DIR$/API_Automation/TestCase/test_org.py" />
         <option value="$PROJECT_DIR$/API_Automation/ApiCommon/mechanicalTask_interface.py" />
         <option value="$PROJECT_DIR$/API_Automation/Params/Param/mechanicalTask_interface.yaml" />
         <option value="$PROJECT_DIR$/API_Automation/TestCase/test_operationTime.py" />
@@ -61,12 +63,24 @@
         <option value="$PROJECT_DIR$/API_Automation/Params/Param/vehicleBoxSet_interface.yaml" />
         <option value="$PROJECT_DIR$/API_Automation/ApiCommon/vehicleBoxSet_interface.py" />
         <option value="$PROJECT_DIR$/API_Automation/TestCase/test_vehicleBoxSet.py" />
-        <option value="$PROJECT_DIR$/API_Automation/Params/Param/tree_interface.yaml" />
         <option value="$PROJECT_DIR$/API_Automation/ApiCommon/tree_interface.py" />
         <option value="$PROJECT_DIR$/API_Automation/TestCase/test_tree.py" />
-        <option value="$PROJECT_DIR$/API_Automation/Params/Param/alarm_interface.yaml" />
-        <option value="$PROJECT_DIR$/API_Automation/ApiCommon/alarm_interface.py" />
-        <option value="$PROJECT_DIR$/API_Automation/TestCase/test_alarm.py" />
+        <option value="$PROJECT_DIR$/API_Automation/TestCase/initEnv.py" />
+        <option value="$PROJECT_DIR$/API_Automation/TestCase/test_org.py" />
+        <option value="$PROJECT_DIR$/API_Automation/TestCase/test_111.py" />
+        <option value="$PROJECT_DIR$/API_Automation/Params/Param/project_interface.yaml" />
+        <option value="$PROJECT_DIR$/API_Automation/ApiCommon/project_interface.py" />
+        <option value="$PROJECT_DIR$/API_Automation/Params/Param/tree_interface.yaml" />
+        <option value="$PROJECT_DIR$/API_Automation/ApiCommon/road_interface.py" />
+        <option value="$PROJECT_DIR$/API_Automation/Params/Param/road_interface.yaml" />
+        <option value="$PROJECT_DIR$/API_Automation/TestCase/test_project.py" />
+        <option value="$PROJECT_DIR$/API_Automation/TestCase/test_project1.py" />
+        <option value="$PROJECT_DIR$/API_Automation/ApiCommon/project1_interface.py" />
+        <option value="$PROJECT_DIR$/API_Automation/Params/Param/project1_interface.yaml" />
+        <option value="$PROJECT_DIR$/API_Automation/TestCase/test_road.py" />
+        <option value="$PROJECT_DIR$/API_Automation/TestCase/test1_road.py" />
+        <option value="$PROJECT_DIR$/API_Automation/Params/Param/road1_interface.yaml" />
+        <option value="$PROJECT_DIR$/API_Automation/ApiCommon/road1_interface.py" />
         <option value="$PROJECT_DIR$/API_Automation/testFile/caselist.txt" />
       </list>
     </option>
@@ -85,7 +99,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -124,15 +137,11 @@
               <item name="API_Automation" type="462c0819:PsiDirectoryNode" />
               <item name="testFile" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="somstest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="API_Automation" type="462c0819:PsiDirectoryNode" />
-              <item name="ut" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -147,7 +156,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -229,13 +238,16 @@
       <workItem from="1634891782342" duration="229000" />
       <workItem from="1634892150589" duration="62000" />
       <workItem from="1635302335053" duration="4436000" />
-      <workItem from="1635403113591" duration="2399000" />
-      <workItem from="1635406281394" duration="35000" />
+      <workItem from="1635471623021" duration="1118000" />
+      <workItem from="1635747978758" duration="7023000" />
+      <workItem from="1635987546664" duration="8082000" />
+      <workItem from="1636335255410" duration="17501000" />
+      <workItem from="1636359969841" duration="82000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80440000" />
+    <option name="totallyTimeSpent" value="111812000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -248,22 +260,21 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24360341" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25159913" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.9291045" weight="0.46420825" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.054229934" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.18329719" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.9275053" visible="true" weight="0.15401301" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4989339" weight="0.73752713" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.329718" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.07089552" side_tool="true" visible="true" weight="0.29175705" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5010661" side_tool="true" weight="0.44251627" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.329718" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.329718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -284,7 +295,7 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/somstest$runAll.coverage" NAME="runAll Coverage Results" MODIFIED="1635406174429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/API_Automation" />
+    <SUITE FILE_PATH="coverage/somstest$runAll.coverage" NAME="runAll Coverage Results" MODIFIED="1636359368236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/API_Automation" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
@@ -296,27 +307,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/Python37/Lib/unittest/suite.py" />
-    <entry file="file://$PROJECT_DIR$/API_Automation/Params/tools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="e#113#124#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/API_Automation/Params/params.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#111#137#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/API_Automation/Common/Assert.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="188">
@@ -389,6 +379,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/API_Automation/Params/Param/role_interface.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="17" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/API_Automation/ApiCommon/Login_interface.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -416,30 +413,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Python37/Lib/unittest/case.py" />
-    <entry file="file://$PROJECT_DIR$/API_Automation/Common/log_Common.py">
+    <entry file="file://$PROJECT_DIR$/API_Automation/TestCase/test_role.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
+        <state relative-caret-position="57">
+          <caret line="3" column="25" lean-forward="true" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
         </state>
       </provider>
     </entry>
+    <entry file="file://D:/Python37/Lib/unittest/case.py" />
     <entry file="file://$PROJECT_DIR$/API_Automation/runAll.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1406">
           <caret line="79" column="28" selection-start-line="79" selection-start-column="28" selection-end-line="79" selection-end-column="28" />
           <folding>
             <element signature="e#37#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/API_Automation/TestCase/test_org.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="931">
-          <caret line="55" column="57" selection-start-line="55" selection-start-column="49" selection-end-line="55" selection-end-column="57" />
-          <folding>
-            <element signature="e#95#106#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -472,34 +459,6 @@
       </provider>
     </entry>
     <entry file="file://D:/Python37/Lib/site-packages/requests/api.py" />
-    <entry file="file://$PROJECT_DIR$/API_Automation/TestCase/test_patrolStandard.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/API_Automation/Params/Param/patrolStandard_interface.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1820">
-          <caret line="86" column="34" selection-start-line="86" selection-start-column="34" selection-end-line="86" selection-end-column="34" />
-          <folding>
-            <element signature="e#1723#2255#0" />
-            <element signature="e#3972#4337#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/API_Automation/ApiCommon/patrolStandard_interface.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="36" column="40" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/API_Automation/Common/Request.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2808">
@@ -507,13 +466,6 @@
           <folding>
             <element signature="e#113#128#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/API_Automation/TestCase/initEnv.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="30" column="53" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="53" />
         </state>
       </provider>
     </entry>
@@ -605,32 +557,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/API_Automation/Params/Param/containerType_interface.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1349">
+        <state relative-caret-position="1846">
           <caret line="71" selection-start-line="71" selection-end-line="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/API_Automation/Params/Param/tree_interface.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1216">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/API_Automation/ApiCommon/containerType_interface.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="988">
+        <state relative-caret-position="629">
           <caret line="53" selection-start-line="53" selection-end-line="53" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/API_Automation/ApiCommon/tree_interface.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="950">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
@@ -639,7 +574,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/API_Automation/TestCase/test_containerType.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1235">
+        <state relative-caret-position="1846">
           <caret line="71" selection-start-line="71" selection-end-line="71" />
           <folding>
             <element signature="e#106#117#0" expanded="true" />
@@ -647,65 +582,102 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/API_Automation/TestCase/test_111.py" />
+    <entry file="file://$PROJECT_DIR$/API_Automation/ApiCommon/patrolStandard_interface.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API_Automation/Params/Param/patrolStandard_interface.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1820">
+          <caret line="86" column="34" selection-start-line="86" selection-start-column="34" selection-end-line="86" selection-end-column="34" />
+          <folding>
+            <element signature="e#1723#2255#0" />
+            <element signature="e#3972#4337#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API_Automation/TestCase/test_patrolStandard.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="72" column="95" lean-forward="true" selection-start-line="72" selection-start-column="95" selection-end-line="72" selection-end-column="95" />
+          <folding>
+            <element signature="e#107#118#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API_Automation/Common/log_Common.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API_Automation/Params/Param/tree_interface.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="537">
+          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API_Automation/TestCase/test_org.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="23" column="51" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="51" />
+          <folding>
+            <element signature="e#95#106#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API_Automation/ApiCommon/tree_interface.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="584">
+          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/API_Automation/TestCase/test_tree.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="571">
-          <caret line="70" selection-start-line="70" selection-end-line="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/API_Automation/Params/Param/role_interface.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-260">
-          <caret line="18" column="17" lean-forward="true" selection-end-line="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/API_Automation/ApiCommon/role_interface.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="48" />
+        <state relative-caret-position="598">
+          <caret line="23" column="47" lean-forward="true" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
           <folding>
-            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#97#108#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/API_Automation/Params/Param/alarm_interface.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/API_Automation/ApiCommon/alarm_interface.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/API_Automation/TestCase/test_role.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="19" column="37" lean-forward="true" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/API_Automation/TestCase/test_alarm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/API_Automation/TestCase/test_road1.py" />
+    <entry file="file://$PROJECT_DIR$/API_Automation/TestCase/test_project1.py" />
+    <entry file="file://$PROJECT_DIR$/API_Automation/ApiCommon/road1_interface.py" />
+    <entry file="file://$PROJECT_DIR$/API_Automation/ApiCommon/project1_interface.py" />
+    <entry file="file://$PROJECT_DIR$/API_Automation/Params/Param/road1_interface.yaml" />
+    <entry file="file://$PROJECT_DIR$/API_Automation/Params/Param/project1_interface.yaml" />
     <entry file="file://$PROJECT_DIR$/API_Automation/testFile/caselist.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        <state relative-caret-position="266">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API_Automation/TestCase/initEnv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
+          <folding>
+            <element signature="e#94#124#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

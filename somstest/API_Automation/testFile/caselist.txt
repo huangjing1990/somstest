@@ -9,7 +9,9 @@ test_mechanicalTask
 test_patrolItems
 test_patrolStandard
 test_fence
+test_alarm
 test_vehicleBoxSet
 test_containerType
 test_tree
-test_alarm
+test_project1
+test_road1

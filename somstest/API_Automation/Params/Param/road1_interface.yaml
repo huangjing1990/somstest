@@ -1,0 +1,93 @@
+---
+road1_interface:
+  dec: "道路管理"
+  findxsRoadByPage:
+    # 选中项目（销售）
+    - url: /road/findRoadByPage
+      data: {
+        "project.projectId":"1008",
+        "page":"1",
+        "rows":"15"
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  addRoad:
+    # 添加道路（销售）
+    - url: /road/addRoad
+      data: {
+              "roadName":"python道路",
+              "startPlace":"",
+              "endplace":"",
+              "length":"1500.00",
+              "deadline":"",
+              "project.projectId":"1008"
+
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  findRoadByPage:
+    # 查询道路（销售）
+    - url: /road/findRoadByPage
+      data: {
+        "project.projectId":"1008",
+        "searchName":"roadName",
+        "searchValue":"python道路",
+        "page":"1",
+        "rows":"15"
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  updateRoad:
+    # 编辑道路（销售）
+    - url: /road/updateRoad
+      data: {
+        "roadName":"编辑python道路",
+        "startPlace":"",
+        "endplace":"",
+        "length":"1500.00",
+        "deadline":"",
+        "project.projectId":"1008",
+        "roadId":""
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+      }
+
+  ExplorerRoad:
+    # 指派踏勘人
+    - url: /road/saveExplorer
+      data: {
+        "roadId":"",
+        "exploreUser.userId":"063665477d884d09a4f"
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  deleteRoad:
+    # 删除道路（销售）
+    - url: /road/deleteRoads
+      data: {
+        "roadId":"",
+        "project.projectId":"1008"
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
