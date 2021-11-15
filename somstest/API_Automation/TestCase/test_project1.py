@@ -31,7 +31,7 @@ class TestProject1(unittest.TestCase):
     @logger("添加项目")
     def test_addproject(self):
         """
-            项目管理：添加项目
+            项目管理：添加销售项目
         """
         self.g["projectName"] = "python项目" + str(random.randint(100, 999))
         response = self.project.add_project(self.req_url, self.g["Cookie"], self.g["projectName"])
@@ -40,7 +40,7 @@ class TestProject1(unittest.TestCase):
     @logger("查询项目")
     def test_findproject(self):
         """
-            项目管理：查询项目
+            项目管理：查询销售项目
         """
         response = self.project.find_project(self.req_url, self.g["Cookie"])
         pythonproject = response["body"]["rows"]
@@ -53,7 +53,7 @@ class TestProject1(unittest.TestCase):
     @logger("编辑项目")
     def test_editproject(self):
         """
-            项目管理：编辑项目
+            项目管理：编辑销售项目
         """
         self.g["projectName"] = "编辑" + self.g["projectName"]
         response = self.project.edit_project(self.req_url, self.g["Cookie"], self.g["projectId"],
@@ -63,7 +63,7 @@ class TestProject1(unittest.TestCase):
     @logger("删除项目")
     def test_deleteproject(self):
         """
-            项目管理：删除项目
+            项目管理：删除销售项目
         """
         response = self.project.delete_project(self.req_url, self.g["Cookie"], self.g["projectId"])
         assert self.initEvn.test.assert_body(response['body'], 'resultCode', 1)

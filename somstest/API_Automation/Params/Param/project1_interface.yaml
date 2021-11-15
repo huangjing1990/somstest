@@ -1,11 +1,11 @@
 ---
 project1_interface:
-  dec: "项目管理"
+  dec: "项目管理(销售)"
   addProject:
     # 添加项目
     - url: /project/addProject
       data: {
-              "projectName":"python项目",
+              "projectName":"python销售项目",
               "provinceId":"0050",
               "cityId":"5000",
               "areaId":"500112",
@@ -54,7 +54,6 @@ project1_interface:
         "Content-Type": "application/x-www-form-urlencoded",
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
       }
-
 
   deleteProject:
     # 删除项目

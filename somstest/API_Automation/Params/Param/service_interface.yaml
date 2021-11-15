@@ -1,0 +1,86 @@
+---
+service_interface:
+  dec: "服务单位管理"
+  addService:
+    # 添加服务单位
+    - url: /clean/addCatering
+      data: {
+              "project":"1276",
+              "unitCategory":"500",
+              "unitCategorySecond":"601",
+              "name":"python服务单位",
+              "address":"湖北省武汉市洪山区洪山街道丽岛柳园(南区)三鸿家园",
+              "lnglat":"114.340743,30.507183",
+              "memo":"python自动化测试",
+              "type":"",
+              "tel":"",
+              "cost":"",
+              "rate":"",
+              "mealOrdering":"-1",
+              "area":"",
+              "talbe":"",
+              "maxPeople":"",
+              "dayPeople":"",
+              "parkNum":""
+
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+  findService:
+    # 查询服务单位
+    - url: /clean/findAllCatering
+      data: {
+              "searchValue":"",
+              "searchName":"name",
+              "project":"1276",
+              "isSign":"2",
+              "unitCategory":"0",
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+  updateService:
+    # 编辑服务单位
+    - url: /clean/updateCatering
+      data: {
+              "cateringUnitsId":"",
+              "unitCategory":"500",
+              "unitCategorySecond":"601",
+              "name":"编辑python服务单位",
+              "address":"湖北省武汉市洪山区洪山街道丽岛柳园(南区)三鸿家园",
+              "lnglat":"114.340743,30.507183",
+              "memo":"python自动化测试",
+              "type":"",
+              "tel":"",
+              "cost":"",
+              "rate":"",
+              "mealOrdering":"-1",
+              "area":"",
+              "talbe":"",
+              "maxPeople":"",
+              "dayPeople":"",
+              "parkNum":""
+
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+  deleteService:
+    # 删除服务单位
+    - url: /clean/deleteCatering
+      data: {
+              "cateringUnitsId":""
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+

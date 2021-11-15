@@ -1,0 +1,79 @@
+---
+project4_interface:
+  dec: "项目管理(收运)"
+  addProject:
+    # 添加项目
+    - url: /produceProject/addProduceProject
+      data: {
+              "picUp":"",
+              "projectName":"python收运项目",
+              "provinceId":"0042",
+              "cityId":"4201",
+              "areaId":"420101",
+              "address":"绿洲大厦",
+              "perishable":"1000.00",
+              "recyclable":"500.00",
+              "harmful":"500.00",
+              "others":"500.00",
+              "memo":"python自动化"
+
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+  findProject:
+    # 查询项目
+    - url: /produceProject/findProjectByPage
+      data: {
+              "orgId":"0",
+              "orgName":"",
+              "searchName":"projectName",
+              "searchValue":"",
+              "page":"1",
+              "rows":"45",
+              "sort":"projectId",
+              "order":"asc"
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+  updateProject:
+    # 编辑项目
+    - url: /produceProject/updateProduceProject
+      data: {
+              "projectId":"",
+              "picUp":"",
+              "projectName":"编辑python收运项目",
+              "provinceId":"0042",
+              "cityId":"4201",
+              "areaId":"420101",
+              "address":"绿洲大厦",
+              "org.orgId":"1053",
+              "perishable":"1000",
+              "recyclable":"500",
+              "harmful":"500",
+              "others":"500",
+              "memo":"python自动化"
+
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+  deleteProject:
+    # 删除项目
+    - url: /produceProject/deleteProduceProject
+      data: {
+              "projectId":""
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
