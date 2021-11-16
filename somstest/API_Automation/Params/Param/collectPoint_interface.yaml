@@ -1,0 +1,76 @@
+---
+collectPoint_interface:
+  dec: "收运点管理"
+  findCollectPoint:
+    # 查询所有公共类收运点
+    - url: /collection/findCollectionPointById
+      data: {
+              "project":"1009",
+              "state":"0",
+              "searchName":"name",
+              "searchValue":"",
+              "unitCategoryType":"501",
+              "page":"1",
+              "rows":"15",
+              "sort":"pointId",
+              "order":"desc"
+
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+  findCollectPointByName:
+    # 根据名称查找收运点
+    - url: /collection/findAllPoint
+      data: {
+              "searchName":"name",
+              "searchValue":"大竹林",
+              "project":"1009",
+              "state":"0",
+              "unitCategoryType":"501"
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+  lookCollectPoint:
+    # 查看收运点详情
+    - url: /collection/findCollectionDetail
+      data: {
+              "collectorPointId":"",
+              "page":"1",
+              "rows":"15"
+
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+  editCollectPoint:
+    # 编辑收运点
+    - url: /collection/editCollectionPoint
+      data: {
+              "cleanTimesEdit":"1,2,3,4,5",
+              "points":"",
+              "longitude":"106.494209",
+              "latitude":"29.6158238",
+              "address":"",
+              "name":"大竹林",
+              "timesType":"0",
+              "cleanTimes":"1",
+              "cleanTimes":"2",
+              "cleanTimes":"3",
+              "cleanTimes":"4",
+              "cleanTimes":"5",
+              "memo":""
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+

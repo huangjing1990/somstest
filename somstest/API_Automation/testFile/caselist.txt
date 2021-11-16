@@ -18,3 +18,4 @@ test_road1
 test_project2
 test_project4
 test_service
+test_collectPoint
