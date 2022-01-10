@@ -1,0 +1,63 @@
+---
+road3_interface:
+  dec: "人工道路管理"
+  addRoad:
+    # 添加人工道路
+    - url: /produceRoad/addRoad
+      data: {
+              "roadName":"python人工道路",
+              "startPlace":"文荟街起点",
+              "endplace":"文荟街终点",
+              "length":"1000.00",
+              "project.projectId":"1009"
+
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  findRoadByPage:
+    # 查询人工道路
+    - url: /produceRoad/findRoadByPage
+      data: {
+        "searchName":"roadName",
+        "searchValue":"python人工道路",
+        "page":"1",
+        "rows":"15",
+        "project.projectId":"1009"
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  updateRoad:
+    # 编辑人工道路
+    - url: /produceRoad/updateRoad
+      data: {
+        "roadName":"编辑python人工道路",
+        "startPlace":"文荟街起点",
+        "endplace":"文荟街终点",
+        "length":"1000.00",
+        "project.projectId":"1009",
+        "roadId":""
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+      }
+
+  deleteRoad:
+    # 删除人工道路
+    - url: /road/deleteRoads
+      data: {
+        "roadId":""
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }

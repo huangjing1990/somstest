@@ -1,54 +1,46 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2021-11-8
+# @Time    : 2021-11-18
 # @Author  : kuwanjun
-# @File    : test_road1.py
+# @File    : test_road3.py
 
 import time
 import random
 from TestCase.initEnv import *
 import unittest
-from ApiCommon.road1_interface import *
+from ApiCommon.road3_interface import *
 from ApiCommon.Login_interface import *
 from Params.params import *
 
 
-class TestRoad1(unittest.TestCase):
+class TestRoad3(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
         cls.initEvn = initEvn()
         cls.req_url = cls.initEvn.host
         cls.login = Login_interface()
-        cls.road = Road1_interface()
+        cls.road = Road3_interface()
         cls.g = globals()
         cls.g["Cookie"] = initEvn().get_adminCookie()
 
-        LOG.info('【道路管理（销售）】测试用例开始执行')
+        LOG.info('【人工道路管理】测试用例开始执行')
 
     def tearDown(self):
-        LOG.info('【道路管理（销售）】测试用例执行完毕')
+        LOG.info('【人工道路管理】测试用例执行完毕')
 
-    @logger("选中项目")
-    def test_findxsroad(self):
-        """
-            道路管理：选中销售项目
-        """
-        response = self.road.findxs_road(self.req_url, self.g["Cookie"])
-        assert self.initEvn.test.assert_in_text(response['body'], "两江新区")
-
-    @logger("添加道路")
+    @logger("添加人工道路")
     def test_addroad(self):
         """
-            道路管理：添加销售道路
+            道路管理：添加人工道路
         """
-        self.g["roadName"] = "python道路" + str(random.randint(100, 999))
+        self.g["roadName"] = "python人工道路" + str(random.randint(100, 999))
         response = self.road.add_road(self.req_url, self.g["Cookie"], self.g["roadName"])
         assert self.initEvn.test.assert_body(response['body'], 'resultCode', 1)
 
-    @logger("查询道路")
+    @logger("查询人工道路")
     def test_findroad(self):
         """
-            道路管理：查询销售道路
+            道路管理：查询人工道路
         """
         response = self.road.find_road(self.req_url, self.g["Cookie"])
         pythonroad = response["body"]["rows"]
@@ -58,28 +50,20 @@ class TestRoad1(unittest.TestCase):
         print("roadId:", self.g["roadId"])
         assert self.initEvn.test.assert_in_text(response["body"], "python")
 
-    @logger("编辑道路")
+    @logger("编辑人工道路")
     def test_editroad(self):
         """
-            道路管理：编辑销售道路
+            道路管理：编辑人工道路
         """
         self.g["roadName"] = "编辑" + self.g["roadName"]
         response = self.road.edit_road(self.req_url, self.g["Cookie"], self.g["roadId"],
                                        self.g["roadName"])
         assert self.initEvn.test.assert_body(response['body'], 'resultCode', 1)
 
-    @logger("指派踏勘人")
-    def test_Explorerroad(self):
-        """
-            道路管理：指派踏勘人
-        """
-        response = self.road.Explorer_road(self.req_url, self.g["Cookie"], self.g["roadId"])
-        assert self.initEvn.test.assert_body(response['body'], 'resultCode', 1)
-
-    @logger("删除道路")
+    @logger("删除人工道路")
     def test_deleteroad(self):
         """
-            道路管理：删除销售道路
+            道路管理：删除人工道路
         """
         response = self.road.delete_road(self.req_url, self.g["Cookie"], self.g["roadId"])
         assert self.initEvn.test.assert_body(response['body'], 'resultCode', 1)

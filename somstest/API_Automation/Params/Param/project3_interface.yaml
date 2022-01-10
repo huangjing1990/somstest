@@ -1,0 +1,71 @@
+---
+project3_interface:
+  dec: "人工项目管理"
+  addProduceProject:
+    # 添加人工项目
+    - url: /produceProject/addProduceProject
+      data: {
+              "projectName":"python人工项目",
+              "operationLevelId":"1",
+              "provinceId":"0050",
+              "cityId":"5000",
+              "areaId":"500112",
+              "address":"轻纺集团",
+              "memo":""
+
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  findProjectByPage:
+    # 查询人工项目
+    - url: /produceProject/findProjectByPage
+      data: {
+        "orgId":"0",
+        "orgName":"两江新区项目公司",
+        "searchName":"projectName",
+        "searchValue":"python人工项目",
+        "page":"1",
+        "rows":"15",
+        "sort":"projectId",
+        "order":"asc"
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  updateProduceProject:
+    # 编辑人工项目
+    - url: /produceProject/updateProduceProject
+      data: {
+        "projectName":"编辑python人工项目",
+        "operationLevelId":"1",
+        "provinceId":"0050",
+        "cityId":"5000",
+        "areaId":"500112",
+        "address":"轻纺集团",
+        "org.orgId":"1053",
+        "memo":"",
+        "projectId":""
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+      }
+
+  deleteProduceProject:
+    # 删除人工项目
+    - url: /produceProject/deleteProduceProject
+      data: {
+        "projectId":""
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }

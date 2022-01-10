@@ -13,149 +13,42 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/API_Automation/testFile/caselist.txt">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< .mine
-            <state relative-caret-position="323">
-              <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-||||||| .r429
-            <state relative-caret-position="494">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-=======
             <state relative-caret-position="598">
               <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
->>>>>>> .r433
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-<<<<<<< .mine
-        <entry file="file://$PROJECT_DIR$/API_Automation/TestCase/test_collectPoint.py">
-||||||| .r429
-        <entry file="file://$PROJECT_DIR$/API_Automation/Params/Param/project1_interface.yaml">
-=======
         <entry file="file://$PROJECT_DIR$/API_Automation/TestCase/initEnv.py">
->>>>>>> .r433
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< .mine
-            <state relative-caret-position="570">
-              <caret line="36" column="71" selection-start-line="36" selection-start-column="71" selection-end-line="36" selection-end-column="71" />
-||||||| .r429
-            <state relative-caret-position="52">
-              <caret line="2" column="17" lean-forward="true" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-=======
             <state relative-caret-position="936">
               <caret line="36" column="15" lean-forward="true" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="15" />
               <folding>
                 <element signature="e#94#124#0" expanded="true" />
               </folding>
->>>>>>> .r433
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-<<<<<<< .mine
-        <entry file="file://$PROJECT_DIR$/API_Automation/Params/Param/collectPoint_interface.yaml">
-||||||| .r429
-        <entry file="file://$PROJECT_DIR$/API_Automation/Params/Param/project2_interface.yaml">
-=======
         <entry file="file://$PROJECT_DIR$/API_Automation/Params/Param/road1_interface.yaml">
->>>>>>> .r433
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< .mine
-            <state relative-caret-position="1007">
-              <caret line="53" column="11" selection-start-line="53" selection-start-column="6" selection-end-line="53" selection-end-column="11" />
-||||||| .r429
-            <state relative-caret-position="546">
-              <caret line="21" column="15" lean-forward="true" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
-=======
             <state>
               <caret column="3" lean-forward="true" selection-start-column="3" selection-end-column="3" />
->>>>>>> .r433
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-<<<<<<< .mine
-        <entry file="file://$PROJECT_DIR$/API_Automation/ApiCommon/collectPoint_interface.py">
-||||||| .r429
-        <entry file="file://$PROJECT_DIR$/API_Automation/ApiCommon/project1_interface.py">
-=======
         <entry file="file://$PROJECT_DIR$/API_Automation/Params/Param/road3_interface.yaml">
->>>>>>> .r433
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< .mine
-            <state relative-caret-position="798">
-              <caret line="43" column="41" lean-forward="true" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-||||||| .r429
-            <state relative-caret-position="78">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-=======
             <state>
               <caret column="3" lean-forward="true" selection-start-column="3" selection-end-column="3" />
->>>>>>> .r433
             </state>
           </provider>
         </entry>
       </file>
-<<<<<<< .mine
-||||||| .r429
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/API_Automation/ApiCommon/project2_interface.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/API_Automation/TestCase/test_project1.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-              <folding>
-                <element signature="e#100#111#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/API_Automation/TestCase/test_project2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1092">
-              <caret line="42" column="23" lean-forward="true" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
-              <folding>
-                <element signature="e#100#111#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/API_Automation/TestCase/initEnv.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
-              <folding>
-                <element signature="e#94#124#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-=======
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/API_Automation/ApiCommon/road1_interface.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -204,7 +97,6 @@
           </provider>
         </entry>
       </file>
->>>>>>> .r433
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -213,14 +105,6 @@
         <option value="Python Script" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>项目</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>服务单位</replace>
-    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -265,15 +149,6 @@
         <option value="$PROJECT_DIR$/API_Automation/Params/Param/project2_interface.yaml" />
         <option value="$PROJECT_DIR$/API_Automation/ApiCommon/project2_interface.py" />
         <option value="$PROJECT_DIR$/API_Automation/TestCase/test_project2.py" />
-<<<<<<< .mine
-        <option value="$PROJECT_DIR$/API_Automation/Params/Param/service_interface.yaml" />
-        <option value="$PROJECT_DIR$/API_Automation/ApiCommon/service_interface.py" />
-        <option value="$PROJECT_DIR$/API_Automation/TestCase/test_service.py" />
-        <option value="$PROJECT_DIR$/API_Automation/Params/Param/collectPoint_interface.yaml" />
-        <option value="$PROJECT_DIR$/API_Automation/ApiCommon/collectPoint_interface.py" />
-        <option value="$PROJECT_DIR$/API_Automation/TestCase/test_collectPoint.py" />
-||||||| .r429
-=======
         <option value="$PROJECT_DIR$/API_Automation/Params/Param/project4_interface.yaml" />
         <option value="$PROJECT_DIR$/API_Automation/Params/Param/project3_interface.yaml" />
         <option value="$PROJECT_DIR$/API_Automation/ApiCommon/project3_interface.py" />
@@ -283,7 +158,6 @@
         <option value="$PROJECT_DIR$/API_Automation/Params/Param/road3_interface.yaml" />
         <option value="$PROJECT_DIR$/API_Automation/ApiCommon/road3_interface.py" />
         <option value="$PROJECT_DIR$/API_Automation/TestCase/test_road3.py" />
->>>>>>> .r433
         <option value="$PROJECT_DIR$/API_Automation/testFile/caselist.txt" />
       </list>
     </option>
@@ -302,6 +176,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -344,19 +219,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-<<<<<<< .mine
-    <property name="last_opened_file_path" value="D:/somsgit/somstest" />
-||||||| .r429
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../rrimstest/API_Automation" />
-=======
     <property name="last_opened_file_path" value="$PROJECT_DIR$/API_Automation/ApiCommon" />
->>>>>>> .r433
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -459,30 +327,15 @@
       <workItem from="1635987546664" duration="8082000" />
       <workItem from="1636335255410" duration="18071000" />
       <workItem from="1636592568631" duration="11465000" />
-<<<<<<< .mine
-      <workItem from="1636959811335" duration="3787000" />
-      <workItem from="1636963642735" duration="41000" />
-      <workItem from="1636963708387" duration="64000" />
-      <workItem from="1637023160279" duration="6771000" />
-      <workItem from="1641519376952" duration="649000" />
-||||||| .r429
-=======
       <workItem from="1636704091516" duration="1704000" />
       <workItem from="1637114270278" duration="6796000" />
       <workItem from="1637137638188" duration="201000" />
       <workItem from="1637197792090" duration="5891000" />
->>>>>>> .r433
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-<<<<<<< .mine
-    <option name="totallyTimeSpent" value="135077000" />
-||||||| .r429
-    <option name="totallyTimeSpent" value="123765000" />
-=======
     <option name="totallyTimeSpent" value="138357000" />
->>>>>>> .r433
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -495,28 +348,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-<<<<<<< .mine
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26492536" />
-||||||| .r429
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25159913" />
-=======
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26226014" />
->>>>>>> .r433
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.18329719" />
-<<<<<<< .mine
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.9275053" weight="0.27982646" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4989339" weight="0.2570499" />
-||||||| .r429
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.9275053" visible="true" weight="0.15401301" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4989339" weight="0.73752713" />
-=======
       <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.9275053" visible="true" weight="0.09219089" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4989339" weight="0.44577006" />
->>>>>>> .r433
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
@@ -544,13 +384,7 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-<<<<<<< .mine
-    <SUITE FILE_PATH="coverage/somstest$runAll.coverage" NAME="runAll Coverage Results" MODIFIED="1637046213860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/API_Automation" />
-||||||| .r429
-    <SUITE FILE_PATH="coverage/somstest$runAll.coverage" NAME="runAll Coverage Results" MODIFIED="1636617548070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/API_Automation" />
-=======
     <SUITE FILE_PATH="coverage/somstest$runAll.coverage" NAME="runAll Coverage Results" MODIFIED="1637217185388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/API_Automation" />
->>>>>>> .r433
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
@@ -562,99 +396,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-<<<<<<< .mine
-    <entry file="file://$PROJECT_DIR$/API_Automation/TestCase/test_mechanicalTask.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1064">
-          <caret line="61" column="21" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/API_Automation/TestCase/test_role.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="25" lean-forward="true" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-||||||| .r429
-    <entry file="file://$PROJECT_DIR$/API_Automation/ApiCommon/mechanicalTask_interface.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="4" column="20" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/API_Automation/Params/Param/mechanicalTask_interface.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="39" column="39" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/API_Automation/ApiCommon/operationTask_interface.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="17" selection-end-line="48" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/API_Automation/Params/Param/org_interface.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
-          <caret line="37" column="28" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/API_Automation/Params/Param/role_interface.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="17" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/API_Automation/ApiCommon/Login_interface.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="35" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/API_Automation/ApiCommon/org_interface.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-344">
-          <caret line="31" column="29" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/API_Automation/TestCase/test_mechanicalTask.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1064">
-          <caret line="61" column="21" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/API_Automation/TestCase/test_role.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="25" lean-forward="true" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-=======
->>>>>>> .r433
     <entry file="file://D:/Python37/Lib/unittest/case.py" />
     <entry file="file://$PROJECT_DIR$/API_Automation/runAll.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -922,79 +663,22 @@
         </state>
       </provider>
     </entry>
-<<<<<<< .mine
-    <entry file="file://$PROJECT_DIR$/API_Automation/Params/Param/project1_interface.yaml">
-||||||| .r429
-    <entry file="file://$PROJECT_DIR$/API_Automation/Params/Param/road1_interface.yaml">
-=======
     <entry file="file://$PROJECT_DIR$/API_Automation/TestCase/test_project2.py">
->>>>>>> .r433
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< .mine
-        <state relative-caret-position="38">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-||||||| .r429
-        <state>
-          <caret column="3" lean-forward="true" selection-start-column="3" selection-end-column="3" />
-=======
         <state relative-caret-position="1520">
           <caret line="136" column="21" selection-start-line="136" selection-start-column="21" selection-end-line="136" selection-end-column="21" />
->>>>>>> .r433
         </state>
       </provider>
     </entry>
-<<<<<<< .mine
-    <entry file="file://$PROJECT_DIR$/API_Automation/Params/Param/project2_interface.yaml">
-||||||| .r429
-    <entry file="file://$PROJECT_DIR$/API_Automation/TestCase/initEnv.py">
-=======
     <entry file="file://$PROJECT_DIR$/API_Automation/ApiCommon/project4_interface.py">
->>>>>>> .r433
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< .mine
-        <state relative-caret-position="399">
-          <caret line="21" column="15" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/API_Automation/ApiCommon/project1_interface.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-||||||| .r429
-        <state relative-caret-position="572">
-          <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
-          <folding>
-            <element signature="e#94#124#0" expanded="true" />
-          </folding>
-=======
         <state relative-caret-position="130">
           <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
->>>>>>> .r433
         </state>
       </provider>
     </entry>
-<<<<<<< .mine
-    <entry file="file://$PROJECT_DIR$/API_Automation/TestCase/test_project1.py">
-||||||| .r429
-    <entry file="file://$PROJECT_DIR$/API_Automation/Params/Param/project4_interface.yaml">
-=======
     <entry file="file://$PROJECT_DIR$/API_Automation/TestCase/test_collectPoint.py">
->>>>>>> .r433
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< .mine
-        <state relative-caret-position="76">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="e#100#111#0" expanded="true" />
-          </folding>
-||||||| .r429
-        <state relative-caret-position="52">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="16" />
-=======
         <state relative-caret-position="-78" />
       </provider>
     </entry>
@@ -1002,94 +686,31 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
           <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
->>>>>>> .r433
         </state>
       </provider>
     </entry>
-<<<<<<< .mine
-    <entry file="file://$PROJECT_DIR$/API_Automation/TestCase/test_project2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/API_Automation/TestCase/test_project4.py">
-||||||| .r429
-    <entry file="file://$PROJECT_DIR$/API_Automation/TestCase/test_project4.py">
-=======
     <entry file="file://$PROJECT_DIR$/API_Automation/Params/Param/project3_interface.yaml">
->>>>>>> .r433
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< .mine
-        <state relative-caret-position="475">
-          <caret line="31" column="30" selection-end-line="69" />
-        </state>
-||||||| .r429
-        <state relative-caret-position="-312" />
-=======
         <state>
           <caret column="3" selection-start-column="3" selection-end-column="3" />
         </state>
->>>>>>> .r433
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/API_Automation/ApiCommon/project4_interface.py">
+    <entry file="file://$PROJECT_DIR$/API_Automation/ApiCommon/project1_interface.py">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< .mine
-        <state relative-caret-position="380">
-          <caret line="21" column="46" selection-end-line="51" />
-||||||| .r429
-        <state relative-caret-position="78">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-=======
         <state relative-caret-position="1300">
           <caret line="51" selection-start-line="51" selection-end-line="51" />
->>>>>>> .r433
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-<<<<<<< .mine
-    <entry file="file://$PROJECT_DIR$/API_Automation/Params/Param/road1_interface.yaml">
-||||||| .r429
-    <entry file="file://$PROJECT_DIR$/API_Automation/ApiCommon/project2_interface.py">
-=======
     <entry file="file://$PROJECT_DIR$/API_Automation/TestCase/test_project1.py">
->>>>>>> .r433
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< .mine
-        <state>
-          <caret column="3" selection-start-column="3" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/API_Automation/Params/Param/project4_interface.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="33" column="25" selection-end-line="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/API_Automation/TestCase/initEnv.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
-||||||| .r429
-        <state relative-caret-position="78">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-=======
         <state relative-caret-position="1638">
           <caret line="69" selection-start-line="69" selection-end-line="69" />
->>>>>>> .r433
           <folding>
-<<<<<<< .mine
-            <element signature="e#94#124#0" expanded="true" />
-||||||| .r429
-            <element signature="e#0#28#0" expanded="true" />
-=======
             <element signature="e#100#111#0" expanded="true" />
           </folding>
         </state>
@@ -1101,26 +722,12 @@
           <caret line="51" selection-start-line="51" selection-end-line="51" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
->>>>>>> .r433
           </folding>
         </state>
       </provider>
     </entry>
-<<<<<<< .mine
-    <entry file="file://$PROJECT_DIR$/API_Automation/ApiCommon/project2_interface.py">
-||||||| .r429
-    <entry file="file://$PROJECT_DIR$/API_Automation/TestCase/test_project1.py">
-=======
     <entry file="file://$PROJECT_DIR$/API_Automation/TestCase/test_project3.py">
->>>>>>> .r433
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< .mine
-        <state relative-caret-position="418">
-          <caret line="23" column="29" selection-end-line="131" />
-||||||| .r429
-        <state relative-caret-position="104">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-=======
         <state relative-caret-position="1612">
           <caret line="68" column="79" selection-start-line="68" selection-start-column="79" selection-end-line="68" selection-end-column="79" />
         </state>
@@ -1137,48 +744,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="936">
           <caret line="36" column="15" lean-forward="true" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="15" />
->>>>>>> .r433
           <folding>
-<<<<<<< .mine
-            <element signature="e#0#28#0" expanded="true" />
-||||||| .r429
-            <element signature="e#100#111#0" expanded="true" />
-=======
             <element signature="e#94#124#0" expanded="true" />
->>>>>>> .r433
           </folding>
         </state>
       </provider>
     </entry>
-<<<<<<< .mine
-    <entry file="file://$PROJECT_DIR$/API_Automation/Params/Param/service_interface.yaml">
-||||||| .r429
-    <entry file="file://$PROJECT_DIR$/API_Automation/TestCase/test_project2.py">
-=======
     <entry file="file://$PROJECT_DIR$/API_Automation/testFile/caselist.txt">
->>>>>>> .r433
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< .mine
-        <state relative-caret-position="437">
-          <caret line="23" column="26" lean-forward="true" selection-end-line="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/API_Automation/TestCase/test_service.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="30" column="17" lean-forward="true" selection-end-line="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/API_Automation/ApiCommon/service_interface.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="893">
-          <caret line="47" lean-forward="true" selection-end-line="53" />
-||||||| .r429
-        <state relative-caret-position="1092">
-          <caret line="42" column="23" lean-forward="true" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
-=======
         <state relative-caret-position="598">
           <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
         </state>
@@ -1202,91 +775,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
           <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
->>>>>>> .r433
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-<<<<<<< .mine
-    <entry file="file://$PROJECT_DIR$/API_Automation/testFile/caselist.txt">
-||||||| .r429
-    <entry file="file://$PROJECT_DIR$/API_Automation/Params/Param/project1_interface.yaml">
-=======
     <entry file="file://$PROJECT_DIR$/API_Automation/ApiCommon/road3_interface.py">
->>>>>>> .r433
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< .mine
-        <state relative-caret-position="323">
-          <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-||||||| .r429
-        <state relative-caret-position="52">
-          <caret line="2" column="17" lean-forward="true" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-=======
         <state relative-caret-position="52">
           <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
->>>>>>> .r433
         </state>
       </provider>
     </entry>
-<<<<<<< .mine
-    <entry file="file://$PROJECT_DIR$/API_Automation/TestCase/test_collectPoint.py">
-||||||| .r429
-    <entry file="file://$PROJECT_DIR$/API_Automation/Params/Param/project2_interface.yaml">
-=======
     <entry file="file://$PROJECT_DIR$/API_Automation/TestCase/test_road1.py">
->>>>>>> .r433
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< .mine
-        <state relative-caret-position="570">
-          <caret line="36" column="71" selection-start-line="36" selection-start-column="71" selection-end-line="36" selection-end-column="71" />
-||||||| .r429
-        <state relative-caret-position="546">
-          <caret line="21" column="15" lean-forward="true" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
-=======
         <state relative-caret-position="-286">
           <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
           <folding>
             <element signature="e#97#108#0" expanded="true" />
           </folding>
->>>>>>> .r433
         </state>
       </provider>
     </entry>
-<<<<<<< .mine
-    <entry file="file://$PROJECT_DIR$/API_Automation/Params/Param/collectPoint_interface.yaml">
-||||||| .r429
-    <entry file="file://$PROJECT_DIR$/API_Automation/testFile/caselist.txt">
-=======
     <entry file="file://$PROJECT_DIR$/API_Automation/TestCase/test_road3.py">
->>>>>>> .r433
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< .mine
-        <state relative-caret-position="1007">
-          <caret line="53" column="11" selection-start-line="53" selection-start-column="6" selection-end-line="53" selection-end-column="11" />
-||||||| .r429
-        <state relative-caret-position="494">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-=======
         <state relative-caret-position="234">
           <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="e#97#108#0" expanded="true" />
-          </folding>
->>>>>>> .r433
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/API_Automation/ApiCommon/collectPoint_interface.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="43" column="41" lean-forward="true" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
