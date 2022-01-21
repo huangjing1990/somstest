@@ -6,7 +6,7 @@ user_interface:
     - url: /user/addUser
       data: {
               "type":"0",
-              "employeeId":"210330",
+              "employeeId":"",
               "username":"python用户",
               "sex":"0",
               "org.orgId":"1215",
@@ -21,13 +21,13 @@ user_interface:
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
 
       }
-  findUserByOrg:
+  findUserByPage:
     # 查询用户
-    - url: /user/findUserByOrg
+    - url: /user/findUserByPage
       data: {
-              "org.orgId":"1215",
+              "orgdetpIds":"[1215]",
               "searchName":"employeeId",
-              "searchValue":"210330",
+              "searchValue":"",
               "page":"1",
               "rows":"15",
               "sort":"employeeId",
@@ -43,9 +43,8 @@ user_interface:
     - url: /user/updateUser
       data: {
               "userId":"",
-              "employeeId":"210330",
-              "username":"编辑python用户",
-              "type":"用户",
+              "employeeId":"",
+              "username":"",
               "sex":"0",
               "org.orgId":"1215",
               "cardMac":"",
@@ -125,8 +124,9 @@ user_interface:
     # 登录历史
     - url: /user/findUserLoginHistory
       data: {
-              "orgId":"1000",
-              "orgName":"新安洁股份",
+              "orgIds":"[1001]",
+              "orgId":"1001",
+              "orgName":"生产运营管理中心",
               "timeStart":"",
               "timeEnd":"",
               "searchName":"username",

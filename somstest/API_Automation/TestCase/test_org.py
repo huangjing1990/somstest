@@ -4,6 +4,7 @@
 # @File    : test_org.py
 
 import time
+import random
 from TestCase.initEnv import *
 import unittest
 from ApiCommon.org_interface import *
@@ -44,7 +45,8 @@ class TestOrg(unittest.TestCase):
         """
             单位管理：添加单位
         """
-        response = self.org.add_org(self.req_url, self.g["Cookie"])
+        self.g["orgName"] = "python部门" + str(random.randint(100, 999))
+        response = self.org.add_org(self.req_url, self.g["Cookie"], orgName=self.g["orgName"])
         assert self.initEvn.test.assert_body(response['body'], 'resultCode', 1)
 
     @logger("查询单位")
@@ -53,10 +55,10 @@ class TestOrg(unittest.TestCase):
             单位管理：查询单位
         """
         response = self.org.find_org(self.req_url, self.g["Cookie"])
-        pythonorg = response["body"]["rows"][0]["children"][22]["children"][8]["children"]
+        pythonorg = response["body"]["rows"][0]["children"][23]["children"][8]["children"]
         # 新安洁股份-新安洁重庆公司-两江新区项目公司-python部门，注意此处如果单位管理结构上变动了，索引也会跟着变动。
         for i in range(0, len(pythonorg)):
-            if pythonorg[i]["orgName"] == "python部门":
+            if pythonorg[i]["orgName"] == self.g["orgName"]:
                 self.g["orgId"] = pythonorg[i]["orgId"]
         print(self.g["orgId"])
         assert self.initEvn.test.assert_in_text(response['body'], "python")

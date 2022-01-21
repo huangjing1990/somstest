@@ -7,10 +7,12 @@ class Role_interface():
     def __init__(self):
         self.request = Request()
 
-    def add_role(self, domain, cookie):
+    def add_role(self, domain, cookie, roleName=None):
         url, data, header = request_data("role_interface", "addRole")
 
         apiUrl = domain + url
+
+        data["roleName"] = roleName
 
         response = self.request.post_request(apiUrl, data, header, cookie)
 

@@ -1,15 +1,18 @@
 from Common.Request import *
 from Params.params import *
 
+
 class Org_interface():
 
     def __init__(self):
         self.request = Request()
 
-    def add_org(self, domain, cookie):
+    def add_org(self, domain, cookie, orgName):
         url, data, header = request_data("org_interface", "addOrg")
 
         apiUrl = domain + url
+
+        data["orgName"] = orgName
 
         response = self.request.post_request(apiUrl, data, header, cookie)
 

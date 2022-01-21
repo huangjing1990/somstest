@@ -4,6 +4,7 @@
 # @File    : test_role.py
 
 import time
+import random
 from TestCase.initEnv import *
 import unittest
 from ApiCommon.role_interface import *
@@ -32,7 +33,8 @@ class TestRole(unittest.TestCase):
         """
             角色管理：添加角色
         """
-        response = self.role.add_role(self.req_url, self.g["Cookie"])
+        self.g["roleName"] = "python角色" + str(random.randint(100, 999))
+        response = self.role.add_role(self.req_url, self.g["Cookie"], roleName=self.g["roleName"])
         assert self.initEvn.test.assert_body(response['body'], 'resultCode', 1)
 
     @logger("查询角色")
@@ -43,7 +45,7 @@ class TestRole(unittest.TestCase):
         response = self.role.find_role(self.req_url, self.g["Cookie"])
         pythonrole = response["body"]["rows"]
         for i in range(0, len(pythonrole)):
-            if pythonrole[i]["roleName"] == "python角色":
+            if pythonrole[i]["roleName"] == self.g["roleName"]:
                 self.g["roleId"] = pythonrole[i]["roleId"]
         assert self.initEvn.test.assert_in_text(response['body'], "python")
 

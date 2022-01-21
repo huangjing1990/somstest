@@ -1,54 +1,6 @@
 ---
 project2_interface:
   dec: "项目管理(生产)"
-  addProject:
-    # 添加项目
-    - url: /project/addProject
-      data: {
-              "projectName":"python生产项目",
-              "provinceId":"0050",
-              "cityId":"5000",
-              "areaId":"500112",
-              "address":"",
-              "memo":""
-
-      }
-      header: {
-        "Content-Type": "application/x-www-form-urlencoded",
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
-
-      }
-
-  findsProject:
-    # 查询项目
-    - url: /project/findProjectByPage
-      data: {
-        "searchName":"projectName",
-        "searchValue":"python生产项目",
-        "page":"1",
-        "rows":"15",
-        "sort":"projectId",
-        "order":"asc",
-        "bidState":"0"
-      }
-      header: {
-        "Content-Type": "application/x-www-form-urlencoded",
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
-
-      }
-
-  updateBidState:
-    # 录入中标状态
-    - url: /project/updateBidState
-      data: {
-        "projectId":"",
-        "bidState":"1",
-        "produceOrg.orgId":"1053"
-      }
-      header: {
-        "Content-Type": "application/x-www-form-urlencoded",
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
-      }
 
   findProjectByPage:
     # 查询项目
@@ -56,7 +8,7 @@ project2_interface:
       data: {
         "orgId":"1053",
         "searchName":"projectName",
-        "searchValue":"python生产项目",
+        "searchValue":"",
         "page":"1",
         "rows":"15",
         "sort":"createTime",
@@ -70,106 +22,17 @@ project2_interface:
       }
 
   updateProject:
-    # 编辑项目
+    # 查询项目
     - url: /project/updateProject
       data: {
-        "projectName":"编辑python生产项目",
+        "projectId":"1009",
+        "projectName":"大竹林项目",
         "provinceId":"0050",
         "cityId":"5000",
         "areaId":"500112",
-        "address":"",
+        "address":"红杉路轻纺集团对面",
         "org.orgId":"1053",
-        "memo":"",
-        "projectId":""
-      }
-      header: {
-        "Content-Type": "application/x-www-form-urlencoded",
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
-      }
-
-  findxsRoadByPage:
-    # 选中项目（生产）
-    - url: /road/findRoadByPage
-      data: {
-        "project.projectId":"",
-        "page":"1",
-        "rows":"15"
-      }
-      header: {
-        "Content-Type": "application/x-www-form-urlencoded",
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
-
-      }
-
-  addRoad:
-    # 添加道路（生产）
-    - url: /road/addRoad
-      data: {
-              "roadName":"python生产道路",
-              "startPlace":"文荟街",
-              "endplace":"文荟街",
-              "length":"800.00",
-              "deadline":"",
-              "project.projectId":""
-
-      }
-      header: {
-        "Content-Type": "application/x-www-form-urlencoded",
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
-
-      }
-
-  findRoadByPage:
-    # 查询道路（生产）
-    - url: /road/findRoadByPage
-      data: {
-        "project.projectId":"",
-        "searchName":"roadName",
-        "searchValue":"python生产道路",
-        "page":"1",
-        "rows":"15"
-      }
-      header: {
-        "Content-Type": "application/x-www-form-urlencoded",
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
-
-      }
-
-  updateRoad:
-    # 编辑道路（生产）
-    - url: /road/updateRoad
-      data: {
-        "roadName":"编辑python生产道路",
-        "startPlace":"文荟街",
-        "endplace":"文荟街",
-        "length":"800.00",
-        "deadline":"",
-        "project.projectId":"",
-        "roadId":""
-      }
-      header: {
-        "Content-Type": "application/x-www-form-urlencoded",
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
-      }
-
-  deleteRoad:
-    # 删除道路（生产）
-    - url: /road/deleteRoads
-      data: {
-        "roadId":"",
-        "project.projectId":""
-      }
-      header: {
-        "Content-Type": "application/x-www-form-urlencoded",
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
-
-      }
-
-  deleteProject:
-    # 删除项目（生产）
-    - url: /project/deleteProject
-      data: {
-        "projectId":""
+        "memo":""
       }
       header: {
         "Content-Type": "application/x-www-form-urlencoded",

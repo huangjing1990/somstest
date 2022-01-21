@@ -1,0 +1,79 @@
+---
+road2_interface:
+  dec: "道路管理（生产）"
+  addRoad:
+    # 添加道路（生产）
+    - url: /road/addRoad
+      data: {
+              "project.projectId":"1009",
+              "roadName":"",
+              "startPlace":"文荟街起点",
+              "endplace":"文荟街终点",
+              "length":"1000.00",
+              "deadline":""
+
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  findRoadByPage:
+    # 查询道路（生产）
+    - url: /road/findRoadByPage
+      data: {
+        "searchName":"roadName",
+        "searchValue":"",
+        "page":"1",
+        "rows":"15",
+        "project.projectId":"1009"
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  saveExplorer:
+    # 指派踏勘人
+    - url: /road/saveExplorer
+      data: {
+        "roadId":"",
+        "exploreUser.userId":"bf7c7793c6064b0b805"
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  updateRoad:
+    # 编辑人工道路
+    - url: /produceRoad/updateRoad
+      data: {
+        "roadId":"",
+        "roadName":"",
+        "startPlace":"文荟街起点",
+        "endplace":"文荟街终点",
+        "length":"1000.00",
+        "project.projectId":"1009",
+        "deadline":""
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+      }
+
+  deleteRoad:
+    # 删除人工道路
+    - url: /road/deleteRoads
+      data: {
+        "roadId":"",
+        "project.projectId":"1009"
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }

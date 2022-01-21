@@ -20,6 +20,7 @@ role_interface:
     # 查询角色
     - url: /role/findRoleByPage
       data: {
+              "orgIds":"[1001]",
               "curOrgId":"1001",
               "page":"1",
               "rows":"15",

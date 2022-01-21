@@ -23,13 +23,12 @@ project1_interface:
     # 查询项目
     - url: /project/findProjectByPage
       data: {
-        "searchName":"projectName",
-        "searchValue":"python项目",
+        "orgIds":"[2022,2032,2030,2033,1218,1034,1220,1053,1054]",
+        "bidState":"0",
         "page":"1",
         "rows":"15",
         "sort":"projectId",
-        "order":"asc",
-        "bidState":"0"
+        "order":"asc"
       }
       header: {
         "Content-Type": "application/x-www-form-urlencoded",
