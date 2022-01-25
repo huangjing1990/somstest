@@ -1,0 +1,67 @@
+---
+roadSection_interface:
+  dec: "路段管理"
+  addRoadSection:
+    # 添加路段
+    - url: /operationRoadSection/saveRoadSection
+      data: {
+              "roadId":"1063",
+              "points":"106.481916,29.616146,106.481616,29.615633,106.484652,29.614802,106.484867,29.615362",
+              "teamId":"1061",
+              "roadName":"",
+              "roadSectionName":"python青竹东路-01-路段",
+              "memo":""
+
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+  findRoadSection:
+    # 查询路段
+    - url: /operationRoadSection/findRoadSectionByPage
+      data: {
+              "orgId":"1022",
+              "teamId":"",
+              "projectId":"",
+              "roadId":"1063",
+              "page":"1",
+              "rows":"15",
+              "sort":"roadSectionId",
+              "order":"asc"
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+  updateRoadSection:
+    # 编辑路段
+    - url: /operationRoadSection/editRoadSection
+      data: {
+              "roadSectionId":"",
+              "points":"106.481916,29.616146,106.481616,29.615633,106.484652,29.614802,106.484867,29.615362",
+              "teamId":"1061",
+              "roadName":"青竹东路",
+              "roadId":"1063",
+              "roadSectionName":"青竹东路-01-路段",
+              "memo":"",
+
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+  deleteRoadSection:
+    # 删除路段
+    - url: /operationRoadSection/deleteRoadSection
+      data: {
+              "roadSectionId":""
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
