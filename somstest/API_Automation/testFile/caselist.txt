@@ -23,3 +23,4 @@ test_project4
 test_service
 test_collectPoint
 test_roadSection
+test_cleanRoute

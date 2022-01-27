@@ -1,0 +1,86 @@
+---
+cleanRoute_interface:
+  dec: "收运路线"
+
+  addCleanRoute:
+    # 添加收运路线
+    - url: /cleanRoute/addCleanRoute
+      data: {
+              "garbageTypeId":"1",
+              "orgId":"1557",
+              "estimateAmount":"1.92",
+              "points":"5570;5592;5594;5569;",
+              "projectId":"1276",
+              "cleanRouteName":"python收运路线",
+              "startTime":"08:00",
+              "endTime":"12:00",
+              "memo":"python"
+
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  findCleanRoute:
+    # 查询收运路线
+    - url: /cleanRoute/findCleanRoute
+      data: {
+              "orgId":"1557",
+              "garbageTypeId":"1",
+              "state":"1",
+              "page":"1",
+              "rows":"15",
+              "sort":"routeId",
+              "order":"asc"
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  updateCleanRoute:
+    # 编辑收运路线
+    - url: /cleanRoute/editCleanRoute
+      data: {
+              "garbageTypeId":"1",
+              "estimateAmount":"1.92",
+              "projectId":"1276",
+              "orgId":"1557",
+              "cleanRouteId":"",
+              "points":"5570;5592;5594;5569;",
+              "cleanRouteName":"编辑python收运路线",
+              "memo":"python"
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  disableCleanRoute:
+    # 禁用收运路线
+    - url: /cleanRoute/cancelRoute
+      data: {
+              "cleanRouteId":""
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  deleteCleanRoute:
+    # 删除收运路线
+    - url: /cleanRoute/deleteRoute
+      data: {
+              "cleanRouteId":""
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
