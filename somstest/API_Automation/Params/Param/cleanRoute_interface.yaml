@@ -31,7 +31,7 @@ cleanRoute_interface:
               "garbageTypeId":"1",
               "state":"1",
               "page":"1",
-              "rows":"15",
+              "rows":"45",
               "sort":"routeId",
               "order":"asc"
       }

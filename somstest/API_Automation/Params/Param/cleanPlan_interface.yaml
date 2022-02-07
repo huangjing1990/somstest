@@ -1,0 +1,151 @@
+---
+cleanPlan_interface:
+  dec: "收运计划"
+
+  addCleanPlan:
+    # 添加收运计划
+    - url: /cleanPlan/addCleanPlan
+      data: {
+        "routeIds":"",
+        "month":"",
+        "memo":"python"
+
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  findCleanPlan:
+    # 查询收运计划
+    - url: /cleanPlan/findCleanPlanByPage
+      data: {
+        "orgId":"1557",
+        "monthStart":"2021-12-01 00:00:00",
+        "monthEnd":"2022-02-28 23:59:59",
+        "state":"",
+        "routeIds":"0",
+        "searchName":"cleanPlanName",
+        "searchValue":"python",
+        "page":"1",
+        "rows":"30",
+        "sort":"cleanPlanId",
+        "order":"asc"
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  updateCleanPlan:
+    # 编辑收运计划
+    - url: /cleanPlan/updateCleanPlan
+      data: {
+        "cleanPlanId":"",
+        "month":"",
+        "memo":"python"
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  addCleanPlanDetail:
+    # 添加收运明细
+    - url: /cleanPlanDetail/addCleanPlanDetail
+      data: {
+        "userId":"d7233f9580cb464eaca",
+        "date":"2022-01-29",
+        "cleanPlanId":"1281",
+        "cleanPlanDetailId":"",
+        "vehicleId":"10971"
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  postponeCleanPlanDetail:
+    # 顺延计划明细
+    - url: /cleanPlanDetail/postponeCleanPlanDetail
+      data: {
+        "cleanPlanId":"1281",
+        "date":"2022-01-29",
+        "driverDays":"2",
+        "vehicleDays":"2"
+
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  submitCleanPlan:
+    # 提交审核
+    - url: /cleanPlan/submitCleanPlan
+      data: {
+        "planCheckUserId":"732b0a27bb7646518e3",
+        "cleanPlanIds":"1281,"
+      }
+
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  findCleanAuditing:
+    # 查询审核记录
+    - url: /cleanAuditing/findCleanAuditingByPage
+      data: {
+        "orgId":"1557",
+        "state":"1",
+        "routeId":"",
+        "monthStart":"2021-12-01 00:00:00",
+        "monthEnd":"2022-02-28 23:59:59",
+        "searchName":"cleanPlanName",
+        "searchValue":"python",
+        "page":"1",
+        "rows":"60",
+        "sort":"cleanPlanId",
+        "order":"asc"
+      }
+
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  cleanAuditing:
+    # 审核通过
+    - url: /cleanAuditing/createCleanPlanRecord
+      data: {
+        "state":"2",
+        "cleanPlanIds":"1314",
+        "recordMemo":"python自动化审核通过",
+        "memo":"python"
+      }
+
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  deleteCleanPlan:
+    # 删除收运计划
+    - url: /CleanPlan/deleteRoute
+      data: {
+        "CleanPlanId":""
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
