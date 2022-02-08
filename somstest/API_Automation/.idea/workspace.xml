@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="38f64d0e-f3ea-42b9-98db-265484356850" name="Default Changelist" comment="2022-1-27 11:00 黄静新增【收运路线】5条用例，累计121条。">
-      <change afterPath="$PROJECT_DIR$/ApiCommon/cleanPlan_interface.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Params/Param/cleanPlan_interface.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestCase/test_cleanPlan.py" afterDir="false" />
+    <list default="true" id="38f64d0e-f3ea-42b9-98db-265484356850" name="Default Changelist" comment="2022-2-7 14:00 黄静新增【收运计划】用例框架，累计121条。">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Log/LOGINFO-2022-01-27-10.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Params/Param/cleanRoute_interface.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Params/Param/cleanRoute_interface.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/report_20220127_105659.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/接口自动化测试.html" beforeDir="false" afterPath="$PROJECT_DIR$/Report/接口自动化测试.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testFile/caselist.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testFile/caselist.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/LOGINFO-2022-01-27-08.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Params/Param/operationPlan_interface.yaml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/venv/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,13 +20,16 @@
     <SUITE FILE_PATH="coverage/API_Automation$test.coverage" NAME="test Coverage Results" MODIFIED="1608444899844" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCase" />
     <SUITE FILE_PATH="coverage/API_Automation$initEnv.coverage" NAME="initEnv Coverage Results" MODIFIED="1608355215250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCase" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="API_Automation" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/testFile/caselist.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+            <state relative-caret-position="437">
+              <caret line="23" column="12" lean-forward="true" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -40,26 +37,62 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestCase/test_cleanPlan.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="59" column="33" lean-forward="true" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
+            <state relative-caret-position="76">
+              <caret line="4" column="86" selection-start-line="4" selection-start-column="86" selection-end-line="4" selection-end-column="86" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Params/Param/cleanRoute_interface.yaml">
+        <entry file="file://$PROJECT_DIR$/Params/Param/org_interface.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="627">
-              <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+            <state relative-caret-position="684">
+              <caret line="36" column="29" lean-forward="true" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python37/site-packages/dateutil/relativedelta.py">
+        <entry file="file://$PROJECT_DIR$/runAll.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1824">
-              <caret line="105" column="32" selection-start-line="105" selection-start-column="26" selection-end-line="105" selection-end-column="32" />
+            <state relative-caret-position="834">
+              <caret line="90" column="12" selection-start-line="90" selection-start-column="12" selection-end-line="90" selection-end-column="12" />
+              <folding>
+                <element signature="e#37#52#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestCase/test_user.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="40" column="66" lean-forward="true" selection-start-line="40" selection-start-column="66" selection-end-line="40" selection-end-column="66" />
+              <folding>
+                <element signature="e#138#149#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Params/Param/user_interface.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" column="23" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ApiCommon/user_interface.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -67,10 +100,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Params/Param/cleanPlan_interface.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1824">
-              <caret line="108" column="41" selection-start-line="108" selection-start-column="22" selection-end-line="108" selection-end-column="41" />
+            <state relative-caret-position="456">
+              <caret line="165" column="2" selection-start-line="165" selection-start-column="2" selection-end-line="165" selection-end-column="2" />
               <folding>
+                <element signature="e#42#418#0" />
+                <element signature="e#422#1055#0" />
+                <element signature="e#1059#1443#0" />
+                <element signature="e#1447#1932#0" />
+                <element signature="e#1936#2384#0" />
                 <element signature="e#2388#2781#0" />
+                <element signature="e#2785#3430#0" />
+                <element signature="e#3434#3869#0" />
+                <element signature="e#3873#4242#0" />
+                <element signature="e#4246#4594#0" />
+                <element signature="e#4598#4943#0" />
+                <element signature="e#3873#4208#0" />
               </folding>
             </state>
           </provider>
@@ -79,8 +123,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ApiCommon/cleanPlan_interface.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1425">
-              <caret line="85" column="73" selection-start-line="85" selection-start-column="65" selection-end-line="85" selection-end-column="73" />
+            <state relative-caret-position="186">
+              <caret line="135" column="50" selection-start-line="135" selection-start-column="45" selection-end-line="135" selection-end-column="50" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
                 <element signature="e#585#866#0" />
@@ -163,8 +207,6 @@
         <option value="$PROJECT_DIR$/ApiCommon/role_interface.py" />
         <option value="$PROJECT_DIR$/TestCase/test_role.py" />
         <option value="$PROJECT_DIR$/Params/Param/role_interface.yaml" />
-        <option value="$PROJECT_DIR$/ApiCommon/user_interface.py" />
-        <option value="$PROJECT_DIR$/TestCase/test_user.py" />
         <option value="$PROJECT_DIR$/Params/Param/user_interface.yaml" />
         <option value="$PROJECT_DIR$/Params/Param/project1_interface.yaml" />
         <option value="$PROJECT_DIR$/Params/Param/project2_interface.yaml" />
@@ -181,6 +223,8 @@
         <option value="$PROJECT_DIR$/ApiCommon/cleanRoute_interface.py" />
         <option value="$PROJECT_DIR$/TestCase/test_cleanRoute.py" />
         <option value="$PROJECT_DIR$/Params/Param/cleanRoute_interface.yaml" />
+        <option value="$PROJECT_DIR$/ApiCommon/user_interface.py" />
+        <option value="$PROJECT_DIR$/TestCase/test_user.py" />
         <option value="$PROJECT_DIR$/Params/Param/cleanPlan_interface.yaml" />
         <option value="$PROJECT_DIR$/ApiCommon/cleanPlan_interface.py" />
         <option value="$PROJECT_DIR$/TestCase/test_cleanPlan.py" />
@@ -202,7 +246,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -265,6 +308,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -476,7 +520,8 @@
       <workItem from="1643245454563" duration="1000" />
       <workItem from="1643246140519" duration="17490000" />
       <workItem from="1643331993575" duration="17914000" />
-      <workItem from="1644197901462" duration="5277000" />
+      <workItem from="1644197901462" duration="14514000" />
+      <workItem from="1644281690191" duration="5896000" />
     </task>
     <task id="LOCAL-00001" summary="2022-1-27 11:00 黄静新增【收运路线】5条用例，累计121条。">
       <created>1643252408637</created>
@@ -485,7 +530,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643252408637</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="2022-2-7 14:00 黄静新增【收运计划】用例框架，累计121条。">
+      <created>1644214036896</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1644214036896</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -515,7 +567,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="285708000" />
+    <option name="totallyTimeSpent" value="300841000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -530,22 +582,22 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.24786781" />
-      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="0" sideWeight="0.50161815" side_tool="true" weight="0.24786781" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49838188" visible="true" weight="0.25053304" />
+      <window_info id="Structure" order="2" sideWeight="0.50161815" side_tool="true" weight="0.24786781" />
       <window_info anchor="bottom" id="Database Changes" order="0" />
-      <window_info anchor="bottom" id="Terminal" order="1" />
-      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="3" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.329718" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50053304" side_tool="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Version Control" order="3" weight="0.329718" />
       <window_info anchor="bottom" id="Python Console" order="4" weight="0.329718" />
       <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.5195228" />
-      <window_info anchor="bottom" id="Run" order="8" weight="0.30151844" />
-      <window_info anchor="bottom" id="Debug" order="9" weight="0.24403471" />
+      <window_info active="true" anchor="bottom" id="Run" order="8" visible="true" weight="0.13991323" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.29934925" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="12" weight="0.329718" />
+      <window_info anchor="bottom" id="TODO" order="12" sideWeight="0.49946696" weight="0.329718" />
       <window_info anchor="right" id="Database" order="0" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="SciView" order="2" />
@@ -556,9 +608,50 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2022-1-27 11:00 黄静新增【收运路线】5条用例，累计121条。" />
-    <option name="LAST_COMMIT_MESSAGE" value="2022-1-27 11:00 黄静新增【收运路线】5条用例，累计121条。" />
+    <MESSAGE value="2022-2-7 14:00 黄静新增【收运计划】用例框架，累计121条。" />
+    <option name="LAST_COMMIT_MESSAGE" value="2022-2-7 14:00 黄静新增【收运计划】用例框架，累计121条。" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -569,7 +662,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/API_Automation$kuwanjun.coverage" NAME="kuwanjun Coverage Results" MODIFIED="1629707584822" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCase" />
-    <SUITE FILE_PATH="coverage/API_Automation$runAll.coverage" NAME="runAll Coverage Results" MODIFIED="1643355774270" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/API_Automation$runAll.coverage" NAME="runAll Coverage Results" MODIFIED="1644307892921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/API_Automation$Unittests_for_test_cleanRoute_TestCleanRoute_test_deleteCleanRoute.coverage" NAME="Unittests for test_cleanRoute.TestCleanRoute.test_deleteCleanRoute Coverage Results" MODIFIED="1643349856428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCase" />
     <SUITE FILE_PATH="coverage/API_Automation$test.coverage" NAME="test Coverage Results" MODIFIED="1608456883588" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCase" />
     <SUITE FILE_PATH="coverage/API_Automation$Unittests_for_test_add_classification_TestAddClass.coverage" NAME="Unittests for test_add_classification.TestAddClass Coverage Results" MODIFIED="1608903457788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCase" />
@@ -577,14 +670,6 @@
     <SUITE FILE_PATH="coverage/API_Automation$test1220.coverage" NAME="test1220 Coverage Results" MODIFIED="1608902697125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestCase" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/TestCase/test_add_classification.py" />
-    <entry file="file://$PROJECT_DIR$/TestCase/test_patrolItems.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TestCase/test_resource.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
@@ -596,30 +681,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Params/Param/org_interface.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Params/Param/user_interface.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2565">
-          <caret line="135" column="26" selection-start-line="135" selection-start-column="26" selection-end-line="135" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ApiCommon/user_interface.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="569">
-          <caret line="109" column="50" selection-start-line="109" selection-start-column="50" selection-end-line="109" selection-end-column="50" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
@@ -789,16 +850,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/runAll.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="90" column="12" lean-forward="true" selection-start-line="90" selection-start-column="12" selection-end-line="90" selection-end-column="12" />
-          <folding>
-            <element signature="e#37#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TestCase/test_vehicleType.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -905,16 +956,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestCase/test_user.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="568">
-          <caret line="108" column="46" selection-start-line="108" selection-start-column="21" selection-end-line="108" selection-end-column="46" />
-          <folding>
-            <element signature="e#138#149#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Python37/Lib/datetime.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -948,25 +989,92 @@
     </entry>
     <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python37/site-packages/dateutil/relativedelta.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1824">
-          <caret line="105" column="32" selection-start-line="105" selection-start-column="26" selection-end-line="105" selection-end-column="32" />
+        <state>
+          <caret line="104" column="42" lean-forward="true" selection-start-line="104" selection-start-column="42" selection-end-line="104" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Params/Param/operationPlan_interface.yaml" />
+    <entry file="file://$PROJECT_DIR$/Params/Param/org_interface.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="36" column="29" lean-forward="true" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Params/Param/operationTask_interface.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#582#1139#0" />
+            <element signature="e#1142#1718#0" />
+            <element signature="e#1721#2138#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runAll.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="834">
+          <caret line="90" column="12" selection-start-line="90" selection-start-column="12" selection-end-line="90" selection-end-column="12" />
+          <folding>
+            <element signature="e#37#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Params/Param/user_interface.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApiCommon/user_interface.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestCase/test_user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="40" column="66" lean-forward="true" selection-start-line="40" selection-start-column="66" selection-end-line="40" selection-end-column="66" />
+          <folding>
+            <element signature="e#138#149#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Params/Param/cleanPlan_interface.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1824">
-          <caret line="108" column="41" selection-start-line="108" selection-start-column="22" selection-end-line="108" selection-end-column="41" />
+        <state relative-caret-position="456">
+          <caret line="165" column="2" selection-start-line="165" selection-start-column="2" selection-end-line="165" selection-end-column="2" />
           <folding>
+            <element signature="e#42#418#0" />
+            <element signature="e#422#1055#0" />
+            <element signature="e#1059#1443#0" />
+            <element signature="e#1447#1932#0" />
+            <element signature="e#1936#2384#0" />
             <element signature="e#2388#2781#0" />
+            <element signature="e#2785#3430#0" />
+            <element signature="e#3434#3869#0" />
+            <element signature="e#3873#4242#0" />
+            <element signature="e#4246#4594#0" />
+            <element signature="e#4598#4943#0" />
+            <element signature="e#3873#4208#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ApiCommon/cleanPlan_interface.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1425">
-          <caret line="85" column="73" selection-start-line="85" selection-start-column="65" selection-end-line="85" selection-end-column="73" />
+        <state relative-caret-position="186">
+          <caret line="135" column="50" selection-start-line="135" selection-start-column="45" selection-end-line="135" selection-end-column="50" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
             <element signature="e#585#866#0" />
@@ -976,15 +1084,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TestCase/test_cleanPlan.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="59" column="33" lean-forward="true" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
+        <state relative-caret-position="76">
+          <caret line="4" column="86" selection-start-line="4" selection-start-column="86" selection-end-line="4" selection-end-column="86" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testFile/caselist.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+        <state relative-caret-position="437">
+          <caret line="23" column="12" lean-forward="true" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
         </state>
       </provider>
     </entry>
