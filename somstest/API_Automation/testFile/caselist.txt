@@ -19,9 +19,10 @@ test_project2
 test_road2
 test_project3
 test_road3
+#test_operationPlan
 test_project4
 test_service
 test_collectPoint
 test_roadSection
 test_cleanRoute
-#test_operationPlan（未完成）
+test_cleanPlan

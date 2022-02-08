@@ -37,7 +37,8 @@ class TestUser(unittest.TestCase):
         """
         self.g["employeeId"] = str(random.randint(700000, 800000))
         self.g["username"] = "python用户" + str(random.randint(100, 1000))
-        response = self.user.add_user(self.req_url, self.g["Cookie"], employeeId=self.g["employeeId"])
+        response = self.user.add_user(self.req_url, self.g["Cookie"], employeeId=self.g["employeeId"],
+                                      username=self.g["username"])
         # 在研发与推广中心下添加用户，部门id=1215，若部门不存在则该模块用例会执行失败。
         assert self.initEvn.test.assert_body(response['body'], 'resultCode', 1)
 

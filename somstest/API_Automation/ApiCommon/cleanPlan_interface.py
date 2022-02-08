@@ -43,13 +43,14 @@ class CleanPlan_interface():
 
         return response
 
-    def add_cleanPlanDetail(self, domain, cookie, date=None, cleanPlanId=None):
+    def add_cleanPlanDetail(self, domain, cookie, date=None, cleanPlanId=None, userId=None):
         url, data, header = request_data("cleanPlan_interface", "addCleanPlanDetail")
 
         apiUrl = domain + url
 
         data["date"] = date
         data["cleanPlanId"] = cleanPlanId
+        data["userId"] = userId
 
         response = self.request.post_request(apiUrl, data, header, cookie)
 
@@ -107,12 +108,49 @@ class CleanPlan_interface():
 
         return response
 
-    def delete_cleanPlan(self, domain, cookie, CleanPlanId=None):
+    # 下发计划
+    def issueCleanPlan(self, domain, cookie, cleanPlanIds=None):
+        url, data, header = request_data("cleanPlan_interface", "issueCleanPlan")
+
+        apiUrl = domain + url
+
+        data["cleanPlanIds"] = cleanPlanIds
+
+        response = self.request.post_request(apiUrl, data, header, cookie)
+
+        return response
+
+    # 顺延计划
+    def postponeCleanPlan(self, domain, cookie, cleanPlanIds=None):
+        url, data, header = request_data("cleanPlan_interface", "postponeCleanPlan")
+
+        apiUrl = domain + url
+
+        data["cleanPlanIds"] = cleanPlanIds
+
+        response = self.request.post_request(apiUrl, data, header, cookie)
+
+        return response
+
+    # 查看垃圾桶数量
+    def getOrgTrashNum(self, domain, cookie, month=None):
+        url, data, header = request_data("cleanPlan_interface", "getOrgTrashNum")
+
+        apiUrl = domain + url
+
+        data["month"] = month
+
+        response = self.request.post_request(apiUrl, data, header, cookie)
+
+        return response
+
+
+    def delete_cleanPlan(self, domain, cookie, cleanPlanId=None):
         url, data, header = request_data("cleanPlan_interface", "deleteCleanPlan")
 
         apiUrl = domain + url
 
-        data["CleanPlanId"] = CleanPlanId
+        data["cleanPlanId"] = cleanPlanId
 
         response = self.request.post_request(apiUrl, data, header, cookie)
 

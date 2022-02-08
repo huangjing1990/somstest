@@ -8,24 +8,31 @@ class User_interface():
         self.request = Request()
 
     # 添加用户
-    def add_user(self, domain, cookie, employeeId=None):
+    def add_user(self, domain, cookie, employeeId=None, orgId=None, username=None):
         url, data, header = request_data("user_interface", "addUser")
 
         apiUrl = domain + url
 
         data["employeeId"] = employeeId
+        data["username"] = username
+
+        if orgId != None:
+            data["org.orgId"] = orgId
 
         response = self.request.post_request(apiUrl, data, header, cookie)
 
         return response
 
     # 查询用户
-    def findUserByPage(self, domain, cookie, employeeId=None):
+    def findUserByPage(self, domain, cookie, employeeId=None, orgdetpIds=None):
         url, data, header = request_data("user_interface", "findUserByPage")
 
         apiUrl = domain + url
 
         data["searchValue"] = employeeId
+
+        if orgdetpIds != None:
+            data["orgdetpIds"] = orgdetpIds
 
         response = self.request.post_request(apiUrl, data, header, cookie)
 

@@ -2,7 +2,7 @@
 # @Time    : 2022-1-27
 # @Author  : huangjing
 # @File    : test_cleanPlan.py
-# 苏丽芳213492登录系统，进行收运计划的增删改查。部门id=1557，项目id=1276，收运路线自主创建。人员：郭华，车辆：鄂ABH599
+# 苏丽芳213492登录系统，进行收运计划的增删改查。部门id=1557（江夏餐厨收运），项目id=1276（江夏餐厨收运项目），收运路线自主创建。人员：自动创建，车辆：鄂ABH599
 # 本模块用例每月最后一天执行会存在问题，计划是当月的，而明细是下个月的。
 
 import time
@@ -15,6 +15,7 @@ import unittest
 from ApiCommon.cleanPlan_interface import *
 from ApiCommon.cleanRoute_interface import *
 from ApiCommon.Login_interface import *
+from ApiCommon.user_interface import *
 from Params.params import *
 
 
@@ -27,6 +28,7 @@ class TestCleanPlan(unittest.TestCase):
         cls.login = Login_interface()
         cls.CleanPlan = CleanPlan_interface()
         cls.cleanRoute = CleanRoute_interface()
+        cls.user = User_interface()
         cls.g = globals()
         cls.g["Cookie"] = initEvn().get_user1Cookie()
 
@@ -92,8 +94,19 @@ class TestCleanPlan(unittest.TestCase):
         date1 = time.strftime("%Y-%m-%d")
         date2 = datetime.strptime(date1, "%Y-%m-%d") + relativedelta(days=+1)
         date = datetime.strftime(date2, "%Y-%m-%d")
+        # 在江夏餐厨收运部门下添加用户
+        self.g["employeeId"] = str(random.randint(700000, 800000))
+        self.g["username"] = "python用户" + str(random.randint(100, 1000))
+        response1 = self.user.add_user(self.req_url, self.g["Cookie"], employeeId=self.g["employeeId"], orgId="1557",
+                                       username=self.g["username"])
+        # 查询用户
+        response2 = self.user.findUserByPage(self.req_url, self.g["Cookie"], employeeId=self.g["employeeId"],
+                                             orgdetpIds="[1557]")
+        self.g["userId"] = response2["body"]["rows"][0]["userId"]
+        print(self.g["userId"])
+
         response = self.CleanPlan.add_cleanPlanDetail(self.req_url, self.g["Cookie"], cleanPlanId=self.g["cleanPlanId"],
-                                                      date=date)
+                                                      date=date, userId=self.g["userId"])
         assert self.initEvn.test.assert_body(response['body'], 'resultCode', 1)
 
     @logger("顺延明细")
@@ -110,7 +123,7 @@ class TestCleanPlan(unittest.TestCase):
         response = self.CleanPlan.postponeCleanPlanDetail(self.req_url, self.g["Cookie"],
                                                           cleanPlanId=self.g["cleanPlanId"], date=date, driverDays=days,
                                                           vehicleDays=days)
-        assert self.initEvn.test.assert_in_text(response['body'], "郭华")
+        assert self.initEvn.test.assert_in_text(response['body'], self.g["username"])
 
     @logger("提交审核")
     def test_submitCleanPlan(self):
@@ -132,7 +145,7 @@ class TestCleanPlan(unittest.TestCase):
         end2 = datetime.strptime(end, "%Y-%m-%d %H:%M:%S") + relativedelta(months=+1)
         monthEnd = datetime.strftime(end2, "%Y-%m-%d %H:%M:%S")
         response = self.CleanPlan.findCleanAuditing(self.req_url, self.g["Cookie"], monthStart=monthStart,
-                                                 monthEnd=monthEnd)
+                                                    monthEnd=monthEnd)
         assert self.initEvn.test.assert_in_text(response['body'], str(self.g["cleanPlanId"]))
 
     @logger("审核通过")
@@ -141,13 +154,38 @@ class TestCleanPlan(unittest.TestCase):
             收运计划：审核通过
         """
         response = self.CleanPlan.cleanAuditing(self.req_url, self.g["Cookie"],
-                                                  cleanPlanIds=self.g["cleanPlanId"])
+                                                cleanPlanIds=self.g["cleanPlanId"])
         assert self.initEvn.test.assert_body(response['body'], 'resultCode', 1)
 
-    # @logger("删除收运计划")
-    # def test_deleteCleanPlan(self):
-    #     """
-    #         收运计划：删除收运计划
-    #     """
-    #     response = self.CleanPlan.delete_cleanPlan(self.req_url, self.g["Cookie"], self.g["CleanPlanId"])
-    #     assert self.initEvn.test.assert_body(response['body'], 'resultCode', 1)
+    @logger("下发计划")
+    def test_issueCleanPlan(self):
+        """
+            收运计划：下发计划
+        """
+        response = self.CleanPlan.issueCleanPlan(self.req_url, self.g["Cookie"], cleanPlanIds=self.g["cleanPlanId"])
+        assert self.initEvn.test.assert_body(response['body'], 'resultCode', 1)
+
+    @logger("顺延计划")
+    def test_postponeCleanPlan(self):
+        """
+            收运计划：顺延计划
+        """
+        response = self.CleanPlan.postponeCleanPlan(self.req_url, self.g["Cookie"], cleanPlanIds=self.g["cleanPlanId"])
+        assert self.initEvn.test.assert_body(response['body'], 'resultCode', 1)
+
+    @logger("查看垃圾桶数量")
+    def test_getOrgTrashNum(self):
+        """
+            收运计划：查看垃圾桶数量
+        """
+        month = time.strftime("%Y-%m")
+        response = self.CleanPlan.getOrgTrashNum(self.req_url, self.g["Cookie"], month=month)
+        assert self.initEvn.test.assert_in_text(response['body'], "trashCanNums")
+
+    @logger("删除收运计划")
+    def test_deleteCleanPlan(self):
+        """
+            收运计划：删除收运计划
+        """
+        response = self.CleanPlan.delete_cleanPlan(self.req_url, self.g["Cookie"], self.g["cleanPlanId"])
+        assert self.initEvn.test.assert_body(response['body'], 'resultCode', 2)

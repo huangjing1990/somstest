@@ -138,11 +138,49 @@ cleanPlan_interface:
 
       }
 
+  issueCleanPlan:
+    # 下发计划
+    - url: /cleanPlan/issueCleanPlan
+      data: {
+              "state":"4",
+              "cleanPlanIds":""
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  postponeCleanPlan:
+    # 顺延计划
+    - url: /cleanPlan/postponeCleanPlan
+      data: {
+              "cleanPlanIds":""
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  getOrgTrashNum:
+    # 查看垃圾桶数量
+    - url: /cleanPlan/getOrgTrashNum
+      data: {
+              "orgId":"1557",
+              "month":"",
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
   deleteCleanPlan:
     # 删除收运计划
-    - url: /CleanPlan/deleteRoute
+    - url: /cleanPlan/deleteCleanPlan
       data: {
-        "CleanPlanId":""
+        "cleanPlanId":""
       }
       header: {
         "Content-Type": "application/x-www-form-urlencoded",
