@@ -1,0 +1,148 @@
+---
+OperationPlan:
+  dec: "人工计划"
+  addOperationPlan:
+    # 添加人工计划
+    - url: /operationPlan/addOperationPlan
+      data: {
+              "roadSectionIds":"1",
+              "memo":"python添加",
+              "month":"2022-02"
+
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  editOperationPlan:
+    # 编辑人工计划
+    - url: /operationPlan/updateOperationPlan
+      data: {
+              "roadSectionId":"1",
+              "type":"0",
+              "memo":"python编辑",
+              "month":"2022-02",
+              "operationPlanId":"15681"
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  newPlanDetail:
+    # 新建计划明细
+    - url: /planDetail/getOperationPlan
+      data: {
+              "month":"2022-02",
+              "roadSectionId":"1",
+              "type":"0"
+
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  addPlanDetail:
+    # 添加时段1作业人员和任务
+    - url: /planDetail/addPlanDetail
+      data: {
+              "date":"2022-02-1顺延",
+              "operationPlanDetailId":"964799",
+              "operationPlanId":"15681",
+              "operationTimeId":"1",
+              "usersId":"53fb98d78ee544d794b",
+              "tasksId":"1"
+
+      }
+
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  addPlanDetail2:
+    # 添加时段2作业人员和任务
+    - url: /planDetail/addPlanDetail
+      data: {
+              "date":"2022-02-1顺延",
+              "operationPlanDetailId":"964799",
+              "operationPlanId":"15681",
+              "operationTimeId":"2",
+              "usersId":"53fb98d78ee544d794b",
+              "tasksId":"1"
+
+      }
+
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  postponePlanDetail:
+    # 顺延计划明细
+    - url: /planDetail/postponePlanDetail
+      data: {
+              "date":"2022-02-1",
+              "operationPlanId":"15681",
+              "roadSectionId":"1",
+              "taskdays":"27",
+              "userdays":"27"
+
+      }
+
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  submitOperationPlan:
+    # 提交审核计划明细
+    - url: /operationPlan/submitOperationPlan
+      data: {
+              "operationPlanIds":"15681",
+              "planCheckUserId":"bf7c7793c6064b0b805"
+      }
+
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  createOperationPlanRecord:
+    # 人工审核通过
+    - url: /operationAuditing/createOperationPlanRecord
+      data: {
+              "state":"2",
+              "recordMemo":"",
+              "operationPlanIds":"15681",
+              "memo":"python审核通过"
+      }
+
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  issueOperationPlan:
+    # 下发人工计划
+    - url: /operationPlan/issueOperationPlan
+      data: {
+        "state":"4",
+        "operationPlanIds":"15681"
+      }
+
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
