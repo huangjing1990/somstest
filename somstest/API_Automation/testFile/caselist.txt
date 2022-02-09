@@ -26,3 +26,4 @@ test_collectPoint
 test_roadSection
 test_cleanRoute
 test_cleanPlan
+test_vehicleDriving

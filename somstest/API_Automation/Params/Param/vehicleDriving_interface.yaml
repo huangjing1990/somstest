@@ -1,0 +1,41 @@
+---
+vehicleDriving_interface:
+  dec: "实时定位"
+  getVehicleLatestPosition:
+    # 查询实时定位
+    - url: /vehicleDriving/getVehicleLatestPosition
+      data: {
+              "vehicleList":"10015"
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  getVehiclestate:
+    # 查询车辆信息框
+    - url: /vehicleDriving/getVehiclestate
+      data: {
+              "vehicleList":"10015"
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  getTrajectory:
+    # 轨迹回放
+    - url: /vehicleDriving/getTrajectory
+      data: {
+              "plate":"渝BY2003",
+              "vehicleId":"10015",
+              "timeStart":"2022-02-07 00:00:00",
+              "timeEnd":"2022-02-07 14:52:44"
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
