@@ -1,13 +1,38 @@
 ---
-OperationPlan:
+operationPlan_interface:
   dec: "人工计划"
   addOperationPlan:
     # 添加人工计划
     - url: /operationPlan/addOperationPlan
       data: {
-              "roadSectionIds":"1",
+              "roadSectionIds":"",
               "memo":"python添加",
-              "month":"2022-02"
+              "month":""
+
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  findOperationPlan:
+    # 查询人工计划
+    - url: /operationPlan/findOperationPlanByPage
+      data: {
+              "orgId":"1053",
+              "projectId":"",
+              "roadId":"",
+              "roadSectionIds":"",
+              "monthStart":"2022-01-01 00:00:00",
+              "monthEnd":"2022-03-31 23:59:59",
+              "state":"",
+              "order":"asc",
+              "page":"1",
+              "rows":"30",
+              "searchName":"team",
+              "searchValue":"",
+              "sort":"operationPlanId"
 
       }
       header: {
@@ -25,20 +50,6 @@ OperationPlan:
               "memo":"python编辑",
               "month":"2022-02",
               "operationPlanId":"15681"
-      }
-      header: {
-        "Content-Type": "application/x-www-form-urlencoded",
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
-
-      }
-
-  newPlanDetail:
-    # 新建计划明细
-    - url: /planDetail/getOperationPlan
-      data: {
-              "month":"2022-02",
-              "roadSectionId":"1",
-              "type":"0"
 
       }
       header: {
@@ -48,37 +59,17 @@ OperationPlan:
       }
 
   addPlanDetail:
-    # 添加时段1作业人员和任务
+    # 新建计划明细1
     - url: /planDetail/addPlanDetail
       data: {
-              "date":"2022-02-1顺延",
-              "operationPlanDetailId":"964799",
-              "operationPlanId":"15681",
+              "date":"2022-02-10顺延",
+              "operationPlanId":"",
               "operationTimeId":"1",
-              "usersId":"53fb98d78ee544d794b",
-              "tasksId":"1"
+              "tasksId":"1",
+              "operationPlanDetailId":"",
+              "usersId":""
 
       }
-
-      header: {
-        "Content-Type": "application/x-www-form-urlencoded",
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
-
-      }
-
-  addPlanDetail2:
-    # 添加时段2作业人员和任务
-    - url: /planDetail/addPlanDetail
-      data: {
-              "date":"2022-02-1顺延",
-              "operationPlanDetailId":"964799",
-              "operationPlanId":"15681",
-              "operationTimeId":"2",
-              "usersId":"53fb98d78ee544d794b",
-              "tasksId":"1"
-
-      }
-
       header: {
         "Content-Type": "application/x-www-form-urlencoded",
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
@@ -89,14 +80,13 @@ OperationPlan:
     # 顺延计划明细
     - url: /planDetail/postponePlanDetail
       data: {
-              "date":"2022-02-1",
-              "operationPlanId":"15681",
-              "roadSectionId":"1",
-              "taskdays":"27",
-              "userdays":"27"
+              "date":"2022-03-1",
+              "operationPlanId":"",
+              "roadSectionId":"2",
+              "taskdays":"5",
+              "userdays":"5"
 
       }
-
       header: {
         "Content-Type": "application/x-www-form-urlencoded",
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
@@ -104,29 +94,48 @@ OperationPlan:
       }
 
   submitOperationPlan:
-    # 提交审核计划明细
+    # 提交审核明细
     - url: /operationPlan/submitOperationPlan
       data: {
-              "operationPlanIds":"15681",
+              "operationPlanIds":"16245",
               "planCheckUserId":"bf7c7793c6064b0b805"
-      }
 
+      }
       header: {
         "Content-Type": "application/x-www-form-urlencoded",
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
 
       }
 
-  createOperationPlanRecord:
-    # 人工审核通过
+  findOperationAuditing:
+    # 查询审核记录
+    - url: /operationAuditing/findOperationAuditingByPage
+      data: {
+              "state":"1",
+              "monthStart":"2022-01-01 00:00:00",
+              "monthEnd":"2022-03-31 23:59:59",
+              "order":"asc",
+              "page":"1",
+              "rows":"15",
+              "sort":"operationPlanId"
+
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  createAuditing:
+    # 审核通过
     - url: /operationAuditing/createOperationPlanRecord
       data: {
               "state":"2",
-              "recordMemo":"",
-              "operationPlanIds":"15681",
-              "memo":"python审核通过"
-      }
+              "operationPlanIds":"16248",
+              "recordMemo":"python通过",
+              "memo":"python通过"
 
+      }
       header: {
         "Content-Type": "application/x-www-form-urlencoded",
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
@@ -134,13 +143,36 @@ OperationPlan:
       }
 
   issueOperationPlan:
-    # 下发人工计划
+    # 下发计划
     - url: /operationPlan/issueOperationPlan
       data: {
-        "state":"4",
-        "operationPlanIds":"15681"
+              "state":"4",
+              "operationPlanIds":"16248"
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
       }
 
+  postponePlan:
+    # 顺延计划
+    - url: /operationPlan/postponePlan
+      data: {
+              "operationPlanIds":"16248"
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+
+      }
+
+  deleteOperationPlan:
+    # 删除计划
+    - url: /operationPlan/confimDeleteOperationPlan
+      data: {
+              "operationPlanId":""
+      }
       header: {
         "Content-Type": "application/x-www-form-urlencoded",
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"

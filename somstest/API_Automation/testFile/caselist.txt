@@ -19,7 +19,7 @@ test_project2
 test_road2
 test_project3
 test_road3
-#test_operationPlan
+test_operationPlan
 test_project4
 test_service
 test_collectPoint
